@@ -1,4 +1,4 @@
-# Incotex Electronics Group [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url] [![devDependency status][dev-dependency-image]][dev-dependency-url]
+# Incotex Electronics Group [![Build status][travis-image]][travis-url]
 
 ООО «НПК «Инкотекс», является частью крупного электронного холдинга ИНКОТЕКС, выпускающего огромную номенклатуру электронных изделий, в том числе: контрольно-кассовые машины, POS , принтеры, электронные весы, счетчики электрической энергии и автоматизированные системы контроля и учета энергоресурсов (АСКУЭ), основанных на PLC технологии, полноцветные и монохромные плазменные и светодиодные экраны и табло, дисплеи типа «бегущая строка» и др.
 
@@ -145,9 +145,3 @@
 
 [travis-image]: https://travis-ci.com/rogatnev-nikita/Incotex.svg?token=1dP9pcnx4EAsqnAdHp7d&branch=master
 [travis-url]: https://travis-ci.com/rogatnev-nikita/Incotex
-
-[dependency-image]: https://david-dm.org/rogatnev-nikita/Incotex.svg?style=flat-square
-[dependency-url]: https://david-dm.org/rogatnev-nikita/Incotex
-
-[dev-dependency-image]: https://david-dm.org/rogatnev-nikita/Incotex/dev-status.svg?style=flat-square
-[dev-dependency-url]: https://david-dm.org/rogatnev-nikita/Incotex#info=devDependencies
