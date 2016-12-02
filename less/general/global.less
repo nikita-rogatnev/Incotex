@@ -25,6 +25,13 @@ h1 {
 	.font-size-h1;
 }
 
+article {
+	h1 {
+		font-size: 21px;
+		font-weight: 900;
+	}
+}
+
 h2 {
 	.font-size-h2;
 }
@@ -37,7 +44,58 @@ h4 {
 	.font-size-h4;
 }
 
+a {
+	text-decoration: none;
+
+	color: @palette-primary;
+
+	&:hover {
+		text-decoration: none;
+
+		color: @palette-accent;
+	}
+}
+
 img {
+	width: 100%;
 	max-width: 100%;
 	height: auto;
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+	position: relative;
+
+	min-height: 1px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.col-xs-15 {
+	float: left;
+
+	width: 20%;
+}
+@media (min-width: 768px) {
+	.col-sm-15 {
+		float: left;
+
+		width: 20%;
+	}
+}
+@media (min-width: 992px) {
+	.col-md-15 {
+		float: left;
+
+		width: 20%;
+	}
+}
+@media (min-width: 1200px) {
+	.col-lg-15 {
+		float: left;
+
+		width: 20%;
+	}
 }
