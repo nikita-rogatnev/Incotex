@@ -143,8 +143,8 @@
 		+-- texh.html
 
 
-[travis-image]: https://travis-ci.org/rogatnev-nikita/Incotex.svg?branch=master
-[travis-url]: https://travis-ci.org/rogatnev-nikita/Incotex
+[travis-image]: https://travis-ci.com/rogatnev-nikita/Incotex.svg?branch=master
+[travis-url]: https://travis-ci.com/rogatnev-nikita/Incotex
 
 [dependency-image]: https://david-dm.org/rogatnev-nikita/Incotex.svg?style=flat-square
 [dependency-url]: https://david-dm.org/rogatnev-nikita/Incotex
