@@ -3,19 +3,17 @@
 /* ------------------------------------------ */
 * {
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
 
-	//outline: 1px dashed lightgrey;
+	outline: 1px dashed lightgrey;
 }
 
 body {
-	color: @color__text;
-	background-color: @color__white;
+	color: @palette-primary;
+	background-color: @palette-secondary;
 
-	font-family: "Exo 2", Arial, sans-serif;
-	font-size: 16px;
-	line-height: 22px;
+	font-family: @font-family-primary;
+
+	.font-size-primary;
 }
 
 .container-fluid {
@@ -31,44 +29,11 @@ h6 {
 	margin: 0;
 }
 
-h1 {
-	margin-bottom: 20px;
-
-	text-align: center;
-	text-transform: uppercase;
-
-	color: @color__text;
-
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 24px;
-	font-weight: 800;
-	line-height: 1.5;
-
-	@media (min-width: @screen-sm) {
-		font-size: 45px;
-	}
-}
-
 span {
 	display: block;
-}
-
-p {
-	margin: 20px 0;
-
-	font-size: 14px;
-	line-height: 22px;
-
-	@media (min-width: @screen-sm) {
-		font-size: 16px;
-	}
 }
 
 img {
 	max-width: 100%;
 	height: auto;
-}
-
-.row-eq-height {
-	display: flex;
 }
