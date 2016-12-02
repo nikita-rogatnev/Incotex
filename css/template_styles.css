@@ -6,25 +6,41 @@
   outline: 1px dashed lightgrey;
 }
 body {
-  color: #000000;
+  color: #434343;
   background-color: #ffffff;
   font-family: "Lato", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 17px;
+  line-height: 1.1;
+  font-size: 13px;
+}
+@media (min-width: 992px) {
+  body {
+    font-size: 15px;
+  }
 }
 .container-fluid {
   padding: 0;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+h1 {
+  font-size: 40px;
 }
-span {
-  display: block;
+@media (min-width: 992px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+h2 {
+  font-size: 30px;
+}
+@media (min-width: 992px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+h3 {
+  font-size: 40px;
+}
+h4 {
+  font-size: 40px;
 }
 img {
   max-width: 100%;
@@ -34,7 +50,9 @@ img {
 /* HEADER BLOCK
 /* ------------------------------------------ */
 .header {
-  padding: 20px 0;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 /* ------------------------------------------ */
 /* MAIN BLOCK
@@ -43,8 +61,112 @@ img {
   outline: 1px solid red;
 }
 /* ------------------------------------------ */
+/* ABOUT BLOCK
+/* ------------------------------------------ */
+.about {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* ------------------------------------------ */
+/* EVENTS BLOCK
+/* ------------------------------------------ */
+.events {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* ------------------------------------------ */
+/* HEADING BLOCK
+/* ------------------------------------------ */
+.heading {
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.heading h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+}
+/* ------------------------------------------ */
+/* KEY PROJECTS BLOCK
+/* ------------------------------------------ */
+.key-projects {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* ------------------------------------------ */
+/* MAP BLOCK
+/* ------------------------------------------ */
+.map {
+  position: relative;
+}
+.map__controls {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  outline: 1px solid red;
+  background: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.map__container .map__item {
+  width: 100%;
+  height: 400px;
+}
+/* ------------------------------------------ */
+/* PARTNERS BLOCK
+/* ------------------------------------------ */
+.partners {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.partners__item {
+  text-align: center;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.partners__item a {
+  display: inline-block;
+}
+/* ------------------------------------------ */
+/* PROJECTS BLOCK
+/* ------------------------------------------ */
+.projects {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* ------------------------------------------ */
+/* SLIDER BLOCK
+/* ------------------------------------------ */
+.slider {
+  outline: 1px solid red;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* ------------------------------------------ */
 /* FOOTER BLOCK
 /* ------------------------------------------ */
 .footer {
-  padding: 20px 0;
+  color: #ffffff;
+  background: #123358;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.footer__navigation a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer__navigation a:hover {
+  color: #1c5699;
 }

@@ -2,11 +2,20 @@
 /* FOOTER BLOCK
 /* ------------------------------------------ */
 .footer {
-	padding: 20px 0;
+	color: @palette-white;
+	background: @palette-quinary;
+
+	.padding-15;
 }
 
-@media (min-width: @screen-sm) {
-}
+.footer__navigation {
+	a {
+		text-decoration: none;
 
-@media (min-width: @screen-lg) {
+		color: @palette-white;
+
+		&:hover {
+			color: @palette-accent;
+		}
+	}
 }
