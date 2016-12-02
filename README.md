@@ -3,8 +3,8 @@
 ООО «НПК «Инкотекс», является частью крупного электронного холдинга ИНКОТЕКС, выпускающего огромную номенклатуру электронных изделий, в том числе: контрольно-кассовые машины, POS , принтеры, электронные весы, счетчики электрической энергии и автоматизированные системы контроля и учета энергоресурсов (АСКУЭ), основанных на PLC технологии, полноцветные и монохромные плазменные и светодиодные экраны и табло, дисплеи типа «бегущая строка» и др.
 
 [![Incotex][2]][1]
-	[1]: https://rogatnev-nikita.github.io/Incotex/
-	[2]: ./images/screenshots/screenshot.png (Incotex screenshot)
+  [1]: https://rogatnev-nikita.github.io/Incotex/
+  [2]: ./images/screenshots/screenshot.png (Incotex screenshot)
 
 ## Summary
 * High Resolution: Yes
