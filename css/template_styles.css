@@ -107,6 +107,12 @@ img {
 /* ABOUT BLOCK
 /* ------------------------------------------ */
 .about {
+  color: #ffffff;
+  background-color: #263c5c;
+  background-image: url(../images/about/about--bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 20px;
   padding-bottom: 20px;
 }
