@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 		less: {
 			style: {
 				files: {
-					"./css/style.css": "./less/style.less",
+					"./css/template_styles.css": "./less/style.less",
 					"./css/bootstrap.css": "./less/bootstrap.less"
 				}
 			}
@@ -24,15 +24,15 @@ module.exports = function(grunt) {
 						browsers: "last 2 versions"
 					})]
 				},
-				src: "css/style.css",
-				dest: "css/style.css"
+				src: "css/template_styles.css",
+				dest: "css/template_styles.css"
 			},
 			minify_style_css: {
 				options: {
 					processors: [require("cssnano")()]
 				},
-				src: "css/style.css",
-				dest: "css/style.min.css"
+				src: "css/template_styles.css",
+				dest: "css/template_styles.min.css"
 			},
 			minify_bootstrap_css: {
 				options: {
