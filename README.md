@@ -4,7 +4,7 @@
 
 [![Incotex][2]][1]
   [1]: https://rogatnev-nikita.github.io/Incotex/
-  [2]: ./images/screenshots/screenshot.png (Incotex screenshot)
+  [2]: ./images/screenshots/screenshot.jpg (Incotex screenshot)
 
 ## Summary
 * High Resolution: Yes
