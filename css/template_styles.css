@@ -91,6 +91,76 @@ img {
   }
 }
 /* ------------------------------------------ */
+/* UI KIT
+/* ------------------------------------------ */
+button,
+.button {
+  position: relative;
+  display: inline-block;
+  margin: 15px auto;
+  text-align: center;
+  vertical-align: middle;
+  white-space: normal;
+  border: none;
+  border-radius: 3px;
+  background: none;
+}
+button:disabled,
+.button:disabled {
+  color: #acacac;
+  border: 2px solid #acacac;
+}
+button:disabled:hover,
+.button:disabled:hover,
+button:disabled:active,
+.button:disabled:active {
+  color: #acacac;
+  border: 2px solid #acacac;
+}
+.button--primary {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px 20px;
+  font-size: 17px;
+  font-weight: 900;
+}
+.button--secondary {
+  width: 100%;
+  max-width: 180px;
+  padding: 8px 20px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.button--accent {
+  color: #1c5699;
+  border: 2px solid #1c5699;
+}
+.button--accent:hover,
+.button--accent:active {
+  color: #ffffff;
+  border: 2px solid #1c5699;
+  background: #1c5699;
+}
+.button--white {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+.button--white:hover,
+.button--white:active {
+  color: #ffffff;
+  border: 2px solid #1c5699;
+  background: #1c5699;
+}
+.button--inacive {
+  color: #acacac;
+  border: 2px solid #acacac;
+}
+.button--inacive:hover,
+.button--inacive:active {
+  color: #acacac;
+  border: 2px solid #acacac;
+}
+/* ------------------------------------------ */
 /* HEADER BLOCK
 /* ------------------------------------------ */
 .header {

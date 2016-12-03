@@ -1,0 +1,90 @@
+/* ------------------------------------------ */
+/* UI KIT
+/* ------------------------------------------ */
+
+// BUTTONS
+button,
+.button {
+	position: relative;
+
+	display: inline-block;
+
+	margin: 15px auto;
+
+	text-align: center;
+	vertical-align: middle;
+	white-space: normal;
+
+	border: none;
+	border-radius: 3px;
+	background: none;
+
+	&:disabled {
+		color: @palette-gray;
+		border: 2px solid @palette-gray;
+
+		&:hover,
+		&:active {
+			color: @palette-gray;
+			border: 2px solid @palette-gray;
+		}
+	}
+}
+
+
+.button {
+	// BIG BUTTON
+	&--primary {
+		width: 100%;
+		max-width: 300px;
+		padding: 12px 20px;
+
+		font-size: 17px;
+		font-weight: 900;
+	}
+
+	// SMALL BUTTON
+	&--secondary {
+		width: 100%;
+		max-width: 180px;
+		padding: 8px 20px;
+
+		font-size: 15px;
+		font-weight: 700;
+	}
+
+	&--accent {
+		color: @palette-accent;
+		border: 2px solid @palette-accent;
+
+		&:hover,
+		&:active {
+			color: @palette-white;
+			border: 2px solid @palette-accent;
+			background: @palette-accent;
+		}
+	}
+
+	&--white {
+		color: @palette-white;
+		border: 2px solid @palette-white;
+
+		&:hover,
+		&:active {
+			color: @palette-white;
+			border: 2px solid @palette-accent;
+			background: @palette-accent;
+		}
+	}
+
+	&--inacive {
+		color: @palette-gray;
+		border: 2px solid @palette-gray;
+
+		&:hover,
+		&:active {
+			color: @palette-gray;
+			border: 2px solid @palette-gray;
+		}
+	}
+}
