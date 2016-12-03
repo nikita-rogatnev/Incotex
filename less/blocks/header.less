@@ -3,10 +3,39 @@
 /* ------------------------------------------ */
 .header {
 	.padding-20;
+
+	&__container {
+		position: relative;
+	}
+
+	&--slider {
+		color: @palette-white;
+		background-color: @palette-quinary;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	&--slide-1 {
+		background-image: url(../images/slider/slider__item-1.png);
+	}
 }
 
-@media (min-width: @screen-sm) {
+.header__logo {
+	height: auto;
+	min-height: auto;
+	max-height: none;
 }
 
-@media (min-width: @screen-lg) {
+.header__headings {
+	margin-top: 100px;
+	margin-bottom: 140px;
+
+	text-align: center;
+}
+
+.header__slides {
+	position: absolute;
+	right: 0;
+	bottom: 0;
 }
