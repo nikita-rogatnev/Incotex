@@ -110,6 +110,18 @@ img {
 .header--slide-1 {
   background-image: url(../images/slider/slider__item-1.png);
 }
+.header--slide-2 {
+  background-image: url(../images/slider/slider__item-1.png);
+}
+.header--slide-3 {
+  background-image: url(../images/slider/slider__item-1.png);
+}
+.header--slide-4 {
+  background-image: url(../images/slider/slider__item-1.png);
+}
+.header--slide-5 {
+  background-image: url(../images/slider/slider__item-1.png);
+}
 .header__logo {
   height: auto;
   min-height: auto;
@@ -122,14 +134,22 @@ img {
 }
 .header__slides {
   position: absolute;
-  right: 0;
+  right: 15px;
   bottom: 0;
 }
-/* ------------------------------------------ */
-/* MAIN BLOCK
-/* ------------------------------------------ */
-.main {
-  outline: 1px solid red;
+.header__slides .header__slide {
+  display: none;
+  background: rgba(1, 20, 49, 0.7);
+}
+.header__slides .header__slide a {
+  display: block;
+  padding: 5px 15px;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 16px;
+}
+.header__slides .header__slide--active {
+  display: block;
 }
 /* ------------------------------------------ */
 /* ABOUT BLOCK
@@ -146,6 +166,8 @@ img {
 }
 .about__more {
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 /* ------------------------------------------ */
 /* BUTTON BLOCK
@@ -160,7 +182,7 @@ img {
   width: 100%;
   max-width: 300px;
   margin: 15px auto;
-  padding: 15px 20px;
+  padding: 12px 20px;
   vertical-align: middle;
   font-size: 17px;
   font-weight: bold;
@@ -180,8 +202,21 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.events__item {
+  font-size: 15px;
+  line-height: 20px;
+}
+.events__item time {
+  display: block;
+  color: #8d8d8d;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .events__more {
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 /* ------------------------------------------ */
 /* HEADING BLOCK
@@ -210,6 +245,12 @@ img {
   margin-bottom: 15px;
 }
 /* ------------------------------------------ */
+/* MAIN BLOCK
+/* ------------------------------------------ */
+.main {
+  outline: 1px solid red;
+}
+/* ------------------------------------------ */
 /* MAP BLOCK
 /* ------------------------------------------ */
 .map {
@@ -229,6 +270,16 @@ img {
   background: rgba(255, 255, 255, 0.9);
   padding-top: 10px;
   padding-bottom: 10px;
+}
+/* ------------------------------------------ */
+/* MENU BLOCK
+/* ------------------------------------------ */
+.menu__item {
+  text-transform: uppercase;
+}
+.menu__item a {
+  color: #ffffff;
+  font-size: 13px;
 }
 /* ------------------------------------------ */
 /* PARTNERS BLOCK

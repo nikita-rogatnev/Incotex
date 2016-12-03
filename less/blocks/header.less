@@ -19,6 +19,22 @@
 	&--slide-1 {
 		background-image: url(../images/slider/slider__item-1.png);
 	}
+
+	&--slide-2 {
+		background-image: url(../images/slider/slider__item-1.png);
+	}
+
+	&--slide-3 {
+		background-image: url(../images/slider/slider__item-1.png);
+	}
+
+	&--slide-4 {
+		background-image: url(../images/slider/slider__item-1.png);
+	}
+
+	&--slide-5 {
+		background-image: url(../images/slider/slider__item-1.png);
+	}
 }
 
 .header__logo {
@@ -36,6 +52,27 @@
 
 .header__slides {
 	position: absolute;
-	right: 0;
+	right: 15px;
 	bottom: 0;
+
+	.header__slide {
+		display: none;
+
+		background: @palette-tertiary;
+
+		a {
+			display: block;
+
+			padding: 5px 15px;
+
+			color: @palette-white;
+
+			font-size: 13px;
+			line-height: 16px;
+		}
+
+		&--active {
+			display: block;
+		}
+	}
 }
