@@ -1,23 +1,80 @@
 /* ------------------------------------------ */
 /* ACCORDIONS
 /* ------------------------------------------ */
+.panel-group .panel {
+	box-shadow: none;
+}
+.panel-group .panel-heading {
+	padding: 10px 0;
+}
 .panel-group .panel-title > a.collapsed:hover,
 .panel-group .panel-title > a.collapsed:focus,
 .icon:hover::before,
 .icon:focus::before {
 	text-decoration: none;
 
-	color: #199dd7;
+	color: @palette-accent;
 	outline: 0 none;
 }
+
+.panel-group .panel-title > a,
+.panel-group .panel-title > a:hover,
+.panel-group .panel-heading + .panel-collapse > .list-group {
+	color: @palette-accent;
+}
+
+.panel-group .panel-title > a.collapsed,
+.panel-group .panel-heading + .panel-collapse > .list-group,
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+	border: 0;
+}
+.panel-group .panel-title > a:hover,
 .panel-group .panel-title > a.collapsed:hover,
 .panel-group .panel-title > a.collapsed:focus {
-	border-bottom: 1px solid rgba(19, 157, 215, 1);
-}
-.panel-group .panel-title > a.collapsed {
-	border-bottom: 1px dotted rgba(0, 119, 200, 0.3);
-}
-.panel-group .panel-title > a.collapsed:hover,
-.panel-group .panel-title > a.collapsed:focus {
+	text-decoration: none;
+
+	color: @palette-accent;
 	border-bottom: 1px dotted rgba(19, 157, 215, 1);
+}
+
+.panel-group {
+	.panel-title {
+		position: relative;
+
+		padding-left: 25px;
+
+		& > a {
+			&:before {
+				position: absolute;
+				top: 9px;
+				left: 0;
+
+				display: block;
+
+				width: 15px;
+				height: 4px;
+
+				content: "";
+
+				background: @palette-accent;
+			}
+
+			&.collapsed {
+				&:before {
+					top: 0;
+
+					width: auto;
+					height: auto;
+
+					content: '+';
+
+					color: @palette-accent;
+					background: none;
+
+					font-size: 28px;
+					font-weight: 900;
+				}
+			}
+		}
+	}
 }

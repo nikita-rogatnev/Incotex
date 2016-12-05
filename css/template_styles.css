@@ -282,24 +282,60 @@ body {
 /* ------------------------------------------ */
 /* ACCORDIONS
 /* ------------------------------------------ */
+.panel-group .panel {
+  box-shadow: none;
+}
+.panel-group .panel-heading {
+  padding: 10px 0;
+}
 .panel-group .panel-title > a.collapsed:hover,
 .panel-group .panel-title > a.collapsed:focus,
 .icon:hover::before,
 .icon:focus::before {
   text-decoration: none;
-  color: #199dd7;
+  color: #1c5699;
   outline: 0 none;
 }
+.panel-group .panel-title > a,
+.panel-group .panel-title > a:hover,
+.panel-group .panel-heading + .panel-collapse > .list-group {
+  color: #1c5699;
+}
+.panel-group .panel-title > a.collapsed,
+.panel-group .panel-heading + .panel-collapse > .list-group,
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+  border: 0;
+}
+.panel-group .panel-title > a:hover,
 .panel-group .panel-title > a.collapsed:hover,
 .panel-group .panel-title > a.collapsed:focus {
-  border-bottom: 1px solid #139dd7;
-}
-.panel-group .panel-title > a.collapsed {
-  border-bottom: 1px dotted rgba(0, 119, 200, 0.3);
-}
-.panel-group .panel-title > a.collapsed:hover,
-.panel-group .panel-title > a.collapsed:focus {
+  text-decoration: none;
+  color: #1c5699;
   border-bottom: 1px dotted #139dd7;
+}
+.panel-group .panel-title {
+  position: relative;
+  padding-left: 25px;
+}
+.panel-group .panel-title > a:before {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  display: block;
+  width: 15px;
+  height: 4px;
+  content: "";
+  background: #1c5699;
+}
+.panel-group .panel-title > a.collapsed:before {
+  top: 0;
+  width: auto;
+  height: auto;
+  content: '+';
+  color: #1c5699;
+  background: none;
+  font-size: 28px;
+  font-weight: 900;
 }
 /* ------------------------------------------ */
 /* ALERTS
