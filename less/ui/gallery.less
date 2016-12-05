@@ -1,0 +1,26 @@
+/* ------------------------------------------ */
+/* GALLERY
+/* ------------------------------------------ */
+.gallery {
+	position: relative;
+
+	display: inline-block;
+}
+
+.gallery {
+	&:hover {
+		&:before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+
+			display: block;
+
+			content: "";
+
+			background: rgba(0, 0, 0, 0.5) url("../images/gallery/lens.png") no-repeat scroll 50% 50%;
+		}
+	}
+}

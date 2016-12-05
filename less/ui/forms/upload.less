@@ -1,0 +1,63 @@
+/* ------------------------------------------ */
+/* FILES UPLOAD
+/* ------------------------------------------ */
+.widget-upload-field {
+	position: relative;
+
+	display: block;
+	overflow: hidden;
+
+	cursor: pointer;
+
+	background-color: transparent;
+
+	line-height: 20px;
+}
+.widget-upload-field .icon-file:before {
+	margin: -4px 6px 0 0;
+
+	font-size: 14px;
+}
+.upload-field-btn {
+	color: #1f6799;
+}
+.upload-field-value {
+	height: 16px;
+	min-height: 0;
+	margin-top: 5px;
+	padding: 0 0 0 19px;
+
+	text-overflow: ellipsis;
+
+	color: #777777;
+	border: 0 none;
+	outline: 0 none;
+	background: transparent none repeat scroll 0 0;
+	box-shadow: none;
+
+	font-size: 13px;
+	line-height: 16px;
+}
+.upload-field-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	width: 100%;
+	height: 100%;
+
+	cursor: pointer;
+
+	opacity: 0;
+}
+.upload-field-overlay[disabled] {
+	opacity: 0;
+}
+
+.widget-upload-field.disabled .icon-file:before {
+	color: #cccccc;
+}
+.upload-field-value:disabled {
+	color: #cccccc;
+	background: transparent none repeat scroll 0 0;
+}

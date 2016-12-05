@@ -1,0 +1,227 @@
+/* ------------------------------------------ */
+/* SELECTS
+/* ------------------------------------------ */
+.selectfix {
+	display: none;
+}
+.touch .selectfix {
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	height: 100%;
+
+	opacity: 0;
+}
+.selectfix-container {
+	position: relative;
+
+	overflow: hidden;
+
+	width: 100%;
+	height: 34px;
+
+	cursor: default;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	text-align: left;
+
+	font-family: arial;
+	font-size: 14px;
+
+	     -o-user-select: none;
+	 -khtml-user-select: none;
+}
+.selectfix-container.opened {
+	z-index: 100;
+
+	overflow: visible;
+}
+.selectfix-border {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	overflow: hidden;
+
+	height: 34px;
+	margin-top: -34px;
+	padding-top: 30px;
+
+	border: 1px solid #cccccc;
+	border-radius: 0;
+	background-color: #ffffff;
+}
+.opened .selectfix-border {
+	bottom: auto;
+
+	height: auto;
+	padding-top: 35px;
+}
+.selectfix-current-value::before {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	right: 8px;
+
+	display: block;
+
+	width: 0;
+	height: 0;
+	margin-top: -4px;
+
+	content: "";
+
+	border-width: 10px 7px;
+	border-style: solid;
+	border-color: #cccccc transparent transparent;
+}
+.selectfix-current-value::after {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	bottom: 2px;
+
+	display: block;
+
+	width: 25px;
+
+	content: "";
+
+	background-color: #ffffff;
+}
+.selectfix-container:hover .selectfix-current-value::before {
+	border-color: #66afe9 transparent transparent;
+}
+.selectfix-container.disabled:hover .selectfix-current-value.disabled::before {
+	border-color: #cccccc transparent transparent;
+}
+.opened .selectfix-current-value::before {
+	margin-top: -15px;
+
+	border-color: transparent transparent #006699;
+}
+.selectfix-container.opened:hover .selectfix-current-value::before {
+	border-color: transparent transparent #66afe9;
+}
+.selectfix-current-value {
+	position: relative;
+	z-index: 1;
+
+	overflow: hidden;
+
+	box-sizing: border-box;
+	height: 100%;
+	padding: 10px 25px 9px 10px;
+
+	cursor: pointer;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+	line-height: 1;
+}
+.opened .selectfix-current-value {
+	border-bottom: 1px solid #cccccc;
+}
+.selectfix-container:hover .opened .selectfix-current-value {
+	border-bottom: 1px solid #006699;
+}
+.selectfix-current-value.disabled,
+.selectfix-current-value.disabled:hover {
+	cursor: not-allowed;
+
+	opacity: 0.5;
+	background-color: transparent;
+}
+
+.selectfix-current-value span span {
+	display: inline-block;
+
+	margin: 0 0 0 8px;
+	padding: 0 8px;
+
+	content: "x";
+	cursor: pointer;
+}
+
+.selectfix-current-value > span {
+	display: inline-block;
+
+	margin: -5px 5px 0 0;
+	padding: 5px 0 5px 8px;
+
+	border-radius: 3px;
+	background-color: rgba(249, 245, 210, 1); //f9f5d2
+}
+.selectfix-container:hover .selectfix-border,
+.selectfix-container:hover .selectfix-current-value {
+	border-color: #66afe9;
+}
+.selectfix-container.disabled:hover .selectfix-border,
+.selectfix-container.disabled:hover .selectfix-current-value {
+	border-color: #cccccc;
+}
+.selectfix-search {
+	padding: 5px;
+}
+.selectfix-search input {
+	display: block;
+
+	box-sizing: border-box;
+	width: 100%;
+	padding: 6px 3px;
+
+	border: 2px solid #006699;
+	border-radius: 3px;
+
+	line-height: 1em;
+}
+
+.selectfix-value {
+	display: block;
+	overflow: hidden;
+
+	margin: 0;
+	padding: 5px 8px;
+
+	cursor: pointer;
+}
+.selectfix-list .selectfix-value span {
+	margin: 0;
+}
+.selectfix-value b {
+	background-color: #aaffaa;
+}
+.selectfix-value:hover,
+.selectfix-value.selected {
+	background-color: #e1edf9;
+}
+.selectfix-value.selected {
+	font-weight: bold;
+}
+.selectfix-value input[type="checkbox"] {
+	margin: 0 5px 0 0;
+
+	vertical-align: middle;
+}
+
+.selectfix-container .scrollpane-bar-y {
+	right: 6px;
+	bottom: 0;
+}
+.selectfix-container .scroll-y .scrollpane-container {
+	margin-right: 21px;
+}
+.selectfix-container .scrollpane-line-y {
+	right: 5px;
+	left: 5px;
+}

@@ -1,3 +1,43 @@
 /* ------------------------------------------ */
 /* TABS
 /* ------------------------------------------ */
+.nav-tabs {
+	border: 0 none navy;
+
+	& > li {
+		float: left;
+
+		margin: 0 10px 0 0;
+		padding: 0;
+
+		& > a {
+			display: inline;
+
+			padding: 0;
+
+			border-width: 0 0 1px;
+			border-style: dotted;
+			border-color: #0077c8;
+			border-radius: 0;
+
+			&:hover,
+			&:focus {
+				color: #199dd7;
+				border-color: #199dd7;
+				outline: 0 none;
+				background-color: transparent;
+			}
+		}
+
+		&.active {
+			& > a,
+			&:hover,
+			&:focus {
+				border-color: transparent;
+				outline: 0 none;
+
+				font-weight: bold;
+			}
+		}
+	}
+}

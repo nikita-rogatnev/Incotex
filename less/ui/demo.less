@@ -1,0 +1,58 @@
+/* ------------------------------------------ */
+/* DEMO STYLES FOR TECH PAGE
+/* ------------------------------------------ */
+.header-demo {
+	height: 100px;
+
+	background-color: #eeeeee;
+}
+
+.modal-dialog {
+	margin: 0;
+}
+
+.caps {
+	margin-bottom: 30px;
+}
+
+.gray {
+	opacity: 0.5;
+	color: @palette-light-gray;
+
+	& > span {
+		color: #ff0000;
+	}
+}
+
+.link {
+	&--active {
+		text-decoration: none;
+
+		color: @palette-accent-hover;
+		border-bottom: 1px solid rgba(58, 169, 255, 1);
+		border-bottom: 1px dotted rgba(58, 169, 255, 1);
+		outline: 0 none;
+	}
+}
+
+button,
+.btn {
+	&--active {
+		color: @palette-white;
+		border: 2px solid @palette-accent;
+		background: @palette-accent;
+
+		.button-border;
+	}
+
+	&--inacive {
+		color: @palette-gray;
+		border: 2px solid @palette-gray;
+
+		&:hover,
+		&:active {
+			color: @palette-gray;
+			border: 2px solid @palette-gray;
+		}
+	}
+}

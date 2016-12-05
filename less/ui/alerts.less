@@ -1,3 +1,53 @@
 /* ------------------------------------------ */
 /* ALERTS
 /* ------------------------------------------ */
+.alert {
+	position: relative;
+
+	min-height: 26px;
+	margin: 0 0 39px;
+	padding: 0 0 0 41px;
+
+	color: inherit;
+	border-color: transparent;
+	background: transparent none repeat scroll 0 0;
+	box-shadow: none;
+	text-shadow: none;
+}
+.alert strong {
+	display: block;
+
+	margin: 0 0 5px;
+
+	font-size: 18px;
+	font-weight: 500;
+}
+.alert::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.alert-success:before {
+	content: '\e80d';
+
+	color: #39b54a;
+
+	font-size: 26px;
+}
+
+.alert-info:before {
+	content: '\e80c';
+
+	color: #1f6799;
+
+	font-size: 26px;
+}
+
+.alert-danger:before {
+	content: '\e80e';
+
+	color: #e1343e;
+
+	font-size: 26px;
+}

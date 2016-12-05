@@ -1,3 +1,71 @@
 /* ------------------------------------------ */
 /* PAGINATION
 /* ------------------------------------------ */
+
+.pagination {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+}
+.pagination > li > a,
+.pagination > li > span {
+	display: inline-block;
+	float: none;
+
+	margin: 0 6.9px;
+	padding: 0;
+
+	vertical-align: top;
+
+	color: #1f6799;
+	border: none;
+	background: none;
+
+	line-height: inherit;
+}
+.pagination > .prev > a,
+.pagination > .prev > span,
+.pagination > .next > a,
+.pagination > .next > span {
+	font-size: 22px;
+	line-height: 0.9;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+	border-radius: 0;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+	margin-right: 0;
+
+	border-radius: 0;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+	color: #00aeff;
+	background: none;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+	color: #231f20;
+	background: none;
+}
+
+.pagination > .disabled > a,
+.pagination > .disabled > a:focus,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > span,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > span:hover {
+	color: #ababab;
+	border-color: transparent;
+	background: none;
+}

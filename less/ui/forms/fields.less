@@ -1,3 +1,38 @@
 /* ------------------------------------------ */
 /* FIELDS
 /* ------------------------------------------ */
+input,
+.form-control {
+	box-shadow: none;
+
+	&:focus,
+	&:hover {
+		border-color: @palette-focus;
+		outline: none;
+		box-shadow: none;
+	}
+
+	&:disabled {
+		&:focus,
+		&:hover {
+			border: 1px solid #cccccc;
+		}
+	}
+}
+
+.has-error input,
+.has-error .form-control {
+	border-color: @palette-error;
+
+	&:focus {
+		border-color: @palette-focus;
+		outline: none;
+		box-shadow: none;
+	}
+
+	&:hover {
+		border-color: @palette-error;
+		outline: none;
+		box-shadow: none;
+	}
+}

@@ -1,3 +1,23 @@
 /* ------------------------------------------ */
 /* ACCORDIONS
 /* ------------------------------------------ */
+.panel-group .panel-title > a.collapsed:hover,
+.panel-group .panel-title > a.collapsed:focus,
+.icon:hover::before,
+.icon:focus::before {
+	text-decoration: none;
+
+	color: #199dd7;
+	outline: 0 none;
+}
+.panel-group .panel-title > a.collapsed:hover,
+.panel-group .panel-title > a.collapsed:focus {
+	border-bottom: 1px solid rgba(19, 157, 215, 1);
+}
+.panel-group .panel-title > a.collapsed {
+	border-bottom: 1px dotted rgba(0, 119, 200, 0.3);
+}
+.panel-group .panel-title > a.collapsed:hover,
+.panel-group .panel-title > a.collapsed:focus {
+	border-bottom: 1px dotted rgba(19, 157, 215, 1);
+}
