@@ -1232,35 +1232,63 @@ thead {
 /* ------------------------------------------ */
 /* TABS
 /* ------------------------------------------ */
-.nav-tabs {
-  border: 0 none navy;
+.nav.nav-tabs {
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid #cecece;
 }
 .nav-tabs > li {
   float: left;
   margin: 0 10px 0 0;
-  padding: 0;
+  padding: 13px 44px 13px;
+  transform: translateY(2px);
+  border: 2px solid transparent;
+  border-bottom: 0;
+  border-radius: 2px 2px 0 0;
 }
-.nav-tabs > li > a {
-  display: inline;
-  padding: 0;
-  border-width: 0 0 1px;
-  border-style: dotted;
-  border-color: #0077c8;
-  border-radius: 0;
+.nav-tabs .active {
+  border: 2px solid #cecece;
+  border-bottom: 0;
+  background: #ffffff;
 }
-.nav-tabs > li > a:hover,
-.nav-tabs > li > a:focus {
-  color: #199dd7;
-  border-color: #199dd7;
+.nav > li > a {
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+  vertical-align: top;
+  color: #1f6799;
+  border: none;
+  font-weight: 700;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  color: #00aeff;
+  border-color: #00aeff;
   outline: 0 none;
   background-color: transparent;
 }
-.nav-tabs > li.active > a,
-.nav-tabs > li.active:hover,
-.nav-tabs > li.active:focus {
+.nav-tabs > li > a {
+  margin-right: 0;
+  margin-bottom: -1px;
+  color: #1c5699;
+  border-bottom: 1px dotted #1c5699;
+  line-height: inherit;
+}
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
   border-color: transparent;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #231f20;
+  border: 0;
   outline: 0 none;
-  font-weight: bold;
+  font-weight: 700;
+}
+.tab-content {
+  padding: 20px 0 32px;
+  border: none;
 }
 /* ------------------------------------------ */
 /* DEMO STYLES FOR TECH PAGE
