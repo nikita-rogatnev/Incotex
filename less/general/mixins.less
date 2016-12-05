@@ -11,30 +11,25 @@
 	}
 }
 
-.font-size-h1() {
-	font-size: 40px;
+// BUTTON BORDER
+.button-border() {
+	&::before {
+		position: absolute;
+		top: 2px;
+		left: 2px;
 
-	@media (min-width: @screen-md) {
-		font-size: 60px;
+		display: block;
+
+		width: ~"calc(100% - 4px)";
+		height: ~"calc(100% - 4px)";
+
+		content: "";
+
+		border: 2px solid @palette-white;
+		border-radius: 3px;
+		background: none;
 	}
 }
-
-.font-size-h2() {
-	font-size: 30px;
-
-	@media (min-width: @screen-md) {
-		font-size: 40px;
-	}
-}
-
-.font-size-h3() {
-	font-size: 40px;
-}
-
-.font-size-h4() {
-	font-size: 40px;
-}
-
 
 // MARGINS AND PADDINGS
 .padding-10() {

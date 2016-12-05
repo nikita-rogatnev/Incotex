@@ -3,13 +3,11 @@
 /* ------------------------------------------ */
 * {
   box-sizing: border-box;
-  outline: 1px dashed lightgrey;
 }
 body {
   color: #434343;
   background-color: #ffffff;
   font-family: "Lato", Arial, sans-serif;
-  line-height: 1.1;
   font-size: 13px;
 }
 @media (min-width: 992px) {
@@ -19,45 +17,6 @@ body {
 }
 .container-fluid {
   padding: 0;
-}
-h1 {
-  font-size: 40px;
-}
-@media (min-width: 992px) {
-  h1 {
-    font-size: 60px;
-  }
-}
-article h1 {
-  font-size: 21px;
-  font-weight: 900;
-}
-h2 {
-  font-size: 30px;
-}
-@media (min-width: 992px) {
-  h2 {
-    font-size: 40px;
-  }
-}
-h3 {
-  font-size: 40px;
-}
-h4 {
-  font-size: 40px;
-}
-a {
-  text-decoration: none;
-  color: #434343;
-}
-a:hover {
-  text-decoration: none;
-  color: #1c5699;
-}
-img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
 }
 .col-xs-15,
 .col-sm-15,
@@ -92,6 +51,12 @@ img {
 }
 /* ------------------------------------------ */
 /* UI KIT
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* FORMS
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* BUTTONS
 /* ------------------------------------------ */
 button,
 .btn {
@@ -151,6 +116,25 @@ button:active::before,
   border-radius: 3px;
   background: none;
 }
+button--active,
+.btn--active {
+  color: #ffffff;
+  border: 2px solid #1c5699;
+  background: #1c5699;
+}
+button--active::before,
+.btn--active::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: block;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  content: "";
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  background: none;
+}
 .btn-primary {
   width: 100%;
   max-width: 300px;
@@ -182,6 +166,183 @@ button:active::before,
 .btn--inacive:active {
   color: #acacac;
   border: 2px solid #acacac;
+}
+.form-group {
+  margin: 0;
+}
+/* ------------------------------------------ */
+/* HEADINGS
+/* ------------------------------------------ */
+h1 {
+  margin: 32px 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+article h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 21px;
+  line-height: 1.2;
+}
+h2 {
+  margin: 39px 0 17px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+h3 {
+  margin: 8px 0;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+h4 {
+  margin: 36px 0 9px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 21px;
+}
+p {
+  margin: 0 0 12px;
+  line-height: 22px;
+}
+/* ------------------------------------------ */
+/* IMAGES
+/* ------------------------------------------ */
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+/* ------------------------------------------ */
+/* LINKS
+/* ------------------------------------------ */
+.link,
+a:not([class]) {
+  cursor: pointer;
+  transition: color 0.3s;
+  text-decoration: none;
+  color: #1c5699;
+  border-bottom: 1px solid rgba(28, 86, 153, 0.3);
+  outline: 0 none;
+}
+.link:hover,
+a:not([class]):hover,
+.link:focus,
+a:not([class]):focus {
+  text-decoration: none;
+  color: #3aa9ff;
+  border-bottom: 1px solid #3aa9ff;
+  outline: 0 none;
+}
+.link--dotted {
+  border-bottom: 1px dotted rgba(28, 86, 153, 0.3);
+}
+.link--dotted:hover,
+.link--dotted:focus {
+  border-bottom: 1px dotted #3aa9ff;
+}
+.link--active {
+  text-decoration: none;
+  color: #3aa9ff;
+  border-bottom: 1px solid #3aa9ff;
+  border-bottom: 1px dotted #3aa9ff;
+  outline: 0 none;
+}
+/* ------------------------------------------ */
+/* LISTS
+/* ------------------------------------------ */
+ul,
+ol {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+ul > li,
+ol > li {
+  display: block;
+  margin: 0 0 12px;
+}
+ul[class],
+ol[class] {
+  padding: 0 0 0 1.15em;
+}
+ul:not([class]) {
+  padding: 0;
+}
+ul:not([class]) > li {
+  position: relative;
+  padding: 0 0 0 1.15em;
+}
+ul:not([class]) > li::before {
+  position: absolute;
+  top: 0.5em;
+  left: 1px;
+  width: 7px;
+  height: 7px;
+  content: '';
+  border-radius: 50%;
+  background: #1f6799;
+}
+ul:not([class]) > li > ul:not([class]) > li::before {
+  border: 1px solid #1f6799;
+  background: none;
+}
+ol:not([class]) {
+  padding: 0;
+  counter-reset: list 0;
+}
+ol:not([class]) > li {
+  position: relative;
+  padding: 0 0 0 1.1em;
+}
+ol:not([class]) > li::before {
+  position: absolute;
+  left: 0;
+  content: counter(list, decimal) '.';
+  counter-increment: list;
+  color: #0b4ea2;
+  font-weight: 700;
+}
+ol:not([class]) > li > ol {
+  counter-reset: list2 0;
+}
+ol:not([class]) > li > ol > li {
+  padding: 0 0 0 2em;
+}
+ol:not([class]) > li > ol > li::before {
+  content: counter(list, decimal) '.' counter(list2, decimal);
+  counter-increment: list2;
+  font-weight: 400;
+}
+li {
+  margin: 0 0 12px;
+}
+li > ol:not([class]) > li {
+  margin: 0;
+}
+li > ul:not([class]) > li {
+  margin: 0;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin: 6px 0 19px 14px;
+}
+.list-ticks {
+  list-style-type: none;
+}
+.list-ticks > li::before {
+  position: absolute;
+  left: 0;
+  content: "1";
+}
+.list-ticks > li > ul > li::before {
+  position: absolute;
+  left: 0;
+  content: "1";
 }
 /* ------------------------------------------ */
 /* HEADER BLOCK

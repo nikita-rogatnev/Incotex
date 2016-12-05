@@ -1,0 +1,102 @@
+/* ------------------------------------------ */
+/* BUTTONS
+/* ------------------------------------------ */
+button,
+.btn {
+	position: relative;
+
+	display: inline-block;
+
+	margin: 15px auto;
+
+	text-align: center;
+	vertical-align: middle;
+	white-space: normal;
+
+	color: @palette-accent;
+	border: none;
+	border: 2px solid @palette-accent;
+	border-radius: 3px;
+	background: none;
+
+	font-weight: 900;
+
+	&:hover,
+	&:active {
+		color: @palette-white;
+		border: 2px solid @palette-accent;
+		background: @palette-accent;
+	}
+
+	&:disabled {
+		color: @palette-gray;
+		border: 2px solid @palette-gray;
+		background: none;
+
+		&:hover,
+		&:active {
+			color: @palette-gray;
+			border: 2px solid @palette-gray;
+			background: none;
+		}
+	}
+
+	&:hover,
+	&:active {
+		outline: none;
+
+		.button-border;
+	}
+
+	&--active {
+		color: @palette-white;
+		border: 2px solid @palette-accent;
+		background: @palette-accent;
+
+		.button-border;
+	}
+}
+
+.btn {
+	// BIG BUTTON
+	&-primary {
+		width: 100%;
+		max-width: 300px;
+		padding: 12px 20px;
+
+		font-size: 17px;
+	}
+
+	// SMALL BUTTON
+	&-sm {
+		width: 100%;
+		max-width: 180px;
+		padding: 8px 20px;
+
+		font-size: 15px;
+		font-weight: 700;
+	}
+
+	&--white {
+		color: @palette-white;
+		border: 2px solid @palette-white;
+
+		&:hover,
+		&:active {
+			color: @palette-white;
+			border: 2px solid @palette-accent;
+			background: @palette-accent;
+		}
+	}
+
+	&--inacive {
+		color: @palette-gray;
+		border: 2px solid @palette-gray;
+
+		&:hover,
+		&:active {
+			color: @palette-gray;
+			border: 2px solid @palette-gray;
+		}
+	}
+}

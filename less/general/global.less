@@ -4,7 +4,7 @@
 * {
 	box-sizing: border-box;
 
-	outline: 1px dashed lightgrey;
+	//outline: 1px dashed lightgrey;
 }
 
 body {
@@ -12,54 +12,13 @@ body {
 	background-color: @palette-white;
 
 	font-family: @font-family-primary;
-	line-height: 1.1;
 
 	.font-size-primary;
 }
 
+// GRID
 .container-fluid {
 	padding: 0;
-}
-
-h1 {
-	.font-size-h1;
-}
-
-article {
-	h1 {
-		font-size: 21px;
-		font-weight: 900;
-	}
-}
-
-h2 {
-	.font-size-h2;
-}
-
-h3 {
-	.font-size-h3;
-}
-
-h4 {
-	.font-size-h4;
-}
-
-a {
-	text-decoration: none;
-
-	color: @palette-primary;
-
-	&:hover {
-		text-decoration: none;
-
-		color: @palette-accent;
-	}
-}
-
-img {
-	width: 100%;
-	max-width: 100%;
-	height: auto;
 }
 
 .col-xs-15,
@@ -78,21 +37,24 @@ img {
 
 	width: 20%;
 }
-@media (min-width: 768px) {
+
+@media (min-width: @screen-sm) {
 	.col-sm-15 {
 		float: left;
 
 		width: 20%;
 	}
 }
-@media (min-width: 992px) {
+
+@media (min-width: @screen-md) {
 	.col-md-15 {
 		float: left;
 
 		width: 20%;
 	}
 }
-@media (min-width: 1200px) {
+
+@media (min-width: @screen-lg) {
 	.col-lg-15 {
 		float: left;
 

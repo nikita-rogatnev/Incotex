@@ -1,0 +1,140 @@
+/* ------------------------------------------ */
+/* LISTS
+/* ------------------------------------------ */
+ul,
+ol {
+	position: relative;
+
+	margin-top: 0;
+	margin-bottom: 10px;
+
+	& > li {
+		display: block;
+
+		margin: 0 0 12px;
+	}
+}
+
+ul[class],
+ol[class] {
+	padding: 0 0 0 1.15em;
+}
+
+ul:not([class]) {
+	padding: 0;
+
+	& > li {
+		position: relative;
+
+		padding: 0 0 0 1.15em;
+
+		&::before {
+			position: absolute;
+			top: 0.5em;
+			left: 1px;
+
+			width: 7px;
+			height: 7px;
+
+			content: '';
+
+			border-radius: 50%;
+			background: #1f6799;
+		}
+
+		& > ul:not([class]) {
+			& > li {
+				&::before {
+					border: 1px solid #1f6799;
+					background: none;
+				}
+			}
+		}
+	}
+}
+
+ol:not([class]) {
+	padding: 0;
+
+	counter-reset: list 0;
+
+	& > li {
+		position: relative;
+
+		padding: 0 0 0 1.1em;
+
+		&::before {
+			position: absolute;
+			left: 0;
+
+			content: counter(list, decimal) '.';
+			counter-increment: list;
+
+			color: #0b4ea2;
+
+			font-weight: 700;
+		}
+
+		& > ol {
+			counter-reset: list2 0;
+
+			& > li {
+				padding: 0 0 0 2em;
+
+				&::before {
+					content: counter(list, decimal) '.' counter(list2, decimal);
+					counter-increment: list2;
+
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}
+
+li {
+	margin: 0 0 12px;
+
+	& > ol:not([class]) {
+		& > li {
+			margin: 0;
+		}
+	}
+
+	& > ul:not([class]) {
+		& > li {
+			margin: 0;
+		}
+	}
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+	margin: 6px 0 19px 14px;
+}
+
+.list-ticks {
+	list-style-type: none;
+
+	& > li {
+		&::before {
+			position: absolute;
+			left: 0;
+
+			content: "1";
+		}
+
+		& > ul {
+			& > li {
+				&::before {
+					position: absolute;
+					left: 0;
+
+					content: "1";
+				}
+			}
+		}
+	}
+}
