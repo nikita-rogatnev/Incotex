@@ -770,16 +770,22 @@ input[type="radio"]:disabled + span::before {
   background-color: transparent;
 }
 .selectfix-current-value span span {
+  position: absolute;
+  top: 1px;
+  right: 1px;
   display: inline-block;
-  margin: 0 0 0 8px;
+  margin: 0;
   padding: 0 8px;
   content: "x";
   cursor: pointer;
+  color: #1c5699;
+  font-size: 24px;
 }
 .selectfix-current-value > span {
+  position: relative;
   display: inline-block;
   margin: -5px 5px 0 0;
-  padding: 5px 0 5px 8px;
+  padding: 5px 30px 5px 8px;
   border-radius: 3px;
   background-color: #f9f5d2;
 }
@@ -809,6 +815,12 @@ input[type="radio"]:disabled + span::before {
   margin: 0;
   padding: 5px 8px;
   cursor: pointer;
+}
+.selectfix-value:nth-child(odd) {
+  background: #fafafa;
+}
+.selectfix-list {
+  margin-top: 2px;
 }
 .selectfix-list .selectfix-value span {
   margin: 0;
@@ -1499,9 +1511,6 @@ button--inacive:active,
 /* ------------------------------------------ */
 /* MAIN BLOCK
 /* ------------------------------------------ */
-.main {
-  outline: 1px solid red;
-}
 /* ------------------------------------------ */
 /* MAP BLOCK
 /* ------------------------------------------ */
