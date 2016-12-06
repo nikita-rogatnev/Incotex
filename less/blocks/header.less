@@ -38,6 +38,23 @@
 	}
 }
 
+.header__navigation {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.23);
+	border-radius: 0;
+
+	.menu {
+		& > li {
+			margin: 20px 15px 10px;
+
+			& > a {
+				color: @palette-white;
+
+				font-size: 13px;
+			}
+		}
+	}
+}
+
 .header__logo {
 	height: auto;
 	min-height: auto;
@@ -82,6 +99,7 @@
 			padding: 5px 15px;
 
 			color: @palette-white;
+			border: 0;
 
 			font-size: 13px;
 			line-height: 16px;
@@ -95,6 +113,36 @@
 
 		&--active {
 			display: block;
+		}
+	}
+}
+
+.header__form {
+	input {
+		padding-bottom: 0;
+		padding-left: 0;
+
+		border: 0;
+		border-bottom: 1px solid @palette-white;
+		border-radius: 0;
+		background: transparent;
+		box-shadow: none;
+
+		font-style: italic;
+	}
+
+	.input-group-btn {
+		padding-left: 15px;
+
+		& > .btn {
+			margin: 10px 0 0 0;
+			padding: 2px 30px;
+
+			color: @palette-white;
+			border: 1px solid @palette-white;
+			border-radius: 3px;
+			background: transparent;
+			box-shadow: none;
 		}
 	}
 }
