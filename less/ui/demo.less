@@ -35,24 +35,28 @@
 	}
 }
 
+
 button,
 .btn {
-	&--active {
-		color: @palette-white;
-		border: 2px solid @palette-accent;
-		background: @palette-accent;
+	&.btn {
+		&--active {
+			color: @palette-white;
+			border: 2px solid @palette-accent;
+			outline: none;
+			background: @palette-accent;
 
-		.button-border;
-	}
+			.button-border-white;
+		}
 
-	&--inacive {
-		color: @palette-gray;
-		border: 2px solid @palette-gray;
-
-		&:hover,
-		&:active {
+		&--inacive {
 			color: @palette-gray;
 			border: 2px solid @palette-gray;
+
+			&:hover,
+			&:active {
+				color: @palette-gray;
+				border: 2px solid @palette-gray;
+			}
 		}
 	}
 }

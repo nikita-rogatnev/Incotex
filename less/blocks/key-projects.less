@@ -6,6 +6,31 @@
 }
 
 .key-projects__item {
+	position: relative;
+
 	.padding-15;
 	.margin-15;
+
+	&:hover {
+		.key-projects__hover {
+			display: block;
+		}
+	}
+}
+
+.key-projects__hover {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+
+	display: none;
+
+	width: 100%;
+	height: 100%;
+
+	color: @palette-white;
+	background: #165194;
+
+	.padding-15;
 }

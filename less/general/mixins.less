@@ -12,16 +12,35 @@
 }
 
 // BUTTON BORDER
-.button-border() {
+.button-border-accent() {
 	&::before {
 		position: absolute;
-		top: 2px;
-		left: 2px;
+		top: 0;
+		left: 0;
 
 		display: block;
 
-		width: ~"calc(100% - 4px)";
-		height: ~"calc(100% - 4px)";
+		width: 100%;
+		height: 100%;
+
+		content: "";
+
+		border: 2px solid @palette-accent;
+		border-radius: 3px;
+		background: none;
+	}
+}
+
+.button-border-white() {
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		display: block;
+
+		width: 100%;
+		height: 100%;
 
 		content: "";
 
