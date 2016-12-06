@@ -6,14 +6,50 @@
 	background: @palette-quinary;
 
 	.padding-15;
+
+	address {
+		a {
+			text-decoration: none;
+
+			color: @palette-white;
+			border: 0;
+
+			&:hover {
+				text-decoration: none;
+
+				color: @palette-white;
+				border: 0;
+			}
+		}
+	}
 }
 
 .footer__navigation {
+	.menu {
+		padding: 0;
+
+		&.list-inline {
+			& > li {
+				padding-right: 55px;
+				padding-left: 0;
+			}
+		}
+	}
+
 	a {
 		color: @palette-white;
 
 		&:hover {
 			color: @palette-accent;
+			border: 0;
 		}
 	}
+}
+
+.footer__copyright {
+	color: #a2b4c9;
+	border-top: 1px solid #a2b4c9;
+
+	font-size: 13px;
+	line-height: 1;
 }

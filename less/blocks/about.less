@@ -2,14 +2,82 @@
 /* ABOUT BLOCK
 /* ------------------------------------------ */
 .about {
+	position: relative;
+
+	padding-top: 60px;
+	padding-bottom: 40px;
+
 	color: @palette-white;
-	background-color: #263c5c;
-	background-image: url(../images/about/about--bg.png);
+	background: url(../images/about/about--bg.png) center center;
 	background-repeat: no-repeat;
-	background-position: center;
 	background-size: cover;
 
-	.padding-20;
+	img {
+		display: block;
+
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	h1 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		transform: translate(-50%,-50%);
+		text-align: center;
+	}
+
+	p {
+		text-align: center;
+	}
+}
+
+.about__item {
+	position: absolute;
+
+	&:nth-child(1) {
+		left: 0;
+	}
+
+	&:nth-child(2) {
+		left: 0;
+	}
+
+	&:nth-child(3) {
+		left: 0;
+	}
+
+	&:nth-child(4) {
+		left: 0;
+	}
+
+	&:nth-child(5) {
+		left: 0;
+	}
+
+	h2 {
+		color: @palette-white;
+
+		font-size: 21px;
+		line-height: 1;
+
+		span {
+			display: block;
+
+			font-size: 82px;
+			line-height: 1;
+		}
+
+		small {
+			display: block;
+
+			color: @palette-white;
+
+			font-size: 14px;
+			line-height: 1;
+		}
+	}
 }
 
 .about__more {

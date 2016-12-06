@@ -2,12 +2,20 @@
 /* EVENTS BLOCK
 /* ------------------------------------------ */
 .events {
-	.padding-20;
+	padding-bottom: 20px;
 }
 
 .events__item {
 	font-size: 15px;
 	line-height: 20px;
+
+	a {
+		text-decoration: none;
+		pointer-events: none;
+
+		color: @palette-black;
+		border: 0;
+	}
 
 	time {
 		display: block;

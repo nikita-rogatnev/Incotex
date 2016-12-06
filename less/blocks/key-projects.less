@@ -9,7 +9,7 @@
 	position: relative;
 
 	.padding-15;
-	.margin-15;
+	.margin-10;
 
 	&:hover {
 		.key-projects__hover {
@@ -24,13 +24,25 @@
 	right: 0;
 	left: 0;
 
-	display: none;
+	display: block;
 
 	width: 100%;
 	height: 100%;
+	padding: 30px 40px;
+
+	text-align: center;
 
 	color: @palette-white;
-	background: #165194;
+	background-color: #185194;
+	background-image: linear-gradient(-45deg, #0b4487 25%, transparent 25%, transparent 50%, #0b4487 50%, #0b4487 75%, transparent 75%, transparent);
 
-	.padding-15;
+	ul {
+		text-align: left;
+	}
+
+	a {
+		margin-top: 25px;
+
+		text-align: center;
+	}
 }
