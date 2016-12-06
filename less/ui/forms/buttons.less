@@ -35,8 +35,6 @@ button,
 	}
 }
 
-
-
 .btn {
 	&.btn {
 		// BIG BUTTON
@@ -72,6 +70,26 @@ button,
 		&--accent {
 			color: @palette-accent;
 			border: 2px solid @palette-accent;
+
+			&:hover,
+			&:active {
+				color: @palette-white;
+				border: 2px solid @palette-accent;
+				outline: none;
+				background: @palette-accent;
+
+				.button-border-white;
+			}
+		}
+
+		// ACCENT BUTTON
+		&--accent-fill {
+			margin: 0;
+			padding: 4px 20px;
+
+			color: @palette-white;
+			border: 2px solid @palette-accent;
+			background: @palette-accent;
 
 			&:hover,
 			&:active {
