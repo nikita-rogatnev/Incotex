@@ -1451,20 +1451,78 @@ button.btn--inacive:active,
   background-image: url(../images/slider/slider__item-1.png);
 }
 .header--slide-2 {
-  background-image: url(../images/slider/slider__item-1.png);
+  background-image: url(../images/slider/slider__item-2.png);
 }
 .header--slide-3 {
-  background-image: url(../images/slider/slider__item-1.png);
+  background-image: url(../images/slider/slider__item-3.png);
 }
 .header--slide-4 {
-  background-image: url(../images/slider/slider__item-1.png);
+  background-image: url(../images/slider/slider__item-4.png);
 }
 .header--slide-5 {
-  background-image: url(../images/slider/slider__item-1.png);
+  background-image: url(../images/slider/slider__item-5.png);
 }
 @media (min-width: 768px) {
   .header .navbar-brand {
     padding-left: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .header .navbar-toggle {
+    position: fixed;
+    z-index: 3;
+    top: 20px;
+    right: 32px;
+    margin: 0;
+  }
+  .header .navbar-toggle .icon-bar:nth-child(1) {
+    transform: rotate(45deg) translate(20%, 20%);
+  }
+  .header .navbar-toggle .icon-bar:nth-child(2) {
+    display: none;
+  }
+  .header .navbar-toggle .icon-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(20%, 20%);
+  }
+  .header .navbar-toggle.collapsed {
+    position: relative;
+    right: 0;
+  }
+  .header .navbar-toggle.collapsed .icon-bar:nth-child(1) {
+    transform: none;
+  }
+  .header .navbar-toggle.collapsed .icon-bar:nth-child(2) {
+    display: block;
+  }
+  .header .navbar-toggle.collapsed .icon-bar:nth-child(3) {
+    transform: none;
+  }
+  .header .navbar-collapse {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100vh;
+    padding: 40px 40px 0 0;
+    transition: none;
+    transition-duration: 0s;
+    animation: none;
+    text-align: right;
+    background: #123358;
+  }
+  .header .navbar-collapse .in .dropdown {
+    display: none;
+  }
+  .header .collapsing {
+    transition: none;
+    transition-duration: 0s;
+    animation: none;
+  }
+}
+@media (max-width: 1200px) and (min-width: 768px) {
+  .header .navbar-toggle.collapsed {
+    right: -15px;
   }
 }
 .header__navigation {
@@ -1477,6 +1535,17 @@ button.btn--inacive:active,
 .header__navigation .menu > li > a {
   color: #ffffff;
   font-size: 13px;
+}
+.header__navigation .menu > li > a:hover {
+  color: #1c5699;
+  border: 0;
+}
+.header__navigation .icon-bar {
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin-bottom: 7px;
+  background: #ffffff;
 }
 .header__logo {
   height: auto;
