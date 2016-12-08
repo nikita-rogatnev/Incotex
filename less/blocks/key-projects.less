@@ -8,13 +8,20 @@
 .key-projects__item {
 	position: relative;
 
-	.padding-15;
-	.margin-10;
+	margin: 10px 0;
+	padding: 15px;
+
+	border: 1px solid #e1e1e1;
 
 	&:hover {
 		.key-projects__hover {
 			display: block;
 		}
+	}
+
+	@media (min-width: @screen-sm) {
+		width: calc(~"50% - 20px");
+		margin: 10px;
 	}
 }
 
@@ -28,7 +35,7 @@
 
 	width: 100%;
 	height: 100%;
-	padding: 30px 40px;
+	padding: 10px;
 
 	text-align: center;
 
@@ -40,8 +47,16 @@
 	}
 
 	a {
-		margin-top: 25px;
+		margin-top: 5px;
 
 		text-align: center;
+
+		@media (min-width: @screen-lg) {
+			margin-top: 25px;
+		}
+	}
+
+	@media (min-width: @screen-lg) {
+		padding: 30px 40px;
 	}
 }

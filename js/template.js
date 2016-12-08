@@ -3,6 +3,51 @@
 // ------------------------------------------ //
 $(function() {
 
+	/* home slider */
+	var slider = $('.header--slider');
+	var background = 'header--slide-1 header--slide-2 header--slide-3 header--slide-4 header--slide-5';
+	var slides = $('.header__slide');
+	var slides_active = 'header__slide--active';
+
+	$('.projects__item:nth-child(1)').click(function() {
+		slider.removeClass(background).addClass("header--slide-1");
+		slides.removeClass(slides_active);
+		$('.header__slide:nth-child(1)').addClass(slides_active);
+		return false;
+	});
+	$('.projects__item:nth-child(2)').click(function() {
+		slider.removeClass(background).addClass("header--slide-2");
+		slides.removeClass(slides_active);
+		$('.header__slide:nth-child(2)').addClass(slides_active);
+		return false;
+	});
+	$('.projects__item:nth-child(3)').click(function() {
+		slider.removeClass(background).addClass("header--slide-3");
+		slides.removeClass(slides_active);
+		$('.header__slide:nth-child(3)').addClass(slides_active);
+		return false;
+	});
+	$('.projects__item:nth-child(4)').click(function() {
+		slider.removeClass(background).addClass("header--slide-4");
+		slides.removeClass(slides_active);
+		$('.header__slide:nth-child(4)').addClass(slides_active);
+		return false;
+	});
+	$('.projects__item:nth-child(5)').click(function() {
+		slider.removeClass(background).addClass("header--slide-5");
+		slides.removeClass(slides_active);
+		$('.header__slide:nth-child(5)').addClass(slides_active);
+		return false;
+	});
+
+
+
+
+
+
+
+
+
 	/* touch */
 	var support_touch = ('ontouchend' in document);
 	if(support_touch)
@@ -317,9 +362,9 @@ function setMarkers(map) {
 	// Origins, anchor positions and coordinates of the marker increase in the X
 	// direction to the right and in the Y direction down.
 	var image = {
-		url: 'images/beachflag.png',
+		url: 'images/map/map__icon--representations-icon.svg',
 		// This marker is 20 pixels wide by 32 pixels high.
-		size: new google.maps.Size(20, 32),
+		size: new google.maps.Size(45, 45),
 		// The origin for this image is (0, 0).
 		origin: new google.maps.Point(0, 0),
 		// The anchor for this image is the base of the flagpole at (0, 32).

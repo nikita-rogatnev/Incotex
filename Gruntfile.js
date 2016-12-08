@@ -5,6 +5,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks("grunt-contrib-less");
 	grunt.loadNpmTasks("grunt-postcss");
 	grunt.loadNpmTasks("grunt-cssnano");
+	grunt.loadNpmTasks('grunt-svg-sprites');
 
 	grunt.initConfig({
 
