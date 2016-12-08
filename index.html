@@ -56,7 +56,7 @@
 				<div class="collapse navbar-collapse" id="header__menu">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="visible-lg">
-							<form class="header__form" action="#" method="#" style="width:400px;">
+							<form class="header__form" action="#" method="post" style="width:400px;">
 								<div class="input-group">
 									<input type="text" class="form-control" placeholder="Поиск по каталогу">
 									<span class="input-group-btn">
@@ -144,7 +144,7 @@
 					<section class="projects__item col-xs-12 col-sm-6 col-md-15">
 						<!-- надо переделать в svg спрайт -->
 						<img src="./images/projects/projects__item-1.png" width="180" height="125" alt="project item">
-						<p>Счётчики<br>электрической энергии<br>и системы учета</p>
+						<p>Счётчики<br>электической энергии<br>и системы учета</p>
 						<h1><span>Меркурий</span></h1>
 						<div class="projects__hover">
 							<p>Светодиодные светильники практически для всех сфер применения: от бытовых ламп до магистрального освещения.</p>
@@ -153,7 +153,7 @@
 					</section>
 					<section class="projects__item col-xs-12 col-sm-6 col-md-15">
 						<img src="./images/projects/projects__item-2.png" width="180" height="125" alt="project item">
-						<p>LED осветительные<br>системы</p>
+						<p>LED осветительные<br>системы</p>
 						<h1><span>Лидерлайт</span></h1>
 						<div class="projects__hover">
 							<p>Светодиодные светильники практически для всех сфер применения: от бытовых ламп до магистрального освещения.</p>
@@ -162,7 +162,7 @@
 					</section>
 					<section class="projects__item col-xs-12 col-sm-6 col-md-15">
 						<img src="./images/projects/projects__item-3.png" width="180" height="125" alt="project item">
-						<p>Средства<br>отображения<br>информации</p>
+						<p>Средства<br>отображения<br>информации</p>
 						<h1><span>Дисплейные системы</span></h1>
 						<div class="projects__hover">
 							<p>Светодиодные светильники практически для всех сфер применения: от бытовых ламп до магистрального освещения.</p>
@@ -171,7 +171,7 @@
 					</section>
 					<section class="projects__item col-xs-12 col-sm-6 col-md-15">
 						<img src="./images/projects/projects__item-4.png" width="180" height="125" alt="project item">
-						<p>Торговое<br>оборудование</p>
+						<p>Торговое<br>оборудование</p>
 						<h1><span>Меркурий</span></h1>
 						<div class="projects__hover">
 							<p>Светодиодные светильники практически для всех сфер применения: от бытовых ламп до магистрального освещения.</p>
@@ -180,7 +180,7 @@
 					</section>
 					<section class="projects__item col-xs-12 col-sm-6 col-md-15">
 						<img src="./images/projects/projects__item-5.png" width="180" height="125" alt="project item">
-						<p>IP видеокамеры<br>и системы<br>видеонаблюдения</p>
+						<p>IP видеокамеры<br>и системы<br>видеонаблюдения</p>
 						<h1><span>ТВ хелп</span></h1>
 						<div class="projects__hover">
 							<p>Светодиодные светильники практически для всех сфер применения: от бытовых ламп до магистрального освещения.</p>
@@ -215,7 +215,7 @@
 							<article class="events__item col-xs-12 col-md-4">
 								<h1><a>Утвержден тип единичных экземпляров Тахографов</a></h1>
 								<time datetime="2016-09-15">15.09.2016</time>
-								<p>Приказом Росстандарта № 1284 утвержден тип единичных экземпляров Тахографов Меркурий ТА-001, выпущенных в период с 2013по 25.12.2015 гг (номера в реестре 65015-16, 65016-16).</p>
+								<p>Приказом Росстандарта № 1284 утвержден тип единичных экземпляров Тахографов Меркурий ТА-001, выпущенных в период с 2013 по 25.12.2015 гг (номера в реестре 65015-16, 65016-16).</p>
 							</article>
 							<article class="events__item col-xs-12 col-md-4">
 								<h1><a>Руководителю сервисного центра по тахографам</a></h1>
@@ -272,7 +272,11 @@
 					</div>
 				</div>
 
-				<img src="./images/about/about__rounds.png" alt="certified" width="1200">
+				<div class="row">
+					<div class="col-xs-12">
+						<img src="./images/about/about__rounds.png" alt="certified" width="1200">
+					</div>
+				</div>
 
 				<!-- ABOUT MORE BTN -->
 				<div class="about__more row">
@@ -282,7 +286,6 @@
 				</div>
 				<!-- ABOUT MORE BTN END -->
 
-			</div>
 			</div>
 		</section>
 		<!-- ABOUT END -->
@@ -306,7 +309,7 @@
 			<div class="map__controls container-fluid">
 				<div class="map__container container">
 					<div class="row">
-						<form class="col-xs-12" action="#" method="#">
+						<form class="col-xs-12" action="#" method="post">
 							<div class="form-group">
 								<label><input type="checkbox" name="map__control" id="map__control--factories" checked=""><span>Заводы</span></label>
 								<label><input type="checkbox" name="map__control" id="map__control--offices" checked=""><span>Офисы</span></label>
@@ -352,7 +355,7 @@
 								<li>В городе Тула было установлено <strong>15 000 светильников</strong> мощностью 90 и 180Вт</li>
 								<li>Энергосервисный контракт, финансируемый "Банком Москвы"</li>
 								<li>В результате потребление электроэнергии <strong>сократилось более чем на 60%</strong>.</li>
-								<li><strong>Ежегодная экономия</strong> электроэнергии <strong>- 6 млн. кВт/ч</strong> ежегодно</li>
+								<li><strong>Ежегодная экономия</strong> электроэнергии <strong>- 6 млн. кВт/ч</strong> ежегодно</li>
 							</ul>
 							<a href="#" class="btn btn--white btn-primary">Подробнее о проекте</a>
 						</div>
@@ -366,7 +369,7 @@
 								<li>В городе Тула было установлено <strong>15 000 светильников</strong> мощностью 90 и 180Вт</li>
 								<li>Энергосервисный контракт, финансируемый "Банком Москвы"</li>
 								<li>В результате потребление электроэнергии <strong>сократилось более чем на 60%</strong>.</li>
-								<li><strong>Ежегодная экономия</strong> электроэнергии <strong>- 6 млн. кВт/ч</strong> ежегодно</li>
+								<li><strong>Ежегодная экономия</strong> электроэнергии <strong>- 6 млн. кВт/ч</strong> ежегодно</li>
 							</ul>
 							<a href="#" class="btn btn--white btn-primary">Подробнее о проекте</a>
 						</div>
@@ -380,7 +383,7 @@
 								<li>В городе Тула было установлено <strong>15 000 светильников</strong> мощностью 90 и 180Вт</li>
 								<li>Энергосервисный контракт, финансируемый "Банком Москвы"</li>
 								<li>В результате потребление электроэнергии <strong>сократилось более чем на 60%</strong>.</li>
-								<li><strong>Ежегодная экономия</strong> электроэнергии <strong>- 6 млн. кВт/ч</strong> ежегодно</li>
+								<li><strong>Ежегодная экономия</strong> электроэнергии <strong>- 6 млн. кВт/ч</strong> ежегодно</li>
 							</ul>
 							<a href="#" class="btn btn--white btn-primary">Подробнее о проекте</a>
 						</div>
@@ -394,12 +397,13 @@
 								<li>В городе Тула было установлено <strong>15 000 светильников</strong> мощностью 90 и 180Вт</li>
 								<li>Энергосервисный контракт, финансируемый "Банком Москвы"</li>
 								<li>В результате потребление электроэнергии <strong>сократилось более чем на 60%</strong>.</li>
-								<li><strong>Ежегодная экономия</strong> электроэнергии <strong>- 6 млн. кВт/ч</strong> ежегодно</li>
+								<li><strong>Ежегодная экономия</strong> электроэнергии <strong>- 6 млн. кВт/ч</strong> ежегодно</li>
 							</ul>
 							<a href="#" class="btn btn--white btn-primary">Подробнее о проекте</a>
 						</div>
 					</article>
 				</div>
+			</div>
 		</section>
 		<!-- KEY PROJECTS END -->
 
@@ -507,7 +511,7 @@
 					<a href="tel:+74954687434">+7 (495) <b>468-74-34</b></a>
 					<p>105484, Москва, 16-я Парковая ул., д. 26, к. 1</p>
 				</address>
-				<form class="footer__form col-xs-12 col-md-4" action="#" method="#">
+				<form class="footer__form col-xs-12 col-md-4" action="#" method="post">
 					<div class="input-group">
 						<input type="text" class="form-control" placeholder="Поиск">
 						<span class="input-group-btn">
