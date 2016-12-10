@@ -262,9 +262,13 @@
 	h1 {
 		margin-bottom: 10px;
 
-		font-size: 61px;
+		font-size: 34px;
 		font-weight: 700;
 		line-height: 1;
+
+		@media (min-width: @screen-md) {
+			font-size: 61px;
+		}
 	}
 
 	h2 {
@@ -272,6 +276,7 @@
 
 		font-size: 20px;
 		font-weight: lighter;
+		line-height: 1.2;
 	}
 }
 

@@ -10,7 +10,11 @@
 
 	.map__item {
 		width: 100%;
-		min-height: 650px;
+		height: 370px;
+
+		@media (min-width: @screen-md) {
+			height: 650px;
+		}
 	}
 }
 

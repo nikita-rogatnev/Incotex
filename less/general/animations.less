@@ -1,0 +1,33 @@
+/* ------------------------------------------ */
+/* ANIMATIONS
+/* ------------------------------------------ */
+@-webkit-keyframes zoomIn {
+	from {
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		        transform: scale3d(0.3, 0.3, 0.3);
+
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+}
+
+@keyframes zoomIn {
+	from {
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		        transform: scale3d(0.3, 0.3, 0.3);
+
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+}
+
+.zoomIn {
+	-webkit-animation-name: zoomIn;
+	        animation-name: zoomIn;
+}
