@@ -27,7 +27,7 @@
 }
 
 .footer__navigation {
-	padding-top: 15px;
+	padding-top: 5px;
 
 	.menu {
 		padding: 0 5px;
@@ -43,6 +43,8 @@
 	a {
 		color: @palette-white;
 
+		font-size: 13px;
+
 		&:hover {
 			color: @palette-accent;
 			border: 0;
@@ -51,21 +53,38 @@
 }
 
 .footer__contacts {
-	.padding-20;
+	padding-top: 5px;
+	padding-bottom: 28px;
 }
 
 .footer__copyright {
-	padding: 20px 0 0 20px;
+	padding-top: 10px;
+
+	text-align: center;
 
 	color: #a2b4c9;
 	border-top: 1px solid #a2b4c9;
 
 	font-size: 13px;
 	line-height: 1;
+
+	@media (min-width: @screen-sm) {
+		text-align: left;
+	}
+
+	@media (min-width: @screen-sm) {
+		div {
+			padding: 0;
+		}
+	}
 }
 
 .footer__developedby {
-	text-align: right;
+	text-align: center;
+
+	@media (min-width: @screen-sm) {
+		text-align: right;
+	}
 
 	a {
 		color: #a2b4c9;

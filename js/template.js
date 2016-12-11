@@ -3,40 +3,27 @@ $(function() {
 	// ------------------------------------------ //
 	// HOME SLIDER
 	// ------------------------------------------ //
-	var slider = $('.header--slider');
-	var background = 'header--slide-1 header--slide-2 header--slide-3 header--slide-4 header--slide-5';
-	var slides = $('.header__slide');
-	var slides_active = 'header__slide--active';
-
-	$('.projects__item:nth-child(1)').click(function() {
-		slider.removeClass(background).addClass("header--slide-1");
-		slides.removeClass(slides_active);
-		$('.header__slide:nth-child(1)').addClass(slides_active);
-		return false;
+	var slides = $('.slider__slide');
+	var slides_active = 'slider__slide--active';
+	slides.hide();
+	$('.slider__slide--active').show();
+	$('.js-projects-slider').click(function() {
+		$(".slider__slide").removeClass(slides_active).hide();
 	});
-	$('.projects__item:nth-child(2)').click(function() {
-		slider.removeClass(background).addClass("header--slide-2");
-		slides.removeClass(slides_active);
-		$('.header__slide:nth-child(2)').addClass(slides_active);
-		return false;
+	$('.js-projects-slider:nth-child(1)').click(function() {
+		$('.slider__slide:nth-child(1)').addClass(slides_active).fadeIn(1000);
 	});
-	$('.projects__item:nth-child(3)').click(function() {
-		slider.removeClass(background).addClass("header--slide-3");
-		slides.removeClass(slides_active);
-		$('.header__slide:nth-child(3)').addClass(slides_active);
-		return false;
+	$('.js-projects-slider:nth-child(2)').click(function() {
+		$('.slider__slide:nth-child(2)').addClass(slides_active).fadeIn(1000);
 	});
-	$('.projects__item:nth-child(4)').click(function() {
-		slider.removeClass(background).addClass("header--slide-4");
-		slides.removeClass(slides_active);
-		$('.header__slide:nth-child(4)').addClass(slides_active);
-		return false;
+	$('.js-projects-slider:nth-child(3)').click(function() {
+		$('.slider__slide:nth-child(3)').addClass(slides_active).fadeIn(1000);
 	});
-	$('.projects__item:nth-child(5)').click(function() {
-		slider.removeClass(background).addClass("header--slide-5");
-		slides.removeClass(slides_active);
-		$('.header__slide:nth-child(5)').addClass(slides_active);
-		return false;
+	$('.js-projects-slider:nth-child(4)').click(function() {
+		$('.slider__slide:nth-child(4)').addClass(slides_active).fadeIn(1000);
+	});
+	$('.js-projects-slider:nth-child(5)').click(function() {
+		$('.slider__slide:nth-child(5)').addClass(slides_active).fadeIn(1000);
 	});
 
 
