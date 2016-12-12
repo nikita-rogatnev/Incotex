@@ -10,6 +10,7 @@
 
 	&--absolute {
 		position: absolute;
+		z-index: 3;
 		top: 0;
 		left: 50%;
 
@@ -34,7 +35,7 @@
 			position: fixed;
 			z-index: 3;
 			top: 20px;
-			right: 32px;
+			right: 15px;
 
 			margin: 0;
 
@@ -80,11 +81,8 @@
 
 			width: 75%;
 			height: 100vh;
-			padding: 40px 40px 0 0;
+			padding: 40px 25px 0 0;
 
-			transition: none;
-			transition-duration: 0s;
-			animation: none;
 			text-align: right;
 
 			background: @palette-quinary;
@@ -94,12 +92,6 @@
 					display: none;
 				}
 			}
-		}
-
-		.collapsing {
-			transition: none;
-			transition-duration: 0s;
-			animation: none;
 		}
 	}
 }
@@ -281,6 +273,7 @@
 		background: transparent;
 		box-shadow: none;
 
+		font-size: 13px;
 		font-style: italic;
 	}
 
@@ -296,6 +289,8 @@
 			border-radius: 3px;
 			background: transparent;
 			box-shadow: none;
+
+			font-size: 12px;
 		}
 	}
 }
