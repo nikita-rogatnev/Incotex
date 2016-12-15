@@ -3,6 +3,7 @@
 /* ------------------------------------------ */
 .footer {
 	color: @palette-white;
+	border-top: 2px solid #65bbfd;
 	background: @palette-quinary;
 
 	.padding-15;
@@ -34,8 +35,16 @@
 
 		&.list-inline {
 			& > li {
-				padding-right: 45px;
+				padding-right: 35px;
 				padding-left: 0;
+
+				&:last-child {
+					padding-right: 0;
+				}
+
+				@media (min-width: @screen-lg) {
+					padding-right: 45px;
+				}
 			}
 		}
 	}
@@ -48,7 +57,7 @@
 		font-weight: 100;
 
 		&:hover {
-			color: @palette-accent;
+			color: #65bbfd;
 			border: 0;
 		}
 	}
@@ -90,6 +99,9 @@
 
 	a {
 		color: #a2b4c9;
+		border: 0;
+
+		font-size: 13px;
 
 		&:hover {
 			color: @palette-white;

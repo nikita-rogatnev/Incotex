@@ -37,7 +37,13 @@
 	label {
 		display: inline-block;
 
+		width: 100%;
+		max-width: 75%;
 		margin-left: 20px;
+
+		@media (min-width: @screen-sm) {
+			width: auto;
+		}
 
 		& > span {
 			svg {

@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
 	grunt.loadNpmTasks("grunt-contrib-less");
 	grunt.loadNpmTasks("grunt-postcss");
@@ -12,8 +12,8 @@ module.exports = function(grunt) {
 		less: {
 			style: {
 				files: {
-					"./css/template_styles.css": "./less/style.less",
-					"./css/bootstrap.css": "./less/bootstrap.less"
+					"./template_styles.css": "./less/style.less",
+					"./bootstrap.css": "./less/bootstrap.less"
 				}
 			}
 		},
@@ -21,26 +21,24 @@ module.exports = function(grunt) {
 		postcss: {
 			prefix: {
 				options: {
-					processors: [require("autoprefixer")({
-						browsers: "last 2 versions"
-					})]
+					processors: [require("autoprefixer")({browsers: "last 2 versions"})]
 				},
-				src: "css/template_styles.css",
-				dest: "css/template_styles.css"
+				src: "./template_styles.css",
+				dest: "./template_styles.css"
 			},
 			minify_style_css: {
 				options: {
 					processors: [require("cssnano")()]
 				},
-				src: "css/template_styles.css",
-				dest: "css/template_styles.min.css"
+				src: "./template_styles.css",
+				dest: "./template_styles.min.css"
 			},
 			minify_bootstrap_css: {
 				options: {
 					processors: [require("cssnano")()]
 				},
-				src: "css/bootstrap.css",
-				dest: "css/bootstrap.min.css"
+				src: "./bootstrap.css",
+				dest: "./bootstrap.min.css"
 			}
 		}
 
