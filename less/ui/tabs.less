@@ -16,7 +16,6 @@
 
 	transform: translateY(2px);
 
-	border: 2px solid transparent;
 	border-bottom: 0;
 	border-radius: 2px 2px 0 0;
 }
@@ -34,32 +33,32 @@
 	text-align: center;
 	vertical-align: top;
 
-	color: #1f6799;
-	border: none;
+	color: @palette-accent;
+	border-bottom: 1px solid transparent;
 
+	font-size: 17px;
 	font-weight: 700;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
-	color: #00aeff;
+	color: @palette-accent;
 	border-color: #00aeff;
 	outline: 0 none;
 	background-color: transparent;
 }
-
 
 .nav-tabs > li > a {
 	margin-right: 0;
 	margin-bottom: -1px;
 
 	color: @palette-accent;
-	border-bottom: 1px dotted rgba(28, 86, 153, 1);
 
 	line-height: inherit;
 }
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:focus {
 	border-color: transparent;
+	border-bottom: 1px dotted rgba(28, 86, 153, 1);
 }
 
 .nav-tabs > li.active > a,
@@ -67,6 +66,7 @@
 .nav-tabs > li.active > a:focus {
 	color: #231f20;
 	border: 0;
+	border-bottom: 1px solid transparent;
 	outline: 0 none;
 
 	font-weight: 700;
