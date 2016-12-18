@@ -6,13 +6,15 @@
 }
 
 .key-projects__item {
-	position: relative;
+	margin-bottom: 20px;
 
-	margin: 10px 0;
-	padding: 15px;
+	.key-projects__item-box {
+		position: relative;
 
-	border: 1px solid #e1e1e1;
+		padding: 13px;
 
+		border: 1px solid #e1e1e1;
+	}
 
 	&:hover {
 		@media (min-width: @screen-md) {
@@ -44,13 +46,7 @@
 			}
 		}
 	}
-
-	@media (min-width: @screen-sm) {
-		width: calc(~"50% - 20px");
-		margin: 10px;
-	}
 }
-
 
 .key-projects__hover {
 	position: absolute;
