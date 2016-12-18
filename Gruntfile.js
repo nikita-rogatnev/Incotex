@@ -28,7 +28,7 @@ module.exports = function (grunt) {
 			},
 			minify_style_css: {
 				options: {
-					processors: [require("cssnano")()]
+					processors: [require('cssnano')()]
 				},
 				src: "./template_styles.css",
 				dest: "./template_styles.min.css"

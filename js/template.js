@@ -4,13 +4,12 @@ $(document)
 		// ------------------------------------------ //
 		// HOME SLIDER
 		// ------------------------------------------ //
-
 		var slides = $('.slider__slide');
 		var slides_active = 'slider__slide--active';
 		slides.hide();
 		$('.slider__slide--active').show();
 
-		if ($(window).width() > 768) {
+		if ($(window).width() > 1200) {
 
 			$('.js-projects-slider:nth-child(1)')
 				.hover(function () {
@@ -135,76 +134,52 @@ $(document)
 // ------------------------------------------ //
 // GOOGLE MAP
 // ------------------------------------------ //
-function initMap() {
-	var map = new google
-		.maps
-		.Map(document.getElementById('map'), {
-			zoom: 10,
-			scrollwheel: false,
-			center: {
-				lat: -33.9,
-				lng: 151.2
-			}
-		});
-	setMarkers(map);
-}
-
-var beaches = [
+var locations = [
 	[
-		'Bondi Beach', -33.890542, 151.274856, 4
+		'3', 57.354645, 32.252347, 3, "./images/map/map__icon--factories-icon.svg"
 	],
 	[
-		'Coogee Beach', -33.923036, 151.259052, 5
+		'2', 57.354645, 35.252347, 2, "./images/map/map__icon--offices-icon.svg"
 	],
-	[
-		'Cronulla Beach', -34.028249, 151.157507, 3
-	],
-	[
-		'Manly Beach', -33.80010128657071, 151.28747820854187, 2
-	],
-	['Maroubra Beach', -33.950198, 151.259302, 1]
+	['1', 57.354645, 38.252347, 1, "./images/map/map__icon--representations-icon.svg"]
 ];
 
-function setMarkers(map) {
-	var image = {
-		url: 'images/map/map__icon--representations-icon.svg',
-		size: new google
+var map = new google
+	.maps
+	.Map(document.getElementById('map'), {
+		zoom: 6,
+		center: new google
 			.maps
-			.Size(45, 45),
-		origin: new google
-			.maps
-			.Point(0, 0),
-		anchor: new google
-			.maps
-			.Point(0, 32)
-	};
-	var shape = {
-		coords: [
-			1,
-			1,
-			1,
-			20,
-			18,
-			20,
-			18,
-			1
-		],
-		type: 'poly'
-	};
-	for (var i = 0; i < beaches.length; i++) {
-		var beach = beaches[i];
-		var marker = new google
-			.maps
-			.Marker({
-				position: {
-					lat: beach[1],
-					lng: beach[2]
-				},
-				map: map,
-				icon: image,
-				shape: shape,
-				title: beach[0],
-				zIndex: beach[3]
-			});
-	}
+			.LatLng(57.354645, 38.252347),
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	});
+
+var infowindow = new google
+	.maps
+	.InfoWindow();
+
+var marker,
+	i;
+
+for (i = 0; i < locations.length; i++) {
+	marker = new google
+		.maps
+		.Marker({
+			position: new google
+				.maps
+				.LatLng(locations[i][1], locations[i][2]),
+			icon: locations[i][4],
+			title: locations[i][0],
+			map: map
+		});
+
+	google
+		.maps
+		.event
+		.addListener(marker, 'click', (function (marker, i) {
+			return function () {
+				infowindow.setContent(locations[i][0]);
+				infowindow.open(map, marker);
+			}
+		})(marker, i));
 }

@@ -4,7 +4,7 @@
 .projects {
 	.padding-20;
 
-	@media (min-width: @screen-sm) {
+	@media (min-width: @screen-md) {
 		margin-top: -100px;
 
 		text-align: center;
@@ -19,7 +19,7 @@
 .projects__items {
 	background: @palette-white;
 
-	@media (min-width: @screen-sm) {
+	@media (min-width: @screen-md) {
 		box-shadow: 0 0 25px 10px rgba(18, 56, 98, 0.15);
 	}
 }
@@ -36,7 +36,7 @@
 	.btn.btn-sm {
 		margin: 15px 0 0 0;
 
-		@media (min-width: @screen-sm) {
+		@media (min-width: @screen-md) {
 			margin: 15px auto;
 		}
 	}
@@ -47,7 +47,7 @@
 
 			margin: 0 auto;
 
-			@media (min-width: @screen-sm) {
+			@media (min-width: @screen-md) {
 				width: 95%;
 				height: 85px;
 
@@ -74,9 +74,8 @@
 				border: 0;
 			}
 
-			@media (max-width: @screen-sm) {
-				display: inline;
-
+			@media (max-width: @screen-md) {
+				min-height: auto;
 				margin: 0;
 				padding: 0;
 
@@ -88,7 +87,7 @@
 		}
 	}
 
-	@media (min-width: @screen-sm) {
+	@media (min-width: @screen-md) {
 		&:hover {
 			.projects__hover {
 				display: block;
@@ -126,7 +125,7 @@
 	}
 }
 
-@media (min-width: @screen-sm) {
+@media (min-width: @screen-md) {
 	.projects__hover {
 		position: absolute;
 		z-index: 2;
@@ -149,10 +148,14 @@
 			text-align: left;
 		}
 
-		@media (min-width: @screen-lg) {
+		@media (min-width: @screen-md) {
 			left: -5%;
 
 			width: 110%;
+		}
+
+		&:hover {
+			display: block;
 		}
 	}
 }
