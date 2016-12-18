@@ -848,16 +848,14 @@ input[type="radio"]:disabled + span::before {
 .selectfix-current-value::before {
   position: absolute;
   z-index: 1;
-  top: 50%;
-  right: 8px;
+  top: 13px;
+  right: 10px;
   display: block;
-  width: 0;
-  height: 0;
-  margin-top: -4px;
+  width: 10px;
+  height: 7px;
   content: "";
-  border-width: 10px 7px;
-  border-style: solid;
-  border-color: #cccccc transparent transparent;
+  background: url(images/input/arrow.svg) no-repeat;
+  background-size: contain;
 }
 .selectfix-current-value::after {
   position: absolute;
@@ -876,7 +874,6 @@ input[type="radio"]:disabled + span::before {
   border-color: #cccccc transparent transparent;
 }
 .opened .selectfix-current-value::before {
-  margin-top: -15px;
   border-color: transparent transparent #006699;
 }
 .selectfix-container.opened:hover .selectfix-current-value::before {
