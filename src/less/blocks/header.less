@@ -45,6 +45,10 @@
 				a {
 					color: @palette-white;
 				}
+
+				@media (min-width: @screen-sm) {
+					border-left: 1px solid rgba(255, 255, 255, 0.23);
+				}
 			}
 
 			.icon-bar {
@@ -53,6 +57,50 @@
 
 			@media (min-width: @screen-lg) {
 				margin: 0;
+			}
+		}
+
+		.header__form {
+			.form-control {
+				color: @palette-white;
+				border: 1px solid transparent;
+				border-bottom-color: @palette-white;
+
+				&:hover {
+					border: 1px solid transparent;
+					border-bottom-color: @palette-white;
+				}
+
+				&:focus {
+					border: 1px solid @palette-white;
+				}
+
+				&::-webkit-input-placeholder {
+					opacity: 1;
+					color: rgba(244, 238, 238, 1);
+				}
+
+				&::-moz-placeholder {
+					opacity: 1;
+					color: rgba(244, 238, 238, 1);
+				}
+
+				&:-ms-input-placeholder {
+					opacity: 1;
+					color: rgba(244, 238, 238, 1);
+				}
+
+				&:-moz-placeholder {
+					opacity: 1;
+					color: rgba(244, 238, 238, 1);
+				}
+			}
+
+			.input-group-btn {
+				& > .btn {
+					color: @palette-white;
+					border: 1px solid @palette-white;
+				}
 			}
 		}
 	}
@@ -330,7 +378,7 @@
 			margin: 12px 0 0 30px;
 			padding-left: 24px;
 
-			border-left: 1px solid rgba(255, 255, 255, 0.23);
+			border-left: 1px solid #e1e1e1;
 
 			font-size: 13px;
 		}
@@ -425,12 +473,13 @@
 	max-width: 400px;
 
 	.form-control {
-		height: 34px;
+		height: 23px;
+		margin-top: 10px;
 		padding: 0;
 
-		color: @palette-white;
+		color: #6a6a6a;
 		border: 1px solid transparent;
-		border-bottom-color: @palette-white;
+		border-bottom-color: #d0d0d0;
 		border-radius: 0;
 		background: transparent;
 		box-shadow: none;
@@ -440,32 +489,32 @@
 
 		&:hover {
 			border: 1px solid transparent;
-			border-bottom-color: @palette-white;
+			border-bottom-color: #d0d0d0;
 			outline: none;
 		}
 
 		&:focus {
-			border: 1px solid @palette-white;
+			border: 1px solid #d0d0d0;
 		}
 
 		&::-webkit-input-placeholder {
 			opacity: 1;
-			color: rgba(244, 238, 238, 1);
+			color: #6a6a6a;
 		}
 
 		&::-moz-placeholder {
 			opacity: 1;
-			color: rgba(244, 238, 238, 1);
+			color: #6a6a6a;
 		}
 
 		&:-ms-input-placeholder {
 			opacity: 1;
-			color: rgba(244, 238, 238, 1);
+			color: #6a6a6a;
 		}
 
 		&:-moz-placeholder {
 			opacity: 1;
-			color: rgba(244, 238, 238, 1);
+			color: #6a6a6a;
 		}
 	}
 
@@ -476,8 +525,8 @@
 			margin: 10px 0 0 0;
 			padding: 2px 30px;
 
-			color: @palette-white;
-			border: 1px solid @palette-white;
+			color: @palette-accent;
+			border: 1px solid @palette-accent;
 			border-radius: 3px;
 			background: transparent;
 			box-shadow: none;

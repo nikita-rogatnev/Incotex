@@ -1575,6 +1575,38 @@ button.btn--inacive:active,
 .header--absolute .header__navigation .icon-bar {
   background: #ffffff;
 }
+.header--absolute .header__form .form-control {
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-bottom-color: #ffffff;
+}
+.header--absolute .header__form .form-control:hover {
+  border: 1px solid transparent;
+  border-bottom-color: #ffffff;
+}
+.header--absolute .header__form .form-control:focus {
+  border: 1px solid #ffffff;
+}
+.header--absolute .header__form .form-control::-webkit-input-placeholder {
+  opacity: 1;
+  color: #f4eeee;
+}
+.header--absolute .header__form .form-control::-moz-placeholder {
+  opacity: 1;
+  color: #f4eeee;
+}
+.header--absolute .header__form .form-control:-ms-input-placeholder {
+  opacity: 1;
+  color: #f4eeee;
+}
+.header--absolute .header__form .form-control:-moz-placeholder {
+  opacity: 1;
+  color: #f4eeee;
+}
+.header--absolute .header__form .input-group-btn > .btn {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
 .header .navbar-toggle {
   position: fixed;
   z-index: 5;
@@ -1743,11 +1775,12 @@ button.btn--inacive:active,
   max-width: 400px;
 }
 .header__form .form-control {
-  height: 34px;
+  height: 23px;
+  margin-top: 10px;
   padding: 0;
-  color: #ffffff;
+  color: #6a6a6a;
   border: 1px solid transparent;
-  border-bottom-color: #ffffff;
+  border-bottom-color: #d0d0d0;
   border-radius: 0;
   background: transparent;
   box-shadow: none;
@@ -1756,27 +1789,27 @@ button.btn--inacive:active,
 }
 .header__form .form-control:hover {
   border: 1px solid transparent;
-  border-bottom-color: #ffffff;
+  border-bottom-color: #d0d0d0;
   outline: none;
 }
 .header__form .form-control:focus {
-  border: 1px solid #ffffff;
+  border: 1px solid #d0d0d0;
 }
 .header__form .form-control::-webkit-input-placeholder {
   opacity: 1;
-  color: #f4eeee;
+  color: #6a6a6a;
 }
 .header__form .form-control::-moz-placeholder {
   opacity: 1;
-  color: #f4eeee;
+  color: #6a6a6a;
 }
 .header__form .form-control:-ms-input-placeholder {
   opacity: 1;
-  color: #f4eeee;
+  color: #6a6a6a;
 }
 .header__form .form-control:-moz-placeholder {
   opacity: 1;
-  color: #f4eeee;
+  color: #6a6a6a;
 }
 .header__form .input-group-btn {
   padding-left: 15px;
@@ -1784,8 +1817,8 @@ button.btn--inacive:active,
 .header__form .input-group-btn > .btn {
   margin: 10px 0 0 0;
   padding: 2px 30px;
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: #1c5699;
+  border: 1px solid #1c5699;
   border-radius: 3px;
   background: transparent;
   box-shadow: none;
@@ -2319,6 +2352,9 @@ button.btn--inacive:active,
     float: left;
     width: 20%;
   }
+  .header--absolute .header__navigation .country {
+    border-left: 1px solid rgba(255, 255, 255, 0.23);
+  }
   .header {
     padding-top: 20px;
   }
@@ -2355,7 +2391,7 @@ button.btn--inacive:active,
   .header__navigation .country {
     margin: 12px 0 0 30px;
     padding-left: 24px;
-    border-left: 1px solid rgba(255, 255, 255, 0.23);
+    border-left: 1px solid #e1e1e1;
     font-size: 13px;
   }
   .header__logo {
