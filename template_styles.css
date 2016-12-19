@@ -1709,11 +1709,13 @@ button.btn--inacive:active,
 }
 .header__navigation .country span {
   position: relative;
+  display: inline-block;
+  vertical-align: bottom;
 }
 .header__navigation .country span img {
   margin-right: 30px;
 }
-.header__navigation .country span:after {
+.header__navigation .country span:nth-child(1):after {
   position: absolute;
   top: 50%;
   right: 10px;
@@ -1742,13 +1744,9 @@ button.btn--inacive:active,
   box-shadow: none;
   font-size: 0;
 }
-.header__navigation .country .dropdown-toggle,
-.header__navigation .country .dropdown-toggle:focus,
-.header__navigation .country .dropdown-toggle:hover {
-  padding-bottom: 12px;
-}
 .header__navigation .country .dropdown-menu {
   left: 25px;
+  margin-top: 5px;
   padding: 0;
 }
 .header__navigation .country .dropdown-menu > li {
@@ -2389,7 +2387,7 @@ button.btn--inacive:active,
     text-align: left;
   }
   .header__navigation .country {
-    margin: 12px 0 0 30px;
+    margin: 10px 0 0 30px;
     padding-left: 24px;
     border-left: 1px solid #e1e1e1;
     font-size: 13px;
@@ -2471,7 +2469,7 @@ button.btn--inacive:active,
   .header__navigation .header__additional {
     top: -10px;
   }
-  .header__navigation .country span:after {
+  .header__navigation .country span:nth-child(1):after {
     transform: translateY(-20%);
   }
   .header__navigation .country .dropdown-menu,
@@ -2488,6 +2486,7 @@ button.btn--inacive:active,
   }
   .header__navigation .country .dropdown-menu {
     width: 170px;
+    margin-top: 20px;
     margin-left: -70px;
     padding: 10px 12px;
     border: 2px solid #1c5699;
