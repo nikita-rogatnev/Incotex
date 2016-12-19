@@ -1572,6 +1572,9 @@ button.btn--inacive:active,
 .header--absolute .header__navigation .country a {
   color: #ffffff;
 }
+.header--absolute .header__navigation .icon-bar {
+  background: #ffffff;
+}
 .header .navbar-toggle {
   position: fixed;
   z-index: 5;
@@ -1600,6 +1603,9 @@ button.btn--inacive:active,
 }
 .header .navbar-toggle.collapsed .icon-bar:nth-child(3) {
   transform: none;
+}
+.header .navbar-toggle[aria-expanded="true"] .icon-bar {
+  background: #ffffff;
 }
 .header .navbar-collapse {
   position: fixed;
@@ -1724,7 +1730,7 @@ button.btn--inacive:active,
   width: 30px;
   height: 2px;
   margin-bottom: 7px;
-  background: #ffffff;
+  background: #000000;
 }
 .header__logo {
   max-width: 160px;
@@ -2592,6 +2598,21 @@ button.btn--inacive:active,
 @media (min-width: 1200px) {
   .container {
     width: 1176px;
+  }
+}
+@media (max-width: 767px) {
+  .header .navbar-collapse[aria-expanded="true"] .menu__item > a {
+    text-decoration: none;
+    color: #ffffff;
+    border: 0;
+  }
+  .header .navbar-collapse[aria-expanded="true"] .menu__item > a:hover {
+    text-decoration: none;
+    color: #65bbfd;
+    border: 0;
+  }
+  .header .navbar-collapse[aria-expanded="true"] .menu__item--active a {
+    color: #65bbfd;
   }
 }
 @media (max-width: 991px) {
