@@ -1572,6 +1572,9 @@ button.btn--inacive:active,
 .header--absolute .header__navigation .country a {
   color: #ffffff;
 }
+.header--absolute .header__navigation .country span:nth-child(2):after {
+  content: url('data:image/svg+xml; utf8, <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 6 3"><path fill="#FFFFFF" d="M0,0.6c0-0.2,0.1-0.3,0.2-0.4c0.3-0.2,0.7-0.3,1.1,0L3,1.5l1.7-1.4c0.3-0.2,0.7-0.2,1.1,0 C6,0.4,6.1,0.7,5.9,0.9c0,0-0.1,0.1-0.1,0.1L3.5,2.8c-0.3,0.2-0.7,0.2-1,0L0.2,1.1C0.1,1,0,0.8,0,0.6z"/></svg>');
+}
 .header--absolute .header__navigation .icon-bar {
   background: #ffffff;
 }
@@ -1712,20 +1715,18 @@ button.btn--inacive:active,
   display: inline-block;
   vertical-align: bottom;
 }
-.header__navigation .country span img {
-  margin-right: 30px;
+.header__navigation .country span:nth-child(2) {
+  margin-right: 20px;
 }
-.header__navigation .country span:nth-child(1):after {
+.header__navigation .country span:nth-child(2):after {
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: -10px;
   display: block;
   width: 10px;
-  height: 6px;
-  content: "";
-  transform: translateY(-60%);
-  background: url('images/country/dropdown_arrow.svg');
-  background-repeat: no-repeat;
+  height: 14px;
+  content: url('data:image/svg+xml; utf8, <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 6 3"><path fill="#4675ac" d="M0,0.6c0-0.2,0.1-0.3,0.2-0.4c0.3-0.2,0.7-0.3,1.1,0L3,1.5l1.7-1.4c0.3-0.2,0.7-0.2,1.1,0 C6,0.4,6.1,0.7,5.9,0.9c0,0-0.1,0.1-0.1,0.1L3.5,2.8c-0.3,0.2-0.7,0.2-1,0L0.2,1.1C0.1,1,0,0.8,0,0.6z"/></svg>');
+  transform: translateY(-70%);
 }
 .header__navigation .country .dropdown-menu,
 .header__navigation .country .dropdown-menu > li > a,
@@ -1746,6 +1747,7 @@ button.btn--inacive:active,
 }
 .header__navigation .country .dropdown-menu {
   left: 25px;
+  min-width: auto;
   margin-top: 5px;
   padding: 0;
 }
@@ -2469,8 +2471,9 @@ button.btn--inacive:active,
   .header__navigation .header__additional {
     top: -10px;
   }
-  .header__navigation .country span:nth-child(1):after {
-    transform: translateY(-20%);
+  .header__navigation .country span:nth-child(2):after {
+    right: -20px;
+    transform: translateY(-80%);
   }
   .header__navigation .country .dropdown-menu,
   .header__navigation .country .dropdown-menu > li > a,
