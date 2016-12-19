@@ -2195,6 +2195,67 @@ button.btn--inacive:active,
   border: 0;
 }
 /* ------------------------------------------ */
+/* REVIEWS BLOCK
+/* ------------------------------------------ */
+/* carousel */
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+/* Control buttons  */
+#quote-carousel .carousel-control {
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left {
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right {
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li {
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active {
+  background: #333333;
+}
+#quote-carousel img {
+  width: 250px;
+  height: 100px;
+}
+/* End carousel */
+.item blockquote {
+  border-left: none;
+  margin: 0;
+}
+.item blockquote img {
+  margin-bottom: 10px;
+}
+.item blockquote p:before {
+  content: "\f10d";
+  font-family: 'Fontawesome';
+  float: left;
+  margin-right: 10px;
+}
+/**
+  MEDIA QUERIES
+*/
+/* Small devices (tablets, 768px and up) */
+/* Small devices (tablets, up to 768px) */
+/* ------------------------------------------ */
 /* SLIDER BLOCK
 /* ------------------------------------------ */
 .slider {
@@ -2442,6 +2503,12 @@ button.btn--inacive:active,
     text-align: right;
   }
 }
+@media (min-width: 768px) {
+  #quote-carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
     width: 720px;
@@ -2638,6 +2705,32 @@ button.btn--inacive:active,
     width: 1176px;
   }
 }
+@media (max-width: 991px) {
+  .projects__item .projects__item-description > h1 {
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-transform: none;
+    font-weight: 600;
+  }
+}
+@media (max-width: 768px) {/* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+  #quote-carousel .carousel-indicators {
+    bottom: -20px !important;
+  }
+  #quote-carousel .carousel-indicators li {
+    display: inline-block;
+    margin: 0px 5px;
+    width: 15px;
+    height: 15px;
+  }
+  #quote-carousel .carousel-indicators li.active {
+    margin: 0px 5px;
+    width: 20px;
+    height: 20px;
+  }
+}
 @media (max-width: 767px) {
   .header .navbar-collapse[aria-expanded="true"] .menu__item > a {
     text-decoration: none;
@@ -2651,15 +2744,5 @@ button.btn--inacive:active,
   }
   .header .navbar-collapse[aria-expanded="true"] .menu__item--active a {
     color: #65bbfd;
-  }
-}
-@media (max-width: 991px) {
-  .projects__item .projects__item-description > h1 {
-    min-height: auto;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    text-transform: none;
-    font-weight: 600;
   }
 }
