@@ -1318,7 +1318,8 @@ ul.pagination {
   padding: 0;
   vertical-align: top;
   color: #1f6799;
-  border: none;
+  border: 0;
+  border-bottom: 1px solid transparent;
   background: none;
   line-height: inherit;
 }
