@@ -1302,6 +1302,9 @@ ol ol {
 /* ------------------------------------------ */
 /* PAGINATION
 /* ------------------------------------------ */
+ul.pagination {
+  padding: 0;
+}
 .pagination {
   font-size: 16px;
   font-weight: 500;
@@ -1541,8 +1544,8 @@ button.btn--inacive:active,
 /* ------------------------------------------ */
 /* HEADER BLOCK
 /* ------------------------------------------ */
-.header {
-  padding-bottom: 90px;
+.header .menu > li > a {
+  color: #010101;
 }
 .header__container {
   position: relative;
@@ -1553,8 +1556,15 @@ button.btn--inacive:active,
   top: 0;
   left: 50%;
   width: 100%;
+  padding-bottom: 90px;
   transform: translateX(-50%);
+}
+.header--absolute .menu > li > a {
   color: #ffffff;
+}
+.header--absolute .header__navigation {
+  margin-right: -15px;
+  margin-left: -15px;
 }
 .header .navbar-toggle {
   position: fixed;
@@ -1611,13 +1621,15 @@ button.btn--inacive:active,
   margin: 20px 15px 10px;
 }
 .header__navigation .menu > li > a {
-  color: #ffffff;
   font-size: 13px;
   font-weight: 400;
 }
 .header__navigation .menu > li > a:hover {
   color: #65bbfd;
   border: 0;
+}
+.header__navigation .menu .menu__item--active {
+  border-bottom: 4px solid #1c5699;
 }
 .header__navigation .header__additional {
   position: absolute;
@@ -1810,6 +1822,52 @@ button.btn--inacive:active,
   padding-bottom: 20px;
 }
 /* ------------------------------------------ */
+/* BREADCRUMBS BLOCK
+/* ------------------------------------------ */
+.breadcrumbs {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.breadcrumbs .breadcrumbs__items {
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.breadcrumbs li {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+.breadcrumbs li::after {
+  display: inline-block;
+  width: 11px;
+  height: 7px;
+  margin: 0 10px;
+  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0"><path fill="#5d5d5d" d="M5161.41,467.077a0.424,0.424,0,0,0-.56,0,0.333,0.333,0,0,0,0,.5l2.81,2.554h-9.27a0.369,0.369,0,0,0-.39.353,0.373,0.373,0,0,0,.39.358h9.27l-2.81,2.549a0.337,0.337,0,0,0,0,.5,0.421,0.421,0,0,0,.56,0l3.47-3.158a0.319,0.319,0,0,0,0-.5Z" transform="translate(-5154 -466.969)"/></svg>');
+  vertical-align: middle;
+}
+.breadcrumbs li:last-child a {
+  color: #1c5699;
+}
+.breadcrumbs li:last-child::after {
+  display: inline-block;
+  width: 15px;
+  height: 10px;
+  margin: 0 0 0 10px;
+  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="#376aa5" d="M2801.86,476.688l-4.04,4.171a0.435,0.435,0,0,1-.64,0l-4.05-4.171a0.477,0.477,0,0,1,0-.665,0.459,0.459,0,0,1,.65,0l3.26,3.373V471H2788v-1h10v1h-0.05v8.4l3.27-3.373a0.447,0.447,0,0,1,.64,0A0.477,0.477,0,0,1,2801.86,476.688Z" transform="translate(-2788 -470)"/></svg>');
+  vertical-align: bottom;
+}
+.breadcrumbs a {
+  margin: 0;
+  text-decoration: none;
+  color: #898989;
+  border: 0;
+  font-size: 13px;
+  line-height: 1;
+}
+/* ------------------------------------------ */
 /* EVENTS BLOCK
 /* ------------------------------------------ */
 .events {
@@ -1842,13 +1900,18 @@ button.btn--inacive:active,
 /* ------------------------------------------ */
 /* HEADING BLOCK
 /* ------------------------------------------ */
-.heading {
-  padding-top: 20px;
-  text-align: center;
+.heading h1 {
+  margin: 0;
+  padding: 0 0 30px 0 ;
+  color: #000000;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 30px;
 }
 .heading h2 {
   margin: 0;
-  padding: 0;
+  padding: 20px 0 0 0;
+  text-align: center;
   color: #000000;
   font-size: 36px;
   font-weight: 900;
@@ -1972,6 +2035,36 @@ button.btn--inacive:active,
 }
 .menu__item {
   text-transform: uppercase;
+}
+/* ------------------------------------------ */
+/* PAGE PAGINATION BLOCK
+/* ------------------------------------------ */
+.page-pagination {
+  padding: 50px 0 60px;
+  text-align: center;
+}
+.page-pagination__current {
+  position: relative;
+}
+.page-pagination__current span {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+  color: #a2a2a2;
+  background: #ffffff;
+  font-size: 13px;
+  line-height: 1;
+}
+.page-pagination__current::before {
+  position: absolute;
+  z-index: -1;
+  top: 6px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background: #d7d7d7;
 }
 /* ------------------------------------------ */
 /* PARTNERS BLOCK
@@ -2252,6 +2345,10 @@ button.btn--inacive:active,
   .header__logo {
     max-width: none;
   }
+  .heading h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
   .heading h2 {
     font-size: 40px;
     line-height: 52px;
@@ -2308,6 +2405,9 @@ button.btn--inacive:active,
   }
   .header .navbar-toggle.collapsed {
     right: -15px;
+  }
+  .header__navigation {
+    margin: 0;
   }
   .header__navigation .menu {
     float: right !important;
