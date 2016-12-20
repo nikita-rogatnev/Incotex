@@ -1,0 +1,67 @@
+/* ------------------------------------------ */
+/* MANUFACTURING BLOCK
+/* ------------------------------------------ */
+.manufacturing {
+	position: relative;
+
+	padding-top: 50px;
+	padding-bottom: 20px;
+
+	@media (min-width: @screen-sm) {
+		padding-bottom: 45px;
+	}
+
+	@media (min-width: @screen-md) {
+		.manufacturing__item {
+			padding-right: 80px;
+		}
+	}
+}
+
+.manufacturing__stats {
+	position: relative;
+
+	width: 100%;
+	margin-top: 20px;
+
+	@media (min-width: @screen-sm) {
+		height: 25px;
+		margin: 25px 0;
+
+		border: 1px solid @palette-accent;
+		border-top: 0;
+	}
+}
+
+.manufacturing__stats-heading {
+	padding: 0;
+
+	text-align: center;
+
+	background: @palette-white;
+
+	@media (min-width: @screen-sm) {
+		position: absolute;
+		left: 50%;
+
+		transform: translateX(-50%);
+	}
+
+	span {
+		display: block;
+
+		&:nth-child(1) {
+			color: @palette-accent;
+
+			font-size: 33px;
+			line-height: 1;
+		}
+
+		&:nth-child(2) {
+			color: #737070;
+
+			font-size: 21px;
+			line-height: 24px;
+		}
+	}
+}

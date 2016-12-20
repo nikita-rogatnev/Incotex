@@ -151,15 +151,21 @@
 		<!-- HERO -->
 		<section class="hero">
 			<div class="container">
-				<h1>Крупнейший в России разработчик и производитель</h1>
-				<h2><span>уникальной</span> радиоэлектронной продукции</h2>
+				<div class="hero__headings">
+					<h1>Крупнейший в России<br>разработчик и производитель</h1>
+					<h2><span>уникальной</span> радиоэлектронной продукции</h2>
+				</div>
 
-				<div class="row">
+				<div class="hero__about row">
 					<div class="col-xs-12 col-sm-6">
-						800+ типов продукции
+						<div class="hero__container">
+							<h2 class="hero__item"><span>800+</span> типов продукции</h2>
+						</div>
 					</div>
 					<div class="col-xs-12 col-sm-6">
-						3000+ сотрудников
+						<div class="hero__container">
+							<h2 class="hero__item"><span>3000+</span> сотрудников</h2>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -231,7 +237,7 @@
 			<div class="manufacturing__items row">
 
 				<!-- MANUFACTURING ITEM -->
-				<div class="manufacturing__item col-xs-12 col-sm-4">
+				<div class="manufacturing__item col-xs-12 col-sm-6 col-lg-4">
 					<div class="row">
 						<div class="col-xs-3">
 							<img src="">
@@ -245,13 +251,13 @@
 				<!-- MANUFACTURING ITEM END -->
 
 				<!-- MANUFACTURING ITEM -->
-				<div class="manufacturing__item col-xs-12 col-sm-4">
+				<div class="manufacturing__item col-xs-12 col-sm-6 col-lg-4">
 					<div class="row">
 						<div class="col-xs-3">
 							<img src="">
 						</div>
 						<div class="col-xs-9">
-							<h3>Разрабатывающие<brкомпании</h3>
+							<h3>Разрабатывающие<br>компании</h3>
 						</div>
 					</div>
 					<p>Отдельные разрабатывающие компаниив Нижнем Новгороде, Рязани, Курске, Софии (Болгария).</p>
@@ -259,7 +265,7 @@
 				<!-- MANUFACTURING ITEM END -->
 
 				<!-- MANUFACTURING ITEM -->
-				<div class="manufacturing__item col-xs-12 col-sm-4">
+				<div class="manufacturing__item col-xs-12 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-0">
 					<div class="row">
 						<div class="col-xs-3">
 							<img src="">
@@ -278,7 +284,7 @@
 			<!-- MANUFACTURING STATS -->
 			<div class="manufacturing__stats">
 				<div class="manufacturing__stats-heading">
-					<span>более 150 тыс. кв.м</span>
+					<span>более <b>150 тыс.</b> кв.м</span>
 					<span>общая производственная площадь Группы</span>
 				</div>
 			</div>
@@ -378,34 +384,52 @@
 
 			<!-- HISTORY ITEMS -->
 			<div class="history__items">
-				<div class="history__item">
-					<span>1993</span>
-					<p><b>В 1993 г.</b> создан <b>первый кассовый аппарат</b>, который положил начало направлению <b>«Торговое оборудование»</b>.</p>
-				</div>
-				<div class="history__item">
-					<span>2000</span>
-					<p><b>В 2000 г.</b> разработан <b>первый интеллектуальный счетчик электрической энергии</b>, который положил основу аналогичного направления.</p>
-				</div>
-				<div class="history__item">
-					<span>2001</span>
-					<p><b>2001 г.</b> начали производиться <b>плазменные модули</b> для табло и экранов, что повлекло за собой развитие направления <b>«Дисплейные системы»</b>.</p>
-				</div>
-				<div class="history__item">
-					<span>2006</span>
-					<p><b>С 2006 г.</b> начались разработки <b>LED экранов</b>. В том же 2006 г. было создано <b>направление источников питания</b>.</p>
-				</div>
-				<div class="history__item">
-					<span>2008</span>
-					<p><b>В 2008 г.</b> создана <b>компания по разработке цифровой электроники</b> (Set-top boxes всех стандартов, цифровые IP видеокамеры с распознаванием образов и другая электроника).</p>
-				</div>
-				<div class="history__item">
-					<span>2011</span>
-					<p><b>В 2011 г. создана компания «Квалиттек»</b>, нацеленная на разработки в сфере профессионального оборудования в области цифрового <b>TV формата DVB2</b>.</p>
-					<p><b>С 2011 г.</b> функционирует направление «LED освещение».</p>
-				</div>
-				<div class="history__item">
-					<span>2011</span>
-					<p><b>В 2012 г.</b> организовано направление разработки и производства <b>серии люминофоров для освещения</b>.</p>
+				<div class="row">
+
+					<div class="history__item col-xs-12 col-sm-6">
+						<span class="history__time">1993</span>
+						<div class="history__text">
+							<p><b>В 1993 г.</b> создан <b>первый кассовый аппарат</b>, который положил начало направлению <b>«Торговое оборудование»</b>.</p>
+						</div>
+					</div>
+					<div class="history__item col-xs-12 col-sm-6 col-sm-offset-6">
+						<span class="history__time">2000</span>
+						<div class="history__text">
+							<p><b>В 2000 г.</b> разработан <b>первый интеллектуальный счетчик электрической энергии</b>, который положил основу аналогичного направления.</p>
+						</div>
+					</div>
+					<div class="history__item col-xs-12 col-sm-6">
+						<span class="history__time">2001</span>
+						<div class="history__text">
+							<p><b>2001 г.</b> начали производиться <b>плазменные модули</b> для табло и экранов, что повлекло за собой развитие направления <b>«Дисплейные системы»</b>.</p>
+						</div>
+					</div>
+					<div class="history__item col-xs-12 col-sm-6 col-sm-offset-6">
+						<span class="history__time">2006</span>
+						<div class="history__text">
+							<p><b>С 2006 г.</b> начались разработки <b>LED экранов</b>. В том же 2006 г. было создано <b>направление источников питания</b>.</p>
+						</div>
+					</div>
+					<div class="history__item col-xs-12 col-sm-6">
+						<span class="history__time">2008</span>
+						<div class="history__text">
+							<p><b>В 2008 г.</b> создана <b>компания по разработке цифровой электроники</b> (Set-top boxes всех стандартов, цифровые IP видеокамеры с распознаванием образов и другая электроника).</p>
+						</div>
+					</div>
+					<div class="history__item col-xs-12 col-sm-6 col-sm-offset-6">
+						<span class="history__time">2011</span>
+						<div class="history__text">
+							<p><b>В 2011 г. создана компания «Квалиттек»</b>, нацеленная на разработки в сфере профессионального оборудования в области цифрового <b>TV формата DVB2</b>.</p>
+							<p><b>С 2011 г.</b> функционирует направление «LED освещение».</p>
+						</div>
+					</div>
+					<div class="history__item col-xs-12 col-sm-6">
+						<span class="history__time">2011</span>
+						<div class="history__text">
+							<p><b>В 2012 г.</b> организовано направление разработки и производства <b>серии люминофоров для освещения</b>.</p>
+						</div>
+					</div>
+
 				</div>
 			</div>
 			<!-- HISTORY ITEMS END -->
