@@ -2,10 +2,22 @@
 /* HISTORY BLOCK
 /* ------------------------------------------ */
 .history {
+	position: relative;
+
 	padding-top: 50px;
 	padding-bottom: 50px;
 
-	border-top: 1px solid #e1e1e1;
+	&:before {
+		position: absolute;
+		top: 0;
+
+		width: 100%;
+		height: 1px;
+
+		content: "";
+
+		background: #e1e1e1;
+	}
 }
 
 .history__items {
@@ -16,7 +28,7 @@
 	&:after {
 		position: absolute;
 		top: 0;
-		right: 10px;
+		right: 0;
 
 		display: block;
 
@@ -37,7 +49,7 @@
 
 .history__item {
 	padding-top: 8px;
-	padding-right: 50px;
+	padding-right: 40px;
 	padding-bottom: 8px;
 
 	font-size: 0;
@@ -55,7 +67,7 @@
 			position: absolute;
 			z-index: 2;
 			top: 50%;
-			right: 19px;
+			right: 9px;
 
 			width: 5px;
 			height: 5px;
@@ -74,7 +86,7 @@
 			&:after {
 				position: absolute;
 				top: 50%;
-				right: 30px;
+				right: 20px;
 
 				display: block;
 
@@ -106,7 +118,7 @@
 			position: absolute;
 			z-index: 2;
 			top: 50%;
-			right: 19px;
+			right: 9px;
 
 			width: 5px;
 			height: 5px;
@@ -125,7 +137,7 @@
 			&:after {
 				position: absolute;
 				top: 50%;
-				right: 30px;
+				right: 20px;
 
 				display: block;
 
@@ -177,10 +189,10 @@
 .history__time {
 	display: inline-block;
 
-	width: 75px;
-	height: 75px;
-	margin-right: 20px;
-	padding: 26px 0;
+	width: 50px;
+	height: 50px;
+	margin-right: 15px;
+	padding: 20px 0;
 
 	text-align: center;
 	vertical-align: middle;
@@ -189,15 +201,25 @@
 	border-radius: 50%;
 	background: @palette-accent;
 
-	font-size: 22px;
+	font-size: 12px;
 	font-weight: 900;
 	line-height: 1;
+
+	@media (min-width: @screen-sm) {
+		width: 75px;
+		height: 75px;
+		margin-right: 20px;
+		padding: 26px 0;
+
+		font-size: 22px;
+		font-weight: 900;
+	}
 }
 
 .history__text {
 	display: inline-block;
 
-	width: calc(~"100% - 95px");
+	width: calc(~"100% - 65px");
 
 	vertical-align: middle;
 
@@ -208,5 +230,9 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
+	}
+
+	@media (min-width: @screen-sm) {
+		width: calc(~"100% - 95px");
 	}
 }
