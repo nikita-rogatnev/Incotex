@@ -2052,6 +2052,8 @@ button.btn--inacive:active,
 .history:before {
   position: absolute;
   top: 0;
+  right: 0;
+  left: 0;
   width: 100%;
   height: 1px;
   content: "";
@@ -2227,6 +2229,29 @@ button.btn--inacive:active,
   position: relative;
   width: 100%;
   margin-top: 20px;
+}
+.manufacturing__item h3 {
+  position: relative;
+  padding-left: 80px;
+}
+.manufacturing__item h3:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 60px;
+  height: 40px;
+  margin-right: 20px;
+  transform: translateY(-50%);
+  outline: 1px solid red;
+}
+.manufacturing__item:nth-child(1) h3:before {
+  content: "";
+}
+.manufacturing__item:nth-child(2) h3:before {
+  content: "";
+}
+.manufacturing__item:nth-child(3) h3:before {
+  content: "";
 }
 .manufacturing__stats-heading {
   padding: 0;
