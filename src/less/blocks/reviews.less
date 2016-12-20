@@ -2,104 +2,179 @@
 /* REVIEWS BLOCK
 /* ------------------------------------------ */
 .reviews {
-	background: @palette-accent;
-}
+	padding-top: 20px;
+	padding-bottom: 30px;
 
-#quote-carousel {
-	margin-top: 30px;
-	padding: 0 10px 30px 10px;
-}
+	color: @palette-white;
+	background: #25466b;
 
-/* Control buttons  */
-#quote-carousel .carousel-control {
-	margin-top: 30px;
+	h1 {
+		margin: 0;
+		padding: 0;
 
-	color: #222222;
-	background: none;
-	text-shadow: none;
+		color: @palette-white;
 
-	font-size: 2.3em;
-}
-/* Previous button  */
-#quote-carousel .carousel-control.left {
-	left: -12px;
-}
-/* Next button  */
-#quote-carousel .carousel-control.right {
-	right: -12px !important;
-}
-/* Changes the position of the indicators */
-#quote-carousel .carousel-indicators {
-	top: auto;
-	right: 50%;
-	bottom: 0;
+		font-size: 21px;
+		font-weight: 900;
+		line-height: 18px;
+	}
 
-	margin-right: -19px;
-}
-/* Changes the color of the indicators */
-#quote-carousel .carousel-indicators li {
-	background: #c0c0c0;
-}
-#quote-carousel .carousel-indicators .active {
-	background: #333333;
-}
-#quote-carousel img {
-	width: 250px;
-	height: 100px;
-}
-/* End carousel */
+	small {
+		display: block;
 
-.item blockquote {
-	margin: 0;
+		margin-top: 10px;
 
-	border-left: none;
-}
+		color: @palette-white;
 
-.item blockquote img {
-	margin-bottom: 10px;
-}
+		font-size: 15px;
+		font-style: italic;
+		line-height: 18px;
 
-.item blockquote p:before {
-	float: left;
-
-	margin-right: 10px;
-
-	content: "\f10d";
-
-	font-family: 'Fontawesome';
-}
-
-
-
-/**
-  MEDIA QUERIES
-*/
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-	#quote-carousel {
-		margin-bottom: 0;
-		padding: 0 40px 30px 40px;
+		&::before {
+			content: "";
+		}
 	}
 }
 
-/* Small devices (tablets, up to 768px) */
-@media (max-width: 768px) {
-	/* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+.reviews__author {
+	margin-bottom: 20px;
 
-	#quote-carousel .carousel-indicators {
-		bottom: -20px !important;
-	}
-	#quote-carousel .carousel-indicators li {
-		display: inline-block;
+	text-align: center;
 
-		width: 15px;
-		height: 15px;
-		margin: 0 5px;
+	font-size: 0;
+
+	.reviews__image {
+		width: 90px;
+		height: 90px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+
+		border-radius: 50%;
+		background: #bfbfbf;
+
+		@media (min-width: @screen-md) {
+			display: inline-block;
+
+			margin-right: 20px;
+			margin-bottom: 0;
+
+			vertical-align: middle;
+		}
 	}
-	#quote-carousel .carousel-indicators li.active {
-		width: 20px;
-		height: 20px;
-		margin: 0 5px;
+
+	@media (min-width: @screen-md) {
+		text-align: left;
+
+		.reviews__name {
+			display: inline-block;
+
+			width: calc(~"100% - 110px");
+
+			vertical-align: middle;
+		}
+	}
+}
+
+
+.reviews__slider {
+	padding: 0;
+
+	background: transparent;
+
+	.reviews__slide {
+		margin: 0;
+
+		border: 0;
+	}
+
+	.carousel-control {
+		background: transparent;
+
+		font-size: 0;
+
+		&:after,
+		&::before {
+			position: absolute;
+			top: 50%;
+
+			width: 20px;
+			height: 20px;
+
+			content: "";
+			transform: translate(-50%, -50%) rotate(45deg);
+
+			border-radius: 1px;
+
+			@media (min-width: @screen-sm) {
+				width: 50px;
+				height: 50px;
+			}
+		}
+
+		&.left {
+			&:after {
+				left: 0;
+
+				border-bottom: 5px solid @palette-white;
+				border-left: 5px solid @palette-white;
+			}
+		}
+
+		&.right {
+			&:before {
+				right: 0;
+
+				border-top: 5px solid @palette-white;
+				border-right: 5px solid @palette-white;
+			}
+		}
+	}
+
+	.carousel-indicators {
+		position: inherit;
+		z-index: 1;
+		bottom: initial;
+		left: initial;
+
+		width: auto;
+		margin: 20px auto 0;
+		margin-top: 20px;
+		padding: 0;
+
+		li {
+			display: inline-block;
+
+			width: 42px;
+			height: 42px;
+			margin: 0;
+			padding: 3px;
+
+			vertical-align: middle;
+			text-indent: initial;
+
+			border: 3px solid transparent;
+			border-radius: 50%;
+			background: transparent;
+		}
+
+		img {
+			position: relative;
+
+			display: block;
+
+			width: 30px;
+			min-width: 30px;
+			max-width: 30px;
+			height: 30px;
+			min-height: 30px;
+			max-height: 30px;
+
+			border-radius: 50%;
+			background: #bfbfbf;
+		}
+
+		.active {
+			border-color: #559dd8;
+		}
 	}
 }

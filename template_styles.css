@@ -278,7 +278,7 @@ a.icon:focus::before {
   box-sizing: border-box;
 }
 body {
-  color: #434343;
+  color: #000000;
   background-color: #ffffff;
   font-family: "Lato", Arial, sans-serif;
   font-size: 13px;
@@ -1943,6 +1943,9 @@ button.btn--inacive:active,
   text-decoration: none;
   border: 0;
 }
+.events__item p {
+  color: #434343;
+}
 .events__item time {
   display: block;
   margin: 5px 0;
@@ -2408,65 +2411,112 @@ button.btn--inacive:active,
 /* REVIEWS BLOCK
 /* ------------------------------------------ */
 .reviews {
-  background: #1c5699;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: #ffffff;
+  background: #25466b;
 }
-#quote-carousel {
-  margin-top: 30px;
-  padding: 0 10px 30px 10px;
-}
-/* Control buttons  */
-#quote-carousel .carousel-control {
-  margin-top: 30px;
-  color: #222222;
-  background: none;
-  text-shadow: none;
-  font-size: 2.3em;
-}
-/* Previous button  */
-#quote-carousel .carousel-control.left {
-  left: -12px;
-}
-/* Next button  */
-#quote-carousel .carousel-control.right {
-  right: -12px !important;
-}
-/* Changes the position of the indicators */
-#quote-carousel .carousel-indicators {
-  top: auto;
-  right: 50%;
-  bottom: 0;
-  margin-right: -19px;
-}
-/* Changes the color of the indicators */
-#quote-carousel .carousel-indicators li {
-  background: #c0c0c0;
-}
-#quote-carousel .carousel-indicators .active {
-  background: #333333;
-}
-#quote-carousel img {
-  width: 250px;
-  height: 100px;
-}
-/* End carousel */
-.item blockquote {
+.reviews h1 {
   margin: 0;
-  border-left: none;
+  padding: 0;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 900;
+  line-height: 18px;
 }
-.item blockquote img {
-  margin-bottom: 10px;
+.reviews small {
+  display: block;
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 18px;
 }
-.item blockquote p:before {
-  float: left;
-  margin-right: 10px;
-  content: "\f10d";
-  font-family: 'Fontawesome';
+.reviews small::before {
+  content: "";
 }
-/**
-  MEDIA QUERIES
-*/
-/* Small devices (tablets, 768px and up) */
-/* Small devices (tablets, up to 768px) */
+.reviews__author {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 0;
+}
+.reviews__author .reviews__image {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  background: #bfbfbf;
+}
+.reviews__slider {
+  padding: 0;
+  background: transparent;
+}
+.reviews__slider .reviews__slide {
+  margin: 0;
+  border: 0;
+}
+.reviews__slider .carousel-control {
+  background: transparent;
+  font-size: 0;
+}
+.reviews__slider .carousel-control:after,
+.reviews__slider .carousel-control::before {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  content: "";
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-radius: 1px;
+}
+.reviews__slider .carousel-control.left:after {
+  left: 0;
+  border-bottom: 5px solid #ffffff;
+  border-left: 5px solid #ffffff;
+}
+.reviews__slider .carousel-control.right:before {
+  right: 0;
+  border-top: 5px solid #ffffff;
+  border-right: 5px solid #ffffff;
+}
+.reviews__slider .carousel-indicators {
+  position: inherit;
+  z-index: 1;
+  bottom: initial;
+  left: initial;
+  width: auto;
+  margin: 20px auto 0;
+  margin-top: 20px;
+  padding: 0;
+}
+.reviews__slider .carousel-indicators li {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  margin: 0;
+  padding: 3px;
+  vertical-align: middle;
+  text-indent: initial;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  background: transparent;
+}
+.reviews__slider .carousel-indicators img {
+  position: relative;
+  display: block;
+  width: 30px;
+  min-width: 30px;
+  max-width: 30px;
+  height: 30px;
+  min-height: 30px;
+  max-height: 30px;
+  border-radius: 50%;
+  background: #bfbfbf;
+}
+.reviews__slider .carousel-indicators .active {
+  border-color: #559dd8;
+}
 /* ------------------------------------------ */
 /* SLIDER BLOCK
 /* ------------------------------------------ */
@@ -2545,7 +2595,7 @@ button.btn--inacive:active,
 /* TECHNOLOGY BLOCK
 /* ------------------------------------------ */
 .technology {
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 50px;
 }
 .technology h4 {
@@ -2789,6 +2839,11 @@ button.btn--inacive:active,
   .projects__item {
     min-height: 160px;
   }
+  .reviews__slider .carousel-control:after,
+  .reviews__slider .carousel-control::before {
+    width: 50px;
+    height: 50px;
+  }
   .slider {
     max-height: 400px;
   }
@@ -2810,6 +2865,9 @@ button.btn--inacive:active,
     width: 60px;
     height: 60px;
   }
+  .footer__contacts {
+    padding-top: 20px;
+  }
   .footer__copyright {
     text-align: left;
   }
@@ -2818,12 +2876,6 @@ button.btn--inacive:active,
   }
   .footer__developedby {
     text-align: right;
-  }
-}
-@media (min-width: 768px) {
-  #quote-carousel {
-    margin-bottom: 0;
-    padding: 0 40px 30px 40px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2977,6 +3029,20 @@ button.btn--inacive:active,
   .projects__hover:hover {
     display: block;
   }
+  .reviews__author .reviews__image {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .reviews__author {
+    text-align: left;
+  }
+  .reviews__author .reviews__name {
+    display: inline-block;
+    width: calc(100% - 110px);
+    vertical-align: middle;
+  }
   .slider {
     max-height: 480px;
   }
@@ -3044,32 +3110,6 @@ button.btn--inacive:active,
     width: 1176px;
   }
 }
-@media (max-width: 991px) {
-  .projects__item .projects__item-description > h1 {
-    min-height: auto;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    text-transform: none;
-    font-weight: 600;
-  }
-}
-@media (max-width: 768px) {/* Make the indicators larger for easier clicking with fingers/thumb on mobile */
-  #quote-carousel .carousel-indicators {
-    bottom: -20px !important;
-  }
-  #quote-carousel .carousel-indicators li {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin: 0 5px;
-  }
-  #quote-carousel .carousel-indicators li.active {
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-  }
-}
 @media (max-width: 767px) {
   .header .navbar-collapse[aria-expanded="true"] .menu__item > a {
     text-decoration: none;
@@ -3083,5 +3123,15 @@ button.btn--inacive:active,
   }
   .header .navbar-collapse[aria-expanded="true"] .menu__item--active a {
     color: #65bbfd;
+  }
+}
+@media (max-width: 991px) {
+  .projects__item .projects__item-description > h1 {
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-transform: none;
+    font-weight: 600;
   }
 }
