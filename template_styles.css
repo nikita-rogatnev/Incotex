@@ -1943,6 +1943,27 @@ button.btn--inacive:active,
   padding-bottom: 20px;
 }
 /* ------------------------------------------ */
+/* BACK BLOCK
+/* ------------------------------------------ */
+.back {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.back a {
+  position: relative;
+  display: inline-block;
+  margin-left: 35px;
+  vertical-align: middle;
+}
+.back a::before {
+  position: absolute;
+  top: 3px;
+  left: -35px;
+  display: inline-block;
+  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="22.03" height="16.09" viewBox="0 0 22.03 16.09"><path style="fill: #0b4ea2; fill-rule: evenodd;" d="M9138.13,3442.18a0.762,0.762,0,0,1,1.11,0,0.815,0.815,0,0,1,0,1.14l-5.63,5.84h18.6a0.794,0.794,0,0,1,.79.8,0.811,0.811,0,0,1-.79.82h-18.6l5.63,5.83a0.827,0.827,0,0,1,0,1.15,0.762,0.762,0,0,1-1.11,0l-6.97-7.22a0.834,0.834,0,0,1,0-1.14Z" transform="translate(-9130.97 -3441.94)"/></svg>');
+  vertical-align: middle;
+}
+/* ------------------------------------------ */
 /* BREADCRUMBS BLOCK
 /* ------------------------------------------ */
 .breadcrumbs {
@@ -2798,6 +2819,32 @@ button.btn--inacive:active,
   text-align: center;
 }
 /* ------------------------------------------ */
+/* SOLUTION DESCRIPTION BLOCK
+/* ------------------------------------------ */
+.solution-description {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+.solution-description__item {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  border-top: 1px solid #e1e1e1;
+}
+.solution-description__item:nth-child(1) {
+  border-top: 0;
+}
+.solution-description__double {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  border-top: 1px solid #e1e1e1;
+}
+.solution-description__double:nth-child(1) {
+  border-top: 0;
+}
+.solution-description__double:nth-child(2) {
+  padding-bottom: 0;
+}
+/* ------------------------------------------ */
 /* SOLUTION INTRO BLOCK
 /* ------------------------------------------ */
 .solution-intro__info {
@@ -2823,6 +2870,13 @@ button.btn--inacive:active,
   font-size: 30px;
   font-weight: 900;
   line-height: 36px;
+}
+/* ------------------------------------------ */
+/* SOLUTION PRODUCTION BLOCK
+/* ------------------------------------------ */
+.solution-production {
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 /* ------------------------------------------ */
 /* FOOTER BLOCK
@@ -3074,6 +3128,15 @@ button.btn--inacive:active,
   .technology__slider .carousel-control::before {
     width: 60px;
     height: 60px;
+  }
+  .solution-description__double {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: 0;
+  }
+  .solution-description__double img {
+    width: auto;
+    height: 190px;
   }
   .solution-intro p {
     padding-right: 20px;

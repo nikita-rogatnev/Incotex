@@ -1,0 +1,45 @@
+/* ------------------------------------------ */
+/* SOLUTION DESCRIPTION BLOCK
+/* ------------------------------------------ */
+.solution-description {
+	padding-top: 70px;
+	padding-bottom: 30px;
+}
+
+.solution-description__item {
+	padding-top: 50px;
+	padding-bottom: 40px;
+
+	border-top: 1px solid #e1e1e1;
+
+	&:nth-child(1) {
+		border-top: 0;
+	}
+}
+
+.solution-description__double {
+	padding-top: 50px;
+	padding-bottom: 40px;
+
+	border-top: 1px solid #e1e1e1;
+
+	&:nth-child(1) {
+		border-top: 0;
+	}
+
+	&:nth-child(2) {
+		padding-bottom: 0;
+	}
+
+	@media (min-width: @screen-sm) {
+		padding-top: 0;
+		padding-bottom: 0;
+
+		border-top: 0;
+
+		img {
+			width: auto;
+			height: 190px;
+		}
+	}
+}
