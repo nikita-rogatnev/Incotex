@@ -153,14 +153,14 @@
 		<!-- SOLUTION INTRO -->
 		<section class="solution-intro container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-9">
+				<div class="col-xs-12 col-sm-7 col-md-9">
 					<p>Аонсовый текст описания решения Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus
 						et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient
 						montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
 				</div>
-				<div class="col-xs-12 col-sm-3">
+				<div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0 col-md-3">
 					<div class="solution-intro__info">
-						<strong>Сроки внедрения решения</strong>
+						<strong>Сроки внедрения<br>решения</strong>
 						<span>20 дней</span>
 						<span class="solution-intro__price">35 000 Р</span>
 						<a href="#" class="btn btn--accent btn-primary">Заказать</a>
@@ -173,14 +173,22 @@
 		<!-- SOLUTION PARAMETERS -->
 		<section class="solution-parameters container">
 			<h2>Ключевые параметры решения</h2>
-			<ul class="solution-parameters__items">
-				<li class="solution-parameters__item">Удаленный доступ через интернет</li>
-				<li class="solution-parameters__item">Аудио каналы</li>
-				<li class="solution-parameters__item">ПО для мобильных устройствAndroid, iOS, Windows Mobile, Blackberry, Symbian</li>
-				<li class="solution-parameters__item">1000 ТВЛ Разрешение видеокамер 720Р,1,3 Мпиксел 1280-960 pixel</li>
-				<li class="solution-parameters__item">Угол обзора 90° 3,6мм</li>
-				<li class="solution-parameters__item">Режим день-ночь</li>
-			</ul>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<ul class="solution-parameters__items list-ticks list-ticks--round">
+						<li class="solution-parameters__item">Удаленный доступ через интернет</li>
+						<li class="solution-parameters__item">Аудио каналы</li>
+						<li class="solution-parameters__item">ПО для мобильных устройствAndroid, iOS, Windows Mobile, Blackberry, Symbian</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<ul class="solution-parameters__items list-ticks list-ticks--round">
+						<li class="solution-parameters__item">1000 ТВЛ Разрешение видеокамер 720Р,1,3 Мпиксел 1280-960 pixel</li>
+						<li class="solution-parameters__item">Угол обзора 90° 3,6мм</li>
+						<li class="solution-parameters__item">Режим день-ночь</li>
+					</ul>
+				</div>
+			</div>
 		</section>
 		<!-- SOLUTION PARAMETERS END -->
 
@@ -283,55 +291,59 @@
 		<!-- BACK END -->
 
 		<!-- QUESTION SECTION -->
-		<section class="question container">
-			<h2>Есть вопросы?</h2>
+		<section class="question">
+			<div class="container">
 
-			<div class="row">
-				<div class="col-xs-12 col-sm-6">
-					<p>Позвоните <a href="tel:+74954687434">(495) <b>123-123-23</b></a> или заполните форму. Мы подберем подходящие товары и подробно расскажем об их возможностях.</p>
+				<h2>Есть вопросы?</h2>
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-5">
+						<p>Позвоните <a href="tel:+74954687434">(495) <b>123-123-23</b></a> или заполните форму. Мы подберем подходящие товары и подробно расскажем об их возможностях.</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-offset-1">
+
+						<!-- FORM -->
+						<form class="#" action="#" method="post">
+							<div class="row">
+								<div class="col-xs-12 col-sm-6">
+									<div class="form-group">
+										<input type="text" placeholder="Ваше имя" class="form-control">
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6">
+									<div class="form-group">
+										<input type="text" placeholder="E-mail" class="form-control">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<textarea class="form-control" placeholder="Ваш вопрос" rows="3"></textarea>
+							</div>
+
+							<div class="row">
+								<div class="col-xs-6 col-md-4">
+									<div class="captcha">
+										<img src="./images/question/captcha.png" alt="captcha" width="143" height="38">
+									</div>
+								</div>
+								<div class="col-xs-6 col-md-8">
+									<div class="form-group">
+										<input type="text" placeholder="Введите код с картинки" class="form-control">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<button class="btn btn--white btn-primary" type="submit">Отправить</button>
+							</div>
+
+						</form>
+						<!-- FORM END -->
+
+					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6">
 
-					<!-- FORM -->
-					<form class="#" action="#" method="post">
-						<div class="row">
-							<div class="col-xs-12 col-sm-6">
-								<div class="form-group">
-									<input type="text" placeholder="Ваше имя" class="form-control">
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-6">
-								<div class="form-group">
-									<input type="text" placeholder="E-mail" class="form-control">
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<textarea class="form-control" placeholder="Ваш вопрос" rows="3"></textarea>
-						</div>
-
-						<div class="row">
-							<div class="col-xs-4">
-								<div class="form-group">
-									<img src="#" alt="" width="" height="">
-								</div>
-							</div>
-							<div class="col-xs-8">
-								<div class="form-group">
-									<input type="text" placeholder="Введите код с картинки" class="form-control">
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<button class="btn btn--white btn-primary" type="submit">Отправить</button>
-						</div>
-
-					</form>
-					<!-- FORM END -->
-
-				</div>
 			</div>
 		</section>
 		<!-- QUESTION SECTION END -->

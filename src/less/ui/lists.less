@@ -137,4 +137,20 @@ ol ol {
 			}
 		}
 	}
+
+	&.list-ticks--round {
+		padding: 0 0 0 33px;
+
+		& > li {
+			position: relative;
+
+			&::before {
+				position: absolute;
+				top: -2px;
+				left: -33px;
+
+				content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="22.22" height="22" viewBox="0 0 22.22 22"><path id="Forma_1" style="fill: #1c5699; fill-rule: evenodd;" d="M9141.41,874.837l0.06,0.086L9141.6,875l0.15,0.089,0.16,0.049,0.23,0.03,0.1-.009,0.29-.077,0.04-.025,0.19-.1,0.09-.119,0.01,0,10.12-12.356a1.013,1.013,0,0,0-.09-1.415,0.961,0.961,0,0,0-1.38.094l-9.35,11.412-3.63-4.8a0.964,0.964,0,0,0-1.38-.143,1.019,1.019,0,0,0-.14,1.41l4.37,5.783Z" transform="translate(-9131 -860)"/><path style="fill: #0b4ea2; fill-rule: evenodd;" d="M9146.71,863.289a8.991,8.991,0,0,0-4.72-1.361,9.075,9.075,0,1,0,9.09,9.074,8.909,8.909,0,0,0-.44-2.642l1.52-1.516a11.131,11.131,0,1,1-4.06-4.94Z" transform="translate(-9131 -860)"/></svg>');
+			}
+		}
+	}
 }
