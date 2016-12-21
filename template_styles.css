@@ -1925,6 +1925,13 @@ button.btn--inacive:active,
   line-height: 1;
 }
 /* ------------------------------------------ */
+/* ERROR BLOCK
+/* ------------------------------------------ */
+.error {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+/* ------------------------------------------ */
 /* EVENTS BLOCK
 /* ------------------------------------------ */
 .events {
@@ -2787,6 +2794,10 @@ button.btn--inacive:active,
   .header__logo {
     max-width: none;
   }
+  .error {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
   .heading h1 {
     font-size: 40px;
     line-height: 48px;
@@ -3112,6 +3123,10 @@ button.btn--inacive:active,
   }
   .header__navigation .menu > li {
     margin: 7px 35px 0 0;
+  }
+  .error {
+    padding-top: 90px;
+    padding-bottom: 100px;
   }
   .key-projects__hover ul li {
     margin: 0 0 12px;
