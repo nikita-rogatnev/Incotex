@@ -17,21 +17,38 @@
 			height: 650px;
 		}
 	}
+
+	&--projects {
+		.map__controls {
+			.padding-15;
+		}
+	}
 }
 
 .map__controls {
-	position: absolute;
-	z-index: 1;
-	top: 0;
-
 	width: 100%;
 
-	background: rgba(255, 255, 255, 0.9);
+	background: @palette-white;
 
 	.padding-10;
 
 	.form-group {
 		margin: 0;
+	}
+
+	h4 {
+		margin: 0;
+		padding: 0;
+
+		font-size: 21px;
+	}
+
+	&--absolute {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+
+		background: rgba(255, 255, 255, 0.9);
 	}
 
 	label {
