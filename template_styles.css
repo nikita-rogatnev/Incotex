@@ -3314,9 +3314,17 @@ button.btn--inacive:active,
   .header__navigation .country .dropdown-menu a:hover {
     color: #000000;
   }
+  .catalog__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
   .catalog__item {
     margin-top: 25px;
     margin-bottom: 25px;
+    flex-grow: 0;
+    flex-basis: 33%;
   }
   .catalog__item header {
     height: 186px;
@@ -3475,10 +3483,6 @@ button.btn--inacive:active,
   }
   .header__navigation .menu > li {
     margin: 7px 35px 0 0;
-  }
-  .catalog__items {
-    display: flex;
-    flex-wrap: wrap;
   }
   .catalog__item {
     margin-top: 35px;
