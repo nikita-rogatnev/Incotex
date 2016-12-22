@@ -1,0 +1,97 @@
+/* ------------------------------------------ */
+/* CATALOG BLOCK
+/* ------------------------------------------ */
+.catalog__items {
+	@media (min-width: @screen-lg) {
+		display: flex;
+
+		flex-wrap: wrap;
+	}
+}
+
+.catalog__item {
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+
+	@media (min-width: @screen-md) {
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+
+	@media (min-width: @screen-lg) {
+		margin-top: 35px;
+		margin-bottom: 35px;
+
+		flex: 0 33%;
+	}
+
+	header {
+		@media (min-width: @screen-sm) {
+			height: 287px;
+		}
+
+		@media (min-width: @screen-md) {
+			height: 186px;
+		}
+
+		@media (min-width: @screen-lg) {
+			height: 230px;
+		}
+
+		a {
+			font-size: 0;
+			line-height: 0;
+		}
+	}
+
+	img {
+		display: block;
+
+		width: 80%;
+		height: auto;
+		margin: 0 auto;
+
+		@media (min-width: @screen-sm) {
+			width: 100%;
+		}
+	}
+
+	h1 {
+		font-size: 17px;
+		line-height: 20px;
+
+		a {
+			text-decoration: none;
+
+			color: @palette-black;
+			border: 0;
+		}
+	}
+
+	span {
+		display: block;
+
+		max-width: 190px;
+
+		font-size: 13px;
+		line-height: 18px;
+	}
+
+	table {
+		width: 100%;
+
+		font-size: 13px;
+		line-height: 18px;
+	}
+
+	td {
+		&:nth-child(odd) {
+			width: 80%;
+		}
+
+		&:nth-child(even) {
+			width: 20%;
+		}
+	}
+}
