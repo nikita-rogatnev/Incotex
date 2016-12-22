@@ -1,3 +1,42 @@
 /* ------------------------------------------ */
 /* SUBCATEGORIES BLOCK
 /* ------------------------------------------ */
+aside {
+	.subcategories__items {
+		margin-bottom: 45px;
+		padding: 0;
+	}
+}
+
+.subcategories__item {
+	margin: 0;
+	padding: 8px 0;
+
+	border-bottom: 1px solid #eeeeee;
+
+	&:nth-child(1) {
+		padding-top: 0;
+	}
+
+	a {
+		text-decoration: none;
+
+		color: #0b4ea2;
+		border: 0;
+	}
+
+	&--active {
+		a {
+			color: @palette-black;
+
+			font-weight: 900;
+
+			&:hover {
+				text-decoration: none;
+
+				color: @palette-black;
+				border: 0;
+			}
+		}
+	}
+}

@@ -2924,6 +2924,32 @@ button.btn--inacive:active,
 /* ------------------------------------------ */
 /* SUBCATEGORIES BLOCK
 /* ------------------------------------------ */
+aside .subcategories__items {
+  margin-bottom: 45px;
+  padding: 0;
+}
+.subcategories__item {
+  margin: 0;
+  padding: 8px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+.subcategories__item:nth-child(1) {
+  padding-top: 0;
+}
+.subcategories__item a {
+  text-decoration: none;
+  color: #0b4ea2;
+  border: 0;
+}
+.subcategories__item--active a {
+  color: #000000;
+  font-weight: 900;
+}
+.subcategories__item--active a:hover {
+  text-decoration: none;
+  color: #000000;
+  border: 0;
+}
 /* ------------------------------------------ */
 /* SUBCATEGORY BLOCK
 /* ------------------------------------------ */
