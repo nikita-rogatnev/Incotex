@@ -171,7 +171,6 @@
 	}
 
 	.navbar-collapse {
-		position: fixed;
 		z-index: 4;
 		top: 0;
 		right: 0;
@@ -191,6 +190,8 @@
 		}
 
 		@media (max-width: @screen-sm) {
+			position: fixed;
+
 			&[aria-expanded="true"] {
 				.menu__item {
 					& > a {
