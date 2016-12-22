@@ -1711,7 +1711,6 @@ button.btn--inacive:active,
   background: #ffffff;
 }
 .header .navbar-collapse {
-  position: fixed;
   z-index: 4;
   top: 0;
   right: 0;
@@ -3484,7 +3483,6 @@ button.btn--inacive:active,
   .catalog__item {
     margin-top: 35px;
     margin-bottom: 35px;
-    flex: 0 33%;
   }
   .catalog__item header {
     height: 230px;
@@ -3516,6 +3514,9 @@ button.btn--inacive:active,
   }
 }
 @media (max-width: 767px) {
+  .header .navbar-collapse {
+    position: fixed;
+  }
   .header .navbar-collapse[aria-expanded="true"] .menu__item > a {
     text-decoration: none;
     color: #ffffff;
