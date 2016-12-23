@@ -1,0 +1,55 @@
+/* ------------------------------------------ */
+/* CATALOG FILTER BLOCK
+/* ------------------------------------------ */
+.catalog-filter__item {
+	margin-bottom: 30px;
+
+	.collapse__link {
+		&.collapse__link--left {
+			&[aria-expanded=false] {
+				&:before {
+					transform: translateY(20%) rotate(270deg);
+				}
+			}
+		}
+	}
+
+	a {
+		display: inline-block;
+
+		margin-bottom: 20px;
+
+		text-decoration: none;
+
+		color: @palette-black;
+		border: 0;
+
+		font-size: 15px;
+		font-weight: 900;
+		line-height: 15px;
+
+		&:hover {
+			text-decoration: none;
+
+			color: @palette-black;
+			border: 0;
+		}
+	}
+}
+
+.catalog-filter__reset {
+	display: inline;
+
+	margin: 0;
+	padding: 0;
+
+	color: #2a4c91;
+	border: 0;
+	border-bottom: 1px dotted #2a4c91;
+
+	font-weight: 400;
+
+	&:hover {
+		border-bottom: 1px dotted transparent;
+	}
+}
