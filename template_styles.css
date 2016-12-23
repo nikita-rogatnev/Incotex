@@ -1945,7 +1945,7 @@ button.btn--inacive:active,
 /* BACK BLOCK
 /* ------------------------------------------ */
 .back {
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 50px;
 }
 .back a {
@@ -2604,6 +2604,32 @@ button.btn--inacive:active,
   position: relative;
 }
 /* ------------------------------------------ */
+/* PROJECT BLOCK
+/* ------------------------------------------ */
+.project__item {
+  position: relative;
+  margin-bottom: 30px;
+}
+.project__item a {
+  text-decoration: none;
+  color: #000000;
+  border: 0;
+}
+.project__item-more {
+  margin-top: 15px;
+}
+.project__item-more span {
+  display: block;
+  font-size: 13px;
+  line-height: 15px;
+}
+.project__item-more span:nth-child(1) {
+  color: #000000;
+}
+.project__item-more span:nth-child(2) {
+  color: #8d8d8d;
+}
+/* ------------------------------------------ */
 /* PROJECTS BLOCK
 /* ------------------------------------------ */
 .projects {
@@ -2949,6 +2975,9 @@ button.btn--inacive:active,
   padding-bottom: 30px;
   color: #434343;
 }
+.solution-production h3 {
+  margin-top: 0;
+}
 .solution-production__note {
   position: relative;
   padding: 15px 15px 15px 40px;
@@ -3060,6 +3089,10 @@ aside .subcategories__items {
 /* ------------------------------------------ */
 /* USED PRODUCTS BLOCK
 /* ------------------------------------------ */
+.usedin-products {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .usedin-products h2 {
   margin-bottom: 0;
 }
