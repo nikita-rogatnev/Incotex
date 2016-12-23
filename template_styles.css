@@ -2735,6 +2735,15 @@ button.btn--inacive:active,
   position: relative;
 }
 /* ------------------------------------------ */
+/* PROJECT INTRO BLOCK
+/* ------------------------------------------ */
+.project-intro {
+  padding-bottom: 30px;
+}
+.project-intro__slider {
+  padding-bottom: 30px;
+}
+/* ------------------------------------------ */
 /* PROJECT BLOCK
 /* ------------------------------------------ */
 .project__item {
