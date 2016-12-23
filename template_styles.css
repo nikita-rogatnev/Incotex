@@ -2069,6 +2069,38 @@ button.btn--inacive:active,
   width: 20%;
   font-weight: 900;
 }
+.catalog__quantity {
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  min-width: 70px;
+  height: 35px;
+  margin: 0;
+  padding-top: 7px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 3px;
+  background: #0b4ea2;
+  font-size: 13px;
+  line-height: 1;
+}
+.catalog__quantity strong {
+  font-size: 21px;
+  font-weight: 900;
+  line-height: 1;
+}
+.catalog__quantity::after {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 65%;
+  display: block;
+  width: 15px;
+  height: 15px;
+  content: "";
+  transform: rotate(45deg) translate(-50%, 100%);
+  background: #0b4ea2;
+}
 /* ------------------------------------------ */
 /* ERROR BLOCK
 /* ------------------------------------------ */
@@ -2559,6 +2591,19 @@ button.btn--inacive:active,
   height: 70px;
 }
 /* ------------------------------------------ */
+/* PROJECT DESCRIPTION BLOCK
+/* ------------------------------------------ */
+.project-description {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+/* ------------------------------------------ */
+/* PROJECT PARAMETERS BLOCK
+/* ------------------------------------------ */
+.project-parameters {
+  position: relative;
+}
+/* ------------------------------------------ */
 /* PROJECTS BLOCK
 /* ------------------------------------------ */
 .projects {
@@ -2922,6 +2967,9 @@ button.btn--inacive:active,
   border-radius: 50%;
 }
 /* ------------------------------------------ */
+/* SOLUTION BLOCK
+/* ------------------------------------------ */
+/* ------------------------------------------ */
 /* SUBCATEGORIES BLOCK
 /* ------------------------------------------ */
 aside .subcategories__items {
@@ -2999,11 +3047,43 @@ aside .subcategories__items {
   text-align: center;
 }
 /* ------------------------------------------ */
-/* USED IN BLOCK
+/* USAW BLOCK
+/* ------------------------------------------ */
+.usaw {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid #e1e1e1;
+}
+.usaw h2 {
+  margin-bottom: 0;
+}
+/* ------------------------------------------ */
+/* USED PRODUCTS BLOCK
+/* ------------------------------------------ */
+.usedin-products h2 {
+  margin-bottom: 0;
+}
+/* ------------------------------------------ */
+/* USED IN PROJECTS BLOCK
 /* ------------------------------------------ */
 .usedin-projects {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+/* ------------------------------------------ */
+/* USED IN SOLUTIONS BLOCK
+/* ------------------------------------------ */
+.usedin-solutions {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.usedin-solutions img {
+  max-width: 50%;
+}
+.usedin-solutions a {
+  text-decoration: none;
+  color: #000000;
+  border: 0;
 }
 /* ------------------------------------------ */
 /* FOOTER BLOCK
@@ -3138,7 +3218,6 @@ aside .subcategories__items {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
   }
   .catalog__item {
     min-width: 50%;
