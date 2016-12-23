@@ -2743,11 +2743,43 @@ button.btn--inacive:active,
 /* ------------------------------------------ */
 /* PROJECT INTRO BLOCK
 /* ------------------------------------------ */
+.project-intro__slider {
+  padding-bottom: 30px;
+}
 .project-intro {
   padding-bottom: 30px;
 }
-.project-intro__slider {
-  padding-bottom: 30px;
+.project-intro small {
+  display: block;
+  margin-bottom: 10px;
+  color: #8d8d8d;
+  font-size: 15px;
+  line-height: 1;
+}
+.project-intro span {
+  display: block;
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 15px;
+  line-height: 20px;
+}
+.project-intro__review img {
+  border: 1px solid #d5d5d5;
+  box-shadow: 0 0 25px 10px rgba(18, 56, 98, 0.15);
+}
+.project-intro__review a {
+  color: #1c5699;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 18px;
+}
+.project-intro__review small {
+  display: block;
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: #8d8d8d;
+  font-size: 13px;
+  line-height: 1;
 }
 /* ------------------------------------------ */
 /* PROJECT BLOCK
