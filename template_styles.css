@@ -2026,7 +2026,6 @@ button.btn--inacive:active,
 .catalog__item {
   margin-top: 15px;
   margin-bottom: 15px;
-  outline: 1px dashed red;
 }
 .catalog__item header a {
   font-size: 0;
@@ -2615,6 +2614,9 @@ button.btn--inacive:active,
   color: #000000;
   border: 0;
 }
+.project__item p {
+  margin-top: 15px;
+}
 .project__item-more {
   margin-top: 15px;
 }
@@ -3031,7 +3033,7 @@ aside .subcategories__items {
 /* SUBCATEGORY BLOCK
 /* ------------------------------------------ */
 .subcategory {
-  outline: 1px solid black;
+  position: relative;
 }
 /* ------------------------------------------ */
 /* TECHNOLOGY BLOCK
@@ -3101,7 +3103,10 @@ aside .subcategories__items {
 /* ------------------------------------------ */
 .usedin-projects {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+}
+.usedin-projects--bordered {
+  border-top: 1px solid #e1e1e1;
 }
 /* ------------------------------------------ */
 /* USED IN SOLUTIONS BLOCK
@@ -3110,6 +3115,9 @@ aside .subcategories__items {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.usedin-solutions--bordered {
+  border-top: 1px solid #e1e1e1;
+}
 .usedin-solutions img {
   max-width: 50%;
 }
@@ -3117,6 +3125,12 @@ aside .subcategories__items {
   text-decoration: none;
   color: #000000;
   border: 0;
+}
+.usedin-solutions p {
+  color: #434343;
+}
+.usedin-solutions p span {
+  color: #000000;
 }
 /* ------------------------------------------ */
 /* FOOTER BLOCK
