@@ -507,6 +507,9 @@ body {
   display: inline-block;
   vertical-align: middle;
 }
+.collapse__link.link--dotted:hover {
+  border: 0;
+}
 .collapse__link.collapse__link--left[aria-expanded="true"]:before {
   display: inline-block;
   width: 10px;
@@ -1480,19 +1483,18 @@ thead {
 .nav.nav-tabs {
   margin: 0;
   padding: 0;
-  border-bottom: 2px solid #cecece;
+  border: 0;
 }
 .nav-tabs > li {
-  float: left;
+  float: none;
+  width: 100%;
   margin: 0 10px 0 0;
-  padding: 13px 44px 13px;
+  padding: 8px 10px;
   transform: translateY(2px);
-  border-bottom: 0;
-  border-radius: 2px 2px 0 0;
+  text-align: center;
+  border-bottom: 1px dashed #cecece;
 }
 .nav-tabs .active {
-  border: 2px solid #cecece;
-  border-bottom: 0;
   background: #ffffff;
 }
 .nav > li > a {
@@ -3653,6 +3655,20 @@ aside .subcategories__items {
   .col-md-15 {
     float: left;
     width: 20%;
+  }
+  .nav.nav-tabs {
+    border-bottom: 2px solid #cecece;
+  }
+  .nav-tabs > li {
+    float: left;
+    width: auto;
+    padding: 13px 24px 13px;
+    border-bottom: 0;
+    border-radius: 2px 2px 0 0;
+  }
+  .nav-tabs .active {
+    border: 2px solid #cecece;
+    border-bottom: 0;
   }
   .header .navbar-toggle.collapsed {
     right: -15px;

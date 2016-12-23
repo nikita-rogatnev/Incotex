@@ -5,26 +5,45 @@
 	margin: 0;
 	padding: 0;
 
-	border-bottom: 2px solid #cecece;
+	border: 0;
+
+	@media (min-width: @screen-md) {
+		border-bottom: 2px solid #cecece;
+	}
 }
 
 .nav-tabs > li {
-	float: left;
+	float: none;
 
+	width: 100%;
 	margin: 0 10px 0 0;
-	padding: 13px 44px 13px;
+	padding: 8px 10px;
 
 	transform: translateY(2px);
+	text-align: center;
 
-	border-bottom: 0;
-	border-radius: 2px 2px 0 0;
+	border-bottom: 1px dashed #cecece;
+
+	@media (min-width: @screen-md) {
+		float: left;
+
+		width: auto;
+		padding: 13px 24px 13px;
+
+		border-bottom: 0;
+		border-radius: 2px 2px 0 0;;
+	}
 }
 
 .nav-tabs .active {
-	border: 2px solid #cecece;
-	border-bottom: 0;
 	background: @palette-white;
+
+	@media (min-width: @screen-md) {
+		border: 2px solid #cecece;
+		border-bottom: 0;
+	}
 }
+
 .nav > li > a {
 	display: inline-block;
 
@@ -39,6 +58,7 @@
 	font-size: 17px;
 	font-weight: 700;
 }
+
 .nav > li > a:hover,
 .nav > li > a:focus {
 	color: @palette-accent;
