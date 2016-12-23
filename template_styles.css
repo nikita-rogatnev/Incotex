@@ -2746,6 +2746,36 @@ button.btn--inacive:active,
 .project-intro__slider {
   padding-bottom: 30px;
 }
+.project-intro__slider .fotorama__nav-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 85px;
+  height: 100%;
+  text-align: right;
+}
+.project-intro__slider .fotorama__stage {
+  width: calc(100% - 90px) !important;
+}
+.project-intro__slider .fotorama__thumb-border {
+  display: none;
+}
+.project-intro__slider .fotorama__nav,
+.project-intro__slider .fotorama__nav__shaft {
+  overflow: scroll;
+  width: 85px !important;
+  height: 100%;
+  padding: 0 !important;
+}
+.project-intro__slider .fotorama__nav__frame {
+  display: block;
+  margin-bottom: 3px;
+  padding: 0 !important;
+  border: 2px solid transparent;
+}
+.project-intro__slider .fotorama__nav__frame.fotorama__active {
+  border: 2px solid #0082ff;
+}
 .project-intro {
   padding-bottom: 30px;
 }
@@ -3866,6 +3896,10 @@ aside .subcategories__items {
   }
   .partners__item img {
     height: 70px;
+  }
+  .project-intro__slider .fotorama__nav,
+  .project-intro__slider .fotorama__nav__shaft {
+    overflow: hidden;
   }
   .footer__navigation .menu.list-inline > li {
     padding-right: 45px;

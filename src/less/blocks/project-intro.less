@@ -3,6 +3,51 @@
 /* ------------------------------------------ */
 .project-intro__slider {
 	padding-bottom: 30px;
+
+	.fotorama__nav-wrap {
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		width: 85px;
+		height: 100%;
+
+		text-align: right;
+	}
+
+	.fotorama__stage {
+		width: calc(~"100% - 90px") !important;
+	}
+
+	.fotorama__thumb-border {
+		display: none;
+	}
+
+	.fotorama__nav,
+	.fotorama__nav__shaft {
+		overflow: scroll;
+
+		width: 85px !important;
+		height: 100%;
+		padding: 0 !important;
+
+		@media (min-width: @screen-lg) {
+			overflow: hidden;
+		}
+	}
+
+	.fotorama__nav__frame {
+		display: block;
+
+		margin-bottom: 3px;
+		padding: 0 !important;
+
+		border: 2px solid transparent;
+
+		&.fotorama__active {
+			border: 2px solid #0082ff;
+		}
+	}
 }
 
 .project-intro {
