@@ -2725,14 +2725,20 @@ button.btn--inacive:active,
 /* PROJECT DESCRIPTION BLOCK
 /* ------------------------------------------ */
 .project-description {
+  margin-bottom: 10px;
   padding-top: 30px;
-  padding-bottom: 60px;
 }
 /* ------------------------------------------ */
 /* PROJECT PARAMETERS BLOCK
 /* ------------------------------------------ */
 .project-parameters {
   position: relative;
+}
+.project-parameters__more {
+  padding-top: 30px;
+}
+.project-parameters__more .panel-body {
+  padding: 0;
 }
 /* ------------------------------------------ */
 /* PROJECT INTRO BLOCK
