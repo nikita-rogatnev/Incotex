@@ -2710,6 +2710,18 @@ button.btn--inacive:active,
   background: #ffffff;
 }
 /* ------------------------------------------ */
+/* PRODUCT INTRO BLOCK
+/* ------------------------------------------ */
+.product-intro {
+  padding-bottom: 30px;
+}
+.product-intro__slider {
+  padding-bottom: 30px;
+}
+.product-intro__slider .fotorama__nav__shaft {
+  float: left;
+}
+/* ------------------------------------------ */
 /* PROJECT DESCRIPTION BLOCK
 /* ------------------------------------------ */
 .project-description {
