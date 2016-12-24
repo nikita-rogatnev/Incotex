@@ -3097,6 +3097,68 @@ button.btn--inacive:active,
   color: #1c5699;
   border: 0;
 }
+.projects__item.projects__item--small {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  min-height: auto;
+  padding: 20px 0 0;
+}
+.projects__item.projects__item--small:hover,
+.projects__item.projects__item--small.projects__item--active {
+  border-radius: 3px;
+  box-shadow: 0 0 25px 10px rgba(18, 56, 98, 0.15);
+}
+.projects__item.projects__item--small:hover h1,
+.projects__item.projects__item--small.projects__item--active h1 {
+  position: relative;
+}
+.projects__item.projects__item--small:hover h1 a,
+.projects__item.projects__item--small.projects__item--active h1 a {
+  position: initial;
+  color: #ffffff;
+}
+.projects__item.projects__item--small:hover .projects__item-heading,
+.projects__item.projects__item--small.projects__item--active .projects__item-heading {
+  background: #1c5699;
+}
+.projects__item.projects__item--small:hover:after,
+.projects__item.projects__item--small.projects__item--active:after {
+  position: absolute;
+  bottom: -24px;
+  left: 47%;
+  width: 20px;
+  height: 20px;
+  content: "";
+  transform: rotate(45deg) translate(-50%, -50%);
+  background: #1c5699;
+}
+.projects__item.projects__item--small .projects__item-description > p {
+  border: 0;
+}
+.projects__item.projects__item--small .projects__item-heading {
+  overflow: hidden;
+  margin-top: 10px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.projects__item.projects__item--small h1 {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1c5699;
+  border-top: 4px solid #1c5699;
+  font-size: 14px;
+  line-height: 18px;
+}
+.projects__item.projects__item--small h1 a {
+  position: relative;
+}
 /* ------------------------------------------ */
 /* QUESTION BLOCK
 /* ------------------------------------------ */
