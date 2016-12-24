@@ -2690,6 +2690,39 @@ button.btn--inacive:active,
   padding-top: 5px;
   text-align: center;
 }
+.gm-style-iw + div {
+  display: none;
+}
+.map__project-item {
+  max-width: 300px;
+  margin: 0;
+  padding: 1px 20px 20px;
+  background: #ffffff;
+}
+.map__project-item h1 {
+  font-size: 21px;
+  line-height: 22px;
+}
+.map__project-item h1 a {
+  text-decoration: none;
+  color: #000000;
+  border: 0;
+}
+.map__project-item span {
+  display: block;
+  margin-bottom: 5px;
+  color: #000000;
+  font-size: 15px;
+  line-height: 1;
+}
+.map__project-item small {
+  display: block;
+  margin-bottom: 5px;
+  margin-bottom: 20px;
+  color: #8d8d8d;
+  font-size: 13px;
+  line-height: 1;
+}
 /* ------------------------------------------ */
 /* MENU BLOCK
 /* ------------------------------------------ */

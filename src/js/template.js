@@ -201,14 +201,15 @@ $(document)
 // ------------------------------------------ //
 // GOOGLE MAP
 // ------------------------------------------ //
+
 var locations = [
 	[
-		'3', 57.354645, 32.252347, 3, "./images/map/map__icon--factories-icon.svg"
+		'<article class="map__project-item"><h1><a href="project.html">Освещение улицы</a></h1><span>Россия, г. Волгоград</span><small>Сдача работ: 2014</small><a href="project.html"><img src="./images/catalog/projects/project__item-1.jpg" alt="project item" width="300" height="120"></a></article>', 57.354645, 32.252347, 3, "./images/map/map__icon--factories-icon.svg"
 	],
 	[
-		'2', 57.354645, 35.252347, 2, "./images/map/map__icon--offices-icon.svg"
+		'<article class="map__project-item"><h1><a href="project.html">Освещение улицы</a></h1><span>Россия, г. Волгоград</span><small>Сдача работ: 2014</small><a href="project.html"><img src="./images/catalog/projects/project__item-1.jpg" alt="project item" width="300" height="120"></a></article>', 57.354645, 35.252347, 2, "./images/map/map__icon--offices-icon.svg"
 	],
-	['1', 57.354645, 38.252347, 1, "./images/map/map__icon--representations-icon.svg"]
+	['<article class="map__project-item"><h1><a href="project.html">Освещение улицы</a></h1><span>Россия, г. Волгоград</span><small>Сдача работ: 2014</small><a href="project.html"><img src="./images/catalog/projects/project__item-1.jpg" alt="project item" width="300" height="120"></a></article>', 57.354645, 38.252347, 1, "./images/map/map__icon--representations-icon.svg"]
 ];
 
 var map = new google
@@ -251,3 +252,29 @@ for (i = 0; i < locations.length; i++) {
 			}
 		})(marker, i));
 }
+
+google
+	.maps
+	.event
+	.addListener(infowindow, 'domready', function () {
+
+		// Reference to the DIV which receives the contents of the infowindow using jQuery
+		var iwOuter = $('.gm-style-iw');
+
+		/* The DIV we want to change is above the .gm-style-iw DIV.
+    * So, we use jQuery and create a iwBackground variable,
+    * and took advantage of the existing reference to .gm-style-iw for the previous DIV with .prev().
+    */
+		var iwBackground = iwOuter.prev();
+
+		// Remove the background shadow DIV
+		iwBackground
+			.children(':nth-child(2)')
+			.css({'display': 'none'});
+
+		// Remove the white background DIV
+		iwBackground
+			.children(':nth-child(4)')
+			.css({'display': 'none'});
+
+	});
