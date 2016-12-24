@@ -3349,6 +3349,18 @@ aside .subcategories__items {
 .subcategory__description {
   padding-bottom: 35px;
 }
+.subcategory__soting .subcategory__soting-noborder .selectfix-border,
+.subcategory__soting .subcategory__soting-noborder .selectfix-current-value {
+  display: inline-block;
+  width: auto;
+  border: 0;
+}
+.subcategory__soting .subcategory__soting-noborder .selectfix-current-value {
+  padding-left: 0;
+}
+.subcategory__soting .subcategory__soting-noborder .selectfix-current-value::before {
+  display: none;
+}
 .subcategory__select-sort label {
   display: inline-block;
   margin-top: 5px;
