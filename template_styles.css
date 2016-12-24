@@ -2200,6 +2200,66 @@ button.btn--inacive:active,
   transform: rotate(45deg) translate(-50%, 100%);
   background: #0b4ea2;
 }
+.catalog .catalog__item--project header {
+  min-height: auto;
+}
+.catalog .catalog__item--project.catalog__item {
+  margin: 15px 0;
+  padding: 0;
+}
+.catalog__item--project .catalog__item-more {
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+}
+.catalog__item--project .catalog__item-more a {
+  margin: 10px auto 20px;
+}
+.catalog__item--project img {
+  width: 100%;
+}
+.catalog__item--project h1 {
+  color: #000000;
+  font-size: 21px;
+  line-height: 22px;
+}
+.catalog__item--project h1 a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 21px;
+  line-height: 22px;
+}
+.catalog__item--project span {
+  margin-bottom: 0;
+  color: #000000;
+  font-size: 13px;
+  line-height: 15px;
+}
+.catalog__item--project small {
+  color: #8d8d8d;
+  font-size: 13px;
+  line-height: 15px;
+}
+.catalog__item--project .catalog__item-map a {
+  text-align: left;
+  color: #1c5699;
+  border-bottom: 1px dotted #1c5699;
+  font-size: 13px;
+  line-height: 14px;
+}
+.catalog__item--project .catalog__item-map a:before {
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 13 16"><path style="fill: #d51f0c; fill-rule: evenodd;" d="M2971.09,1500.64a7.257,7.257,0,0,0-9.19,0,5.726,5.726,0,0,0-.61,7.88l5.21,6.48,5.2-6.48A5.707,5.707,0,0,0,2971.09,1500.64Zm-4.53,5.96a2.067,2.067,0,1,1,2.37-2.05A2.228,2.228,0,0,1,2966.56,1506.6Z" transform="translate(-2960 -1499)"/></svg>');
+  border: 0;
+}
+.catalog__item--project p {
+  margin-top: 8px;
+  color: #434343;
+  font-size: 15px;
+  line-height: 17px;
+}
 /* ------------------------------------------ */
 /* ERROR BLOCK
 /* ------------------------------------------ */
@@ -3610,6 +3670,9 @@ aside .subcategories__items {
   .catalog__item img {
     width: 100%;
   }
+  .catalog__item--project .catalog__item-hover {
+    padding: 10px;
+  }
   .error {
     padding-top: 30px;
     padding-bottom: 60px;
@@ -3854,6 +3917,15 @@ aside .subcategories__items {
   }
   .catalog__item header {
     min-height: 190px;
+  }
+  .catalog__item--project:hover .catalog__item-hover {
+    position: absolute;
+    z-index: 2;
+    background: #ffffff;
+    box-shadow: 0 0 25px 10px rgba(18, 56, 98, 0.15);
+  }
+  .catalog__item--project:hover .catalog__item-more {
+    display: block;
   }
   .history__item:nth-child(odd) .history__time:after {
     right: 10px;
