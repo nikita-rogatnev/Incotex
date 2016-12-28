@@ -350,9 +350,13 @@
 		}
 
 		img {
-			width: 20px;
-			height: 20px;
-			margin-right: 10px;
+			width: 22px;
+			height: 15px;
+			margin-right: 28px;
+
+			@media (min-width: @screen-md) {
+				margin-right: 10px;
+			}
 		}
 
 		span {
@@ -363,7 +367,15 @@
 			vertical-align: bottom;
 
 			&:nth-child(2) {
-				margin-right: 20px;
+				right: 15px;
+
+				margin: 0;
+
+				@media (min-width: @screen-md) {
+					right: 15px;
+
+					margin-left: 20px;
+				}
 
 				&:after {
 					position: absolute;

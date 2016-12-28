@@ -1837,9 +1837,9 @@ button.btn--inacive:active,
   color: #0f3473;
 }
 .header__navigation .country img {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+  width: 22px;
+  height: 15px;
+  margin-right: 28px;
 }
 .header__navigation .country span {
   position: relative;
@@ -1847,7 +1847,8 @@ button.btn--inacive:active,
   vertical-align: bottom;
 }
 .header__navigation .country span:nth-child(2) {
-  margin-right: 20px;
+  right: 15px;
+  margin: 0;
 }
 .header__navigation .country span:nth-child(2):after {
   position: absolute;
@@ -3965,6 +3966,13 @@ aside .subcategories__items {
   }
   .header__navigation .header__additional {
     top: -10px;
+  }
+  .header__navigation .country img {
+    margin-right: 10px;
+  }
+  .header__navigation .country span:nth-child(2) {
+    right: 15px;
+    margin-left: 20px;
   }
   .header__navigation .country span:nth-child(2):after {
     right: -20px;
