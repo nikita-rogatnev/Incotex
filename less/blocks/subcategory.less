@@ -1,0 +1,49 @@
+/* ------------------------------------------ */
+/* SUBCATEGORY BLOCK
+/* ------------------------------------------ */
+.subcategory {
+	position: relative;
+
+	color: #434343;
+}
+
+.subcategory__description {
+	padding-bottom: 35px;
+}
+
+.subcategory__soting {
+	.subcategory__soting-noborder {
+		.selectfix-border,
+		.selectfix-current-value {
+			display: inline-block;
+
+			width: auto;
+
+			border: 0;
+		}
+		.selectfix-current-value {
+			padding-left: 0;
+
+			&::before {
+				display: none;
+			}
+		}
+	}
+}
+
+.subcategory__select-sort {
+	margin-bottom: 15px;
+
+	@media (min-width: @screen-sm) {
+		margin-bottom: 0;
+	}
+
+	label {
+		display: inline-block;
+
+		margin-top: 5px;
+
+		vertical-align: middle;
+		white-space: nowrap;
+	}
+}

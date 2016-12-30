@@ -1,0 +1,92 @@
+/* ------------------------------------------ */
+/* DOUBLE RANGE
+/* ------------------------------------------ */
+.range {
+	position: relative;
+	top: -10px;
+
+	.irs-line {
+		top: 25px;
+
+		width: 100%;
+		height: 2px;
+
+		background: #c4c4c4;
+
+		.irs-line-right,
+		.irs-line-mid,
+		.irs-line-left {
+			height: 2px;
+
+			background: none;
+		}
+	}
+
+	.irs-bar {
+		height: 2px;
+
+		background: #0b4ea2;
+	}
+
+	.irs-slider {
+		top: 27px;
+
+		width: 18px;
+		height: auto;
+
+		content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="18.97" height="21" viewBox="0 0 18.97 21"><path style="fill: #fff;stroke: #ccc;stroke-width: 1px;fill-rule: evenodd;" d="M7201.97,1030.67a3.106,3.106,0,0,1,.03.33v9a2.006,2.006,0,0,1-2,2h-13.97a2,2,0,0,1-2-2v-9a1.265,1.265,0,0,1,.03-0.28,1.441,1.441,0,0,1,.42-1.3l7.39-6.98a1.677,1.677,0,0,1,2.27,0l7.39,6.98A1.462,1.462,0,0,1,7201.97,1030.67Z" transform="translate(-7183.53 -1021.5)"/></svg>');
+
+		background: none;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.range__controls {
+	position: relative;
+	z-index: 1;
+
+	height: 31px;
+
+	text-align: center;
+
+	span {
+		display: inline-block;
+
+		margin-top: 8px;
+
+		vertical-align: middle;
+
+		color: #818181;
+
+		line-height: 1;
+	}
+
+	.range__control {
+		display: inline-block;
+
+		width: 100%;
+		max-width: 100px;
+		margin: 0;
+		padding: 4px;
+
+		text-align: center;
+		vertical-align: middle;
+
+		border: 1px solid #e1e1e1;
+		border-radius: 3px;
+
+		font-size: 15px;
+		font-weight: 600;
+
+		&--from {
+			float: left;
+		}
+
+		&--to {
+			float: right;
+		}
+	}
+}

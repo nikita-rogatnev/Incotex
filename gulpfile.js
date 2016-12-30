@@ -14,12 +14,12 @@ var del = require("del");
 var uglify = require("gulp-uglify");
 
 gulp.task("clean", function () {
-	return del(["./*.css", "./images/icons", "./js"]);
+	return del(["./*.css", "./images/icons"]);
 });
 
 gulp.task("style", function () {
 	gulp
-		.src("./src/less/*.less")
+		.src("./less/*.less")
 		.pipe(plumber())
 		.pipe(less())
 		.pipe(postcss([
@@ -35,14 +35,6 @@ gulp.task("style", function () {
 		.pipe(server.stream());
 });
 
-gulp.task("minJs", function () {
-	return gulp
-		.src("./src/js/**.js")
-		.pipe(uglify())
-		.pipe(rename({suffix: ".min"}))
-		.pipe(gulp.dest("./js"));
-});
-
 gulp.task("build", function (fn) {
-	run("clean", "style", "minJs");
+	run("clean", "style");
 });
