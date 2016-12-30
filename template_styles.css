@@ -216,10 +216,6 @@ body {
   margin-left: auto;
   padding: 0;
 }
-b,
-strong {
-  color: #000000;
-}
 .row {
   margin-right: -10px;
   margin-left: -10px;
@@ -1788,7 +1784,7 @@ button.btn--inacive:active,
 .header__navigation .country span:nth-child(2):after {
   position: absolute;
   top: 50%;
-  right: -10px;
+  right: -15px;
   display: block;
   width: 10px;
   height: 14px;
@@ -2571,6 +2567,7 @@ button.btn--inacive:active,
 .map__controls {
   width: 100%;
   background: #ffffff;
+  font-size: 14px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -3154,10 +3151,6 @@ button.btn--inacive:active,
 .question textarea {
   margin: 10px 0 20px;
 }
-.question b,
-.question strong {
-  color: #ffffff;
-}
 /* ------------------------------------------ */
 /* REVIEWS BLOCK
 /* ------------------------------------------ */
@@ -3717,7 +3710,7 @@ aside .subcategories__items {
     margin-top: 20px;
   }
   .header__navigation .menu > li {
-    margin: 6px 8px 0 0;
+    margin: 6px 5px 0 0;
   }
   .header__navigation .menu > li:last-child {
     margin-right: 0;
@@ -3969,7 +3962,7 @@ aside .subcategories__items {
     margin-left: 20px;
   }
   .header__navigation .country span:nth-child(2):after {
-    right: -20px;
+    right: -15px;
     transform: translateY(-80%);
   }
   .header__navigation .country .dropdown-menu,
@@ -4179,7 +4172,7 @@ aside .subcategories__items {
     margin: 0;
   }
   .header__navigation .menu > li {
-    margin: 7px 35px 0 0;
+    margin: 7px 25px 0 0;
   }
   .catalog__item {
     margin-top: 35px;
