@@ -1772,6 +1772,7 @@ button.btn--inacive:active,
   width: 22px;
   height: 15px;
   margin-right: 28px;
+  vertical-align: top;
 }
 .header__navigation .country span {
   position: relative;
