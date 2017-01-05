@@ -3,6 +3,11 @@
 /* ------------------------------------------ */
 @font-face {
   font-family: 'Lato';
+  font-style: italic;
+  src: url('fonts/lato/lato-italic.woff2') format('woff2'), url('fonts/lato/lato-italic.woff') format('woff'), url(fonts/lato/lato-italic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
   font-weight: 900;
   font-style: normal;
   src: url('fonts/lato/900/lato-black.woff2') format('woff2'), url('fonts/lato/900/lato-black.woff') format('woff'), url(fonts/lato/900/lato-black.ttf) format('truetype');
@@ -4155,8 +4160,8 @@ aside .subcategories__items {
 }
 @media (min-width: 991px) and (min-width: 991px) {
   .projects__hover {
-    left: -3%;
-    width: 106%;
+    left: -8%;
+    width: 116%;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
