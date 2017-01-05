@@ -2470,7 +2470,7 @@ button.btn--inacive:active,
   right: 0;
   left: 0;
   display: none;
-  width: 100%;
+  width: 70%;
   height: 100%;
   padding: 20px 25px;
   text-align: center;
@@ -4043,6 +4043,7 @@ aside .subcategories__items {
   }
   .key-projects__item:hover .key-projects__hover {
     display: block;
+    width: 100%;
     animation-name: zoomIn;
     animation-duration: 0.3s;
   }
