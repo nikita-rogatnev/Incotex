@@ -74,7 +74,13 @@
 	font-weight: 500;
 
 	@media (min-width: @screen-sm) {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	@media (min-width: @screen-md) {
 		padding-top: 20px;
+		padding-bottom: 28px;
 	}
 }
 
@@ -122,7 +128,7 @@
 
 		&:hover {
 			color: @palette-white;
-			border: 0;
+			border-color: @palette-white;
 		}
 	}
 }

@@ -1776,7 +1776,6 @@ button.btn--inacive:active,
 .header__navigation .country img {
   width: 22px;
   height: 15px;
-  margin-top: -4px;
   margin-right: 28px;
   vertical-align: middle;
 }
@@ -1842,7 +1841,8 @@ button.btn--inacive:active,
   max-height: none;
 }
 .header__form {
-  width: 100%;
+  float: right;
+  width: 70%;
   max-width: 400px;
 }
 .header__form .form-control {
@@ -2223,12 +2223,11 @@ button.btn--inacive:active,
   color: #000000;
   border: 0;
 }
-.events__item a:hover {
-  text-decoration: none;
-  border: 0;
-}
 .events__item p {
   color: #434343;
+}
+.events__item h1 {
+  line-height: 22px;
 }
 .events__item time {
   display: block;
@@ -2604,6 +2603,7 @@ button.btn--inacive:active,
 }
 .map__controls input[type=checkbox] + span {
   margin: 0;
+  padding: 0 0 0 26px;
 }
 .map__controls input[type=checkbox] + span:before {
   border: 1px solid #1c5699;
@@ -3681,7 +3681,7 @@ aside .subcategories__items {
 }
 .footer__developedby a:hover {
   color: #ffffff;
-  border: 0;
+  border-color: #ffffff;
 }
 @media (min-width: 479px) {
   .slider__headings {
@@ -3906,7 +3906,8 @@ aside .subcategories__items {
     height: 60px;
   }
   .footer__contacts {
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .footer__copyright {
     text-align: left;
@@ -3998,6 +3999,9 @@ aside .subcategories__items {
   }
   .header__navigation .country .dropdown-menu a:hover {
     color: #000000;
+  }
+  .header__form {
+    width: 100%;
   }
   .catalog__items--three .catalog__item {
     min-width: 33.33333333%;
@@ -4158,6 +4162,10 @@ aside .subcategories__items {
   .technology__about-item {
     padding-right: 60px;
   }
+  .footer__contacts {
+    padding-top: 20px;
+    padding-bottom: 28px;
+  }
 }
 @media (min-width: 991px) and (min-width: 991px) {
   .projects__hover {
@@ -4180,6 +4188,9 @@ aside .subcategories__items {
   }
   .header__navigation .menu > li {
     margin: 7px 25px 0 0;
+  }
+  .header__navigation .country .dropdown-menu img {
+    margin-top: -4px;
   }
   .catalog__item {
     margin-top: 35px;

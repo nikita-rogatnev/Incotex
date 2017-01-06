@@ -354,7 +354,6 @@
 		img {
 			width: 22px;
 			height: 15px;
-			margin-top: -4px;
 			margin-right: 28px;
 
 			vertical-align: middle;
@@ -452,6 +451,12 @@
 				padding: 7px 0;
 			}
 
+			img {
+				@media (min-width: @screen-lg) {
+					margin-top: -4px;
+				}
+			}
+
 			@media (min-width: @screen-md) {
 				width: 170px;
 				margin-top: 20px;
@@ -496,8 +501,14 @@
 }
 
 .header__form {
-	width: 100%;
+	float: right;
+
+	width: 70%;
 	max-width: 400px;
+
+	@media (min-width: @screen-md) {
+		width: 100%;
+	}
 
 	.form-control {
 		height: 23px;
