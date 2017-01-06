@@ -1776,6 +1776,7 @@ button.btn--inacive:active,
 .header__navigation .country img {
   width: 22px;
   height: 15px;
+  margin-top: -4px;
   margin-right: 28px;
   vertical-align: middle;
 }
