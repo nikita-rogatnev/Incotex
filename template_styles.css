@@ -3046,7 +3046,6 @@ button.btn--inacive:active,
 }
 .projects__item .projects__item-image img {
   max-width: 90%;
-  height: auto;
   max-height: 90%;
 }
 .projects__item .btn.btn-sm {
