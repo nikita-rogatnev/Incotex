@@ -4239,7 +4239,7 @@ aside .subcategories__items {
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   img[src$=".svg"] {
     width: 100%;
-    outline: 1px solid red;
+    height: 100%;
   }
 }
 @media (max-width: 767px) {
