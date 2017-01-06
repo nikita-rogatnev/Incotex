@@ -216,9 +216,6 @@ body {
   font-family: "Lato", Arial, sans-serif;
   font-size: 13px;
 }
-svg {
-  height: auto;
-}
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -4242,6 +4239,7 @@ aside .subcategories__items {
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   img[src$=".svg"] {
     width: 100%;
+    outline: 1px solid red;
   }
 }
 @media (max-width: 767px) {
