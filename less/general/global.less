@@ -16,8 +16,15 @@ body {
 	.font-size-primary;
 }
 
+// SVG IE FIX
 svg {
-	height: auto; //svg ie fix
+	height: auto;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	img[src$=".svg"] {
+		width: 100%;
+	}
 }
 
 // GRID

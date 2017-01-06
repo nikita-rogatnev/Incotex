@@ -3928,6 +3928,12 @@ aside .subcategories__items {
     width: 720px;
   }
 }
+@media (min-width: 991px) and (min-width: 991px) {
+  .projects__hover {
+    left: -8%;
+    width: 116%;
+  }
+}
 @media (min-width: 991px) {
   body {
     font-size: 15px;
@@ -4181,12 +4187,6 @@ aside .subcategories__items {
     padding-bottom: 28px;
   }
 }
-@media (min-width: 991px) and (min-width: 991px) {
-  .projects__hover {
-    left: -8%;
-    width: 116%;
-  }
-}
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
     width: 960px;
@@ -4237,6 +4237,11 @@ aside .subcategories__items {
 @media (min-width: 1200px) {
   .container {
     width: 1176px;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img[src$=".svg"] {
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
