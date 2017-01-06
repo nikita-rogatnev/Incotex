@@ -1777,7 +1777,7 @@ button.btn--inacive:active,
   width: 22px;
   height: 15px;
   margin-right: 28px;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .header__navigation .country span {
   position: relative;
@@ -3716,7 +3716,7 @@ aside .subcategories__items {
     margin-top: 20px;
   }
   .header__navigation .menu > li {
-    margin: 6px 5px 0 0;
+    margin: 6px 23px 0 0;
   }
   .header__navigation .menu > li:last-child {
     margin-right: 0;
@@ -3997,7 +3997,6 @@ aside .subcategories__items {
   }
   .header__navigation .country .dropdown-menu a:hover {
     color: #000000;
-    font-weight: 800;
   }
   .catalog__items--three .catalog__item {
     min-width: 33.33333333%;
