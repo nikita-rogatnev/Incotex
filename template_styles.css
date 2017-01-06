@@ -3012,7 +3012,7 @@ button.btn--inacive:active,
 }
 .projects h1 {
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 800;
 }
 .projects--absolute .projects__item .projects__item-image {
   height: 110px;
@@ -4097,8 +4097,19 @@ aside .subcategories__items {
     width: 100%;
     border-bottom: 4px solid #1c5699;
   }
+  .projects__item .projects__item-description {
+    margin-top: 10px;
+  }
+  .projects__item .projects__item-description h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .projects__item:hover .projects__hover {
+    left: -20px;
     display: block;
+    width: calc(100% + 40px);
+    height: 100%;
     animation-name: zoomIn;
     animation-duration: 0.3s;
   }
@@ -4106,10 +4117,7 @@ aside .subcategories__items {
     position: relative;
   }
   .projects__item:hover h1 a {
-    position: absolute;
     z-index: 3;
-    left: 50%;
-    transform: translateX(-50%);
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
@@ -4129,7 +4137,7 @@ aside .subcategories__items {
     display: none;
     width: 100%;
     height: 100%;
-    padding: 20px 15px;
+    padding: 25px 20px;
     text-align: center;
     color: #ffffff;
     background: #185194 url(images/key-projects/key-projects__hover--bg.png) repeat;
