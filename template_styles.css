@@ -4,7 +4,7 @@
 @font-face {
   font-family: 'Lato';
   font-style: italic;
-  src: url('fonts/lato/lato-italic.woff2') format('woff2'), url('fonts/lato/lato-italic.woff') format('woff'), url(fonts/lato/lato-italic.ttf) format('truetype');
+  src: url('fonts/lato/italic/lato-italic.woff2') format('woff2'), url('fonts/lato/italic/lato-italic.woff') format('woff'), url(fonts/lato/italic/lato-italic.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
@@ -215,6 +215,9 @@ body {
   background-color: #ffffff;
   font-family: "Lato", Arial, sans-serif;
   font-size: 13px;
+}
+svg {
+  height: auto;
 }
 .container-fluid {
   margin-right: auto;
@@ -2466,14 +2469,15 @@ button.btn--inacive:active,
 }
 .key-projects__hover {
   position: absolute;
-  top: 0;
+  top: -10px;
   right: 0;
-  left: 0;
+  left: -10px;
   display: none;
-  width: 70%;
-  height: 100%;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
   padding: 20px 25px;
   text-align: center;
+  opacity: 0.97;
   color: #ffffff;
   background: #185194 url(images/key-projects/key-projects__hover--bg.png) repeat;
   box-shadow: 0 0 25px 10px rgba(18, 56, 98, 0.15);
@@ -4047,9 +4051,19 @@ aside .subcategories__items {
   }
   .key-projects__item:hover .key-projects__hover {
     display: block;
-    width: 100%;
     animation-name: zoomIn;
     animation-duration: 0.3s;
+  }
+  .key-projects__hover ul li {
+    margin: 0 0 10px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .key-projects__hover a {
+    margin: 15px 0 0;
+  }
+  .key-projects__hover {
+    padding: 25px 30px;
   }
   .manufacturing .manufacturing__item {
     padding-right: 80px;
@@ -4205,13 +4219,9 @@ aside .subcategories__items {
   }
   .key-projects__hover ul li {
     margin: 0 0 12px;
-    font-size: 15px;
   }
   .key-projects__hover a {
-    margin-top: 25px;
-  }
-  .key-projects__hover {
-    padding: 25px 30px;
+    margin: 25px 0 0;
   }
   .partners__item img {
     height: 70px;
