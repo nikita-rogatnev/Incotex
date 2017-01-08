@@ -70,8 +70,6 @@
 
 		.header__form {
 			.form-control {
-				padding-left: 10px;
-
 				color: @palette-white;
 				border: 1px solid transparent;
 				border-bottom-color: @palette-white;
@@ -263,6 +261,18 @@
 					border: 0;
 				}
 			}
+
+			&:first-child {
+				a {
+					padding-left: 0;
+				}
+			}
+
+			&:last-child {
+				a {
+					padding-right: 0;
+				}
+			}
 		}
 
 		.menu__item {
@@ -272,6 +282,7 @@
 
 			&--active {
 				a {
+					color: @palette-accent;
 					border-bottom: 4px solid @palette-accent;
 
 					&:hover {
@@ -287,10 +298,10 @@
 			margin-top: 20px;
 
 			& > li {
-				margin: 6px 23px 0 0;
+				margin: 6px 0 0;
 
-				&:last-child {
-					margin-right: 0;
+				a {
+					padding: 0 11.5px;
 				}
 			}
 		}
@@ -301,13 +312,21 @@
 			margin-top: 0;
 
 			& > li {
-				margin: 6px 25px 0 0;
+				margin: 6px 0 0;
+
+				a {
+					padding: 0 12.5px;
+				}
 			}
 		}
 
 		@media (min-width: @screen-lg) {
 			& > li {
-				margin: 7px 25px 0 0;
+				margin: 7px 0 0;
+
+				a {
+					padding: 0 12.5px;
+				}
 			}
 		}
 	}
@@ -514,6 +533,7 @@
 		height: 23px;
 		margin-top: 10px;
 		padding: 0;
+		padding-left: 10px;
 
 		color: #6a6a6a;
 		border: 1px solid transparent;
@@ -561,7 +581,7 @@
 
 		& > .btn {
 			margin: 10px 0 0 0;
-			padding: 2px 30px;
+			padding: 2px 23px;
 
 			color: @palette-accent;
 			border: 1px solid @palette-accent;
@@ -570,6 +590,7 @@
 			box-shadow: none;
 
 			font-size: 12px;
+			line-height: 1;
 		}
 	}
 }

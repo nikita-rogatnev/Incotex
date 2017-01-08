@@ -2,7 +2,7 @@
 /* PROJECT INTRO BLOCK
 /* ------------------------------------------ */
 .project-intro__slider {
-	padding-bottom: 30px;
+	margin-bottom: 20px;
 
 	.fotorama__nav-wrap {
 		position: absolute;
@@ -14,7 +14,6 @@
 
 		text-align: right;
 	}
-
 	.fotorama__stage {
 		width: calc(~"100% - 90px") !important;
 	}
@@ -25,15 +24,9 @@
 
 	.fotorama__nav,
 	.fotorama__nav__shaft {
-		overflow: scroll;
-
 		width: 85px !important;
 		height: 100%;
 		padding: 0 !important;
-
-		@media (min-width: @screen-lg) {
-			overflow: hidden;
-		}
 	}
 
 	.fotorama__nav__frame {
@@ -46,6 +39,19 @@
 
 		&.fotorama__active {
 			border: 2px solid #0082ff;
+		}
+	}
+
+	@media (min-width: @screen-md) {
+		width: 100% !important;
+		height: 400px !important;
+
+		.fotorama__wrap {
+			min-width: 100% !important;
+		}
+
+		.fotorama__stage {
+			height: 400px !important;
 		}
 	}
 }

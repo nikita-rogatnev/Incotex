@@ -4,7 +4,7 @@ $(document)
 		// ------------------------------------------ //
 		// HOME SLIDER
 		// ------------------------------------------ //
-		if ($(window).width() > 1200) {
+		if ($(window).width() > 991) {
 			$(document)
 				.on('mouseenter', '.js-projects-slider', function () {
 					changeSlide($(this).index());
@@ -307,3 +307,10 @@ if ($("#map2").length) {
 
 		});
 }
+
+google
+	.maps
+	.event
+	.addListener(map, "click", function (event) {
+		infowindow.close();
+	});
