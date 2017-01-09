@@ -12,15 +12,17 @@ $(document)
 		};
 
 		function changeSlide(index) {
-			$('.slider__slide')
-				.stop(true, true)
-				.removeClass('slider__slide--active')
-				.fadeOut(800);
+			if (!$('.slider__slide').eq(index).hasClass('slider__slide--active')){
+				$('.slider__slide')
+					.stop(true, true)
+					.removeClass('slider__slide--active')
+					.fadeOut(800);
 
-			$('.slider__slide')
-				.eq(index)
-				.addClass('slider__slide--active')
-				.fadeIn(800);
+				$('.slider__slide')
+					.eq(index)
+					.addClass('slider__slide--active')
+					.fadeIn(800);
+			}
 		};
 
 		// ------------------------------------------ //
