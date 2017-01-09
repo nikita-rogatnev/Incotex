@@ -527,7 +527,9 @@ button:disabled,
 button:disabled:hover,
 .btn:disabled:hover,
 button:disabled:active,
-.btn:disabled:active {
+.btn:disabled:active,
+button:disabled:focus,
+.btn:disabled:focus {
   color: #acacac;
   border: 2px solid #acacac;
   background: none;
@@ -539,7 +541,8 @@ button:disabled:active,
   font-size: 17px;
 }
 .btn.btn-primary:hover,
-.btn.btn-primary:active {
+.btn.btn-primary:active,
+.btn.btn-primary:focus {
   box-shadow: none;
 }
 .btn.btn-sm {
@@ -550,7 +553,8 @@ button:disabled:active,
   font-weight: 700;
 }
 .btn.btn-sm:hover,
-.btn.btn-sm:active {
+.btn.btn-sm:active,
+.btn.btn-sm:focus {
   box-shadow: none;
 }
 .btn.btn--accent {
@@ -558,14 +562,16 @@ button:disabled:active,
   border: 2px solid #1c5699;
 }
 .btn.btn--accent:hover,
-.btn.btn--accent:active {
+.btn.btn--accent:active,
+.btn.btn--accent:focus {
   color: #ffffff;
   border: 2px solid #1c5699;
   outline: none;
   background: #1c5699;
 }
 .btn.btn--accent:hover::before,
-.btn.btn--accent:active::before {
+.btn.btn--accent:active::before,
+.btn.btn--accent:focus::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -585,14 +591,16 @@ button:disabled:active,
   background: #1c5699;
 }
 .btn.btn--accent-fill:hover,
-.btn.btn--accent-fill:active {
+.btn.btn--accent-fill:active,
+.btn.btn--accent-fill:focus {
   color: #ffffff;
   border: 2px solid #1c5699;
   outline: none;
   background: #1c5699;
 }
 .btn.btn--accent-fill:hover::before,
-.btn.btn--accent-fill:active::before {
+.btn.btn--accent-fill:active::before,
+.btn.btn--accent-fill:focus::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -609,14 +617,16 @@ button:disabled:active,
   border: 2px solid #ffffff;
 }
 .btn.btn--white:hover,
-.btn.btn--white:active {
+.btn.btn--white:active,
+.btn.btn--white:focus {
   color: #1c5699;
   border: 2px solid #ffffff;
   outline: none;
   background: #ffffff;
 }
 .btn.btn--white:hover::before,
-.btn.btn--white:active::before {
+.btn.btn--white:active::before,
+.btn.btn--white:focus::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -637,7 +647,9 @@ button:disabled:active,
 .btn.btn:disabled:hover,
 .btn.btn--inacive:hover,
 .btn.btn:disabled:active,
-.btn.btn--inacive:active {
+.btn.btn--inacive:active,
+.btn.btn:disabled:focus,
+.btn.btn--inacive:focus {
   color: #acacac;
   border: 2px solid #acacac;
   background: #ffffff;
