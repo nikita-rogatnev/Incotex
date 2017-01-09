@@ -1797,6 +1797,7 @@ button.btn--inacive:active,
 }
 .header__navigation .header__additional {
   position: absolute;
+  z-index: 3;
   top: 30px;
   right: 80px;
   display: inline-block;
