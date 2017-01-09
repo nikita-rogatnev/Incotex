@@ -3189,6 +3189,7 @@ button.btn--inacive:active,
 }
 .projects__item.projects__item--small .projects__item-heading {
   overflow: hidden;
+  margin-top: 20px;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
