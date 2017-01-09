@@ -12,6 +12,7 @@ var rename = require("gulp-rename");
 var run = require("run-sequence");
 var del = require("del");
 var uglify = require("gulp-uglify");
+var base64 = require('gulp-base64');
 
 gulp.task("clean", function () {
 	return del(["./*.css", "./images/icons"]);
@@ -22,6 +23,7 @@ gulp.task("style", function () {
 		.src("./less/*.less")
 		.pipe(plumber())
 		.pipe(less())
+		.pipe(base64({deleteAfterEncoding: false, extensions: ['svg']}))
 		.pipe(postcss([
 			autoprefixer({
 				browsers: ["last 1 version", "last 2 Chrome versions", "last 2 Firefox versions", "last 2 Opera versions", "last 2 Edge versions"]
