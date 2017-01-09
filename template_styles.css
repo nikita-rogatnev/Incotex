@@ -880,7 +880,8 @@ input[type="radio"]:disabled + span::before {
   text-overflow: ellipsis;
   line-height: 1;
 }
-.opened .selectfix-current-value {
+.selectfix-current-value {
+  width: 100%;
   border-bottom: 1px solid #cccccc;
 }
 .selectfix-container:hover .opened .selectfix-current-value {
@@ -1318,6 +1319,9 @@ ol ol {
   position: relative;
   top: -10px;
 }
+.range input {
+  font-style: normal;
+}
 .range .irs-line {
   top: 25px;
   width: 100%;
@@ -1369,6 +1373,7 @@ ol ol {
   border-radius: 3px;
   font-size: 15px;
   font-weight: 600;
+  font-style: normal;
 }
 .range__controls .range__control--from {
   float: left;
@@ -2051,8 +2056,12 @@ button.btn--inacive:active,
 /* ------------------------------------------ */
 /* CATALOG FILTER BLOCK
 /* ------------------------------------------ */
+.catalog-filters button.btn-primary {
+  padding-right: 0;
+  padding-left: 0;
+}
 .catalog-filter__item {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .catalog-filter__item .collapse__link.collapse__link--left[aria-expanded=false]:before {
   transform: translateY(20%) rotate(270deg);
@@ -3587,8 +3596,18 @@ aside .subcategories__items {
 .subcategory__soting .subcategory__soting-noborder .selectfix-current-value::before {
   display: none;
 }
+.subcategory__soting .selectfix-current-value {
+  display: inline-block;
+}
+.subcategory__soting .selectfix-current-value > span {
+  color: black;
+}
 .subcategory__select-sort {
   margin-bottom: 15px;
+  color: #818181;
+}
+.subcategory__select-sort label {
+  color: #010101;
 }
 .subcategory__select-sort label {
   display: inline-block;
