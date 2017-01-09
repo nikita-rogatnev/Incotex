@@ -2032,6 +2032,12 @@ button.btn--inacive:active,
 .breadcrumbs li:last-child a {
   color: #1c5699;
 }
+.breadcrumbs li:last-child a:hover {
+  text-decoration: none;
+  color: #3aa9ff;
+  border-bottom: 1px solid #3aa9ff;
+  outline: 0 none;
+}
 .breadcrumbs li:last-child::after {
   display: inline-block;
   width: 18px;
@@ -2043,6 +2049,12 @@ button.btn--inacive:active,
 .breadcrumbs li:only-child a {
   color: #898989;
 }
+.breadcrumbs li:only-child a:hover {
+  text-decoration: none;
+  color: #3aa9ff;
+  border-bottom: 1px solid #3aa9ff;
+  outline: 0 none;
+}
 .breadcrumbs a {
   margin: 0;
   text-decoration: none;
@@ -2051,6 +2063,12 @@ button.btn--inacive:active,
   font-size: 13px;
   font-weight: 500;
   line-height: 1;
+}
+.breadcrumbs a:hover {
+  text-decoration: none;
+  color: #3aa9ff;
+  border-bottom: 1px solid #3aa9ff;
+  outline: 0 none;
 }
 /* ------------------------------------------ */
 /* CAPTCHA BLOCK
@@ -4071,6 +4089,9 @@ aside .subcategories__items {
   }
   .header__navigation {
     margin: 0;
+  }
+  .header__navigation .menu > li:first-child a {
+    padding-left: 12.5px;
   }
   .header__navigation .menu {
     float: right !important;

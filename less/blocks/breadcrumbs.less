@@ -36,6 +36,14 @@
 		&:last-child {
 			a {
 				color: @palette-accent;
+
+				&:hover {
+					text-decoration: none;
+
+					color: #3aa9ff;
+					border-bottom: 1px solid #3aa9ff;
+					outline: 0 none;
+				}
 			}
 
 			&::after {
@@ -53,6 +61,14 @@
 		&:only-child {
 			a {
 				color: #898989;
+
+				&:hover {
+					text-decoration: none;
+
+					color: #3aa9ff;
+					border-bottom: 1px solid #3aa9ff;
+					outline: 0 none;
+				}
 			}
 		}
 	}
@@ -68,5 +84,13 @@
 		font-size: 13px;
 		font-weight: 500;
 		line-height: 1;
+
+		&:hover {
+			text-decoration: none;
+
+			color: #3aa9ff;
+			border-bottom: 1px solid #3aa9ff;
+			outline: 0 none;
+		}
 	}
 }
