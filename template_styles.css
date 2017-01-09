@@ -3319,7 +3319,7 @@ button.btn--inacive:active,
   position: inherit;
   z-index: 1;
   bottom: initial;
-  left: initial;
+  left: 0;
   width: auto;
   margin: 20px auto 0;
   margin-top: 20px;
