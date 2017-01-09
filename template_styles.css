@@ -2092,6 +2092,12 @@ button.btn--inacive:active,
   max-height: 38px;
 }
 /* ------------------------------------------ */
+/* CATALOG CATEGORIES BLOCK
+/* ------------------------------------------ */
+.catalog-categories {
+  padding-bottom: 20px;
+}
+/* ------------------------------------------ */
 /* CATALOG FILTER BLOCK
 /* ------------------------------------------ */
 .catalog-filters button.btn-primary {
