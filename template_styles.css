@@ -445,7 +445,7 @@ strong {
   vertical-align: middle;
 }
 .collapse__link.link--dotted:hover {
-  border: 0;
+  text-decoration: none;
 }
 .collapse__link.collapse__link--left[aria-expanded="true"]:before {
   display: inline-block;
@@ -465,7 +465,7 @@ strong {
 .collapse__link.collapse__link--right .collapse--open:after {
   display: inline-block;
   width: 10px;
-  margin-left: 5px;
+  margin-left: 8px;
   content: url('data:image/svg+xml; utf8, <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 6 3"><path fill="#4675ac" d="M0,0.6c0-0.2,0.1-0.3,0.2-0.4c0.3-0.2,0.7-0.3,1.1,0L3,1.5l1.7-1.4c0.3-0.2,0.7-0.2,1.1,0 C6,0.4,6.1,0.7,5.9,0.9c0,0-0.1,0.1-0.1,0.1L3.5,2.8c-0.3,0.2-0.7,0.2-1,0L0.2,1.1C0.1,1,0,0.8,0,0.6z"/></svg>');
   vertical-align: top;
 }
@@ -1178,8 +1178,8 @@ ul:not([class]) > li::before {
   position: absolute;
   top: 0.5em;
   left: 1px;
-  width: 7px;
-  height: 7px;
+  width: 5px;
+  height: 5px;
   content: '';
   border-radius: 50%;
   background: #1f6799;
@@ -1973,16 +1973,21 @@ button.btn--inacive:active,
 .back a {
   position: relative;
   display: inline-block;
-  margin-left: 35px;
+  margin-left: 25px;
   vertical-align: middle;
+  border-bottom-style: dotted;
+  font-size: 12px;
 }
 .back a::before {
   position: absolute;
-  top: 3px;
-  left: -35px;
+  top: 1px;
+  left: -25px;
   display: inline-block;
-  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="22.03" height="16.09" viewBox="0 0 22.03 16.09"><path style="fill: #0b4ea2; fill-rule: evenodd;" d="M9138.13,3442.18a0.762,0.762,0,0,1,1.11,0,0.815,0.815,0,0,1,0,1.14l-5.63,5.84h18.6a0.794,0.794,0,0,1,.79.8,0.811,0.811,0,0,1-.79.82h-18.6l5.63,5.83a0.827,0.827,0,0,1,0,1.15,0.762,0.762,0,0,1-1.11,0l-6.97-7.22a0.834,0.834,0,0,1,0-1.14Z" transform="translate(-9130.97 -3441.94)"/></svg>');
+  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 22.03 16.09"><path style="fill: #0b4ea2; fill-rule: evenodd;" d="M9138.13,3442.18a0.762,0.762,0,0,1,1.11,0,0.815,0.815,0,0,1,0,1.14l-5.63,5.84h18.6a0.794,0.794,0,0,1,.79.8,0.811,0.811,0,0,1-.79.82h-18.6l5.63,5.83a0.827,0.827,0,0,1,0,1.15,0.762,0.762,0,0,1-1.11,0l-6.97-7.22a0.834,0.834,0,0,1,0-1.14Z" transform="translate(-9130.97 -3441.94)"/></svg>');
   vertical-align: middle;
+}
+.back a:hover {
+  border-bottom-style: dotted;
 }
 /* ------------------------------------------ */
 /* BREADCRUMBS BLOCK
@@ -2169,6 +2174,11 @@ button.btn--inacive:active,
   margin: 15px 0;
   padding: 0;
 }
+.catalog .catalog__item--project .btn--accent {
+  width: 80%;
+  padding-top: 8px;
+  padding-bottom: 9px;
+}
 .catalog__item--project .catalog__item-more {
   display: none;
   margin: 0 auto;
@@ -2308,6 +2318,8 @@ button.btn--inacive:active,
   line-height: 1.8;
 }
 .hero__headings > h2 span {
+  display: inline-block;
+  height: 34px;
   padding: 0 10px 3px;
   background: #1c5699;
   line-height: 1;
@@ -2452,6 +2464,7 @@ button.btn--inacive:active,
   display: inline-block;
   width: calc(100% - 65px);
   vertical-align: middle;
+  color: #000000;
   font-size: 15px;
   line-height: 18px;
 }
@@ -2565,6 +2578,9 @@ button.btn--inacive:active,
 }
 .manufacturing__stats-heading span {
   display: block;
+}
+.manufacturing__stats-heading span b {
+  font-size: 40px;
 }
 .manufacturing__stats-heading span:nth-child(1) {
   color: #1c5699;
@@ -2885,6 +2901,9 @@ button.btn--inacive:active,
   color: #434343;
   background: #ffffff;
 }
+.product-info img {
+  margin-bottom: 30px;
+}
 /* ------------------------------------------ */
 /* PRODUCT INTRO BLOCK
 /* ------------------------------------------ */
@@ -2912,6 +2931,8 @@ button.btn--inacive:active,
 /* ------------------------------------------ */
 .project-parameters {
   position: relative;
+  font-size: 17px;
+  line-height: 22px;
 }
 .project-parameters .project-parameters__item {
   color: #000000;
@@ -2927,6 +2948,9 @@ button.btn--inacive:active,
 /* ------------------------------------------ */
 /* PROJECT INTRO BLOCK
 /* ------------------------------------------ */
+.project-intro b {
+  font-weight: 700;
+}
 .project-intro__slider {
   margin-bottom: 20px;
 }
@@ -2976,14 +3000,17 @@ button.btn--inacive:active,
   font-size: 15px;
   line-height: 20px;
 }
+.project-intro__review {
+  margin-top: 35px;
+}
 .project-intro__review img {
   border: 1px solid #d5d5d5;
-  box-shadow: 0 0 25px 10px rgba(18, 56, 98, 0.15);
+  box-shadow: 0 20px 30px 7px rgba(18, 56, 98, 0.2);
 }
 .project-intro__review a {
   color: #1c5699;
   font-size: 15px;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 18px;
 }
 .project-intro__review small {
@@ -3195,6 +3222,13 @@ button.btn--inacive:active,
 .question textarea {
   margin: 10px 0 20px;
 }
+.question b {
+  font-size: 19px;
+}
+.question p {
+  font-size: 17px;
+  line-height: 22px;
+}
 /* ------------------------------------------ */
 /* REVIEWS BLOCK
 /* ------------------------------------------ */
@@ -3215,13 +3249,17 @@ button.btn--inacive:active,
 .reviews small {
   display: block;
   margin-top: 10px;
-  color: #ffffff;
+  color: #d5e0ef;
   font-size: 15px;
   font-style: italic;
   line-height: 18px;
 }
 .reviews small::before {
   content: "";
+}
+.reviews p {
+  font-size: 17px;
+  line-height: 22px;
 }
 .reviews__author {
   margin-bottom: 20px;
@@ -3286,19 +3324,17 @@ button.btn--inacive:active,
   padding: 3px;
   vertical-align: middle;
   text-indent: initial;
-  border: 3px solid transparent;
+  border: 2px solid transparent;
   border-radius: 50%;
   background: transparent;
 }
 .reviews__slider .carousel-indicators img {
   position: relative;
   display: block;
-  width: 30px;
-  min-width: 30px;
-  max-width: 30px;
-  height: 30px;
-  min-height: 30px;
-  max-height: 30px;
+  min-width: 32px;
+  max-width: 32px;
+  min-height: 32px;
+  max-height: 32px;
   border-radius: 50%;
   background: #bfbfbf;
 }
@@ -3385,7 +3421,10 @@ button.btn--inacive:active,
 .slider__caption a:hover {
   text-decoration: none;
   color: #ffffff;
-  border-color: #ffffff;
+  border-color: #2e539e !important;
+}
+.fotorama__thumb-border {
+  border-color: #2e539e !important;
 }
 /* ------------------------------------------ */
 /* SOLUTION DESCRIPTION BLOCK
@@ -3394,6 +3433,11 @@ button.btn--inacive:active,
   padding-top: 30px;
   padding-bottom: 30px;
   color: #434343;
+  font-size: 15px;
+  line-height: 20px;
+}
+.solution-description ul > li {
+  margin: 0 0 7px;
 }
 .solution-description__item {
   padding-top: 50px;
@@ -3431,7 +3475,7 @@ button.btn--inacive:active,
   text-align: center;
   color: #000000;
   border: 1px solid #ebebeb;
-  box-shadow: 0 0 20px 10px rgba(18, 56, 98, 0.15);
+  box-shadow: 0 15px 20px 5px rgba(18, 56, 98, 0.24);
 }
 .solution-intro__info strong {
   display: block;
@@ -3474,6 +3518,8 @@ button.btn--inacive:active,
   padding: 15px 15px 15px 40px;
   border: 2px solid #0b4ea2;
   border-radius: 3px;
+  font-size: 13px;
+  line-height: 18px;
 }
 .solution-production__note:before {
   position: absolute;
@@ -3588,6 +3634,9 @@ aside .subcategories__items {
   border-top: 5px solid #ffffff;
   border-right: 5px solid #ffffff;
 }
+.technology__about-item {
+  color: #000000;
+}
 .technology__more {
   padding-top: 40px;
   text-align: center;
@@ -3599,6 +3648,10 @@ aside .subcategories__items {
   padding-top: 30px;
   padding-bottom: 30px;
   border-top: 1px solid #e1e1e1;
+}
+.usaw h1 {
+  font-size: 15px;
+  line-height: 18px;
 }
 .usaw h2 {
   margin-bottom: 0;
@@ -4109,13 +4162,16 @@ aside .subcategories__items {
     padding: 25px 30px;
   }
   .manufacturing .manufacturing__item {
-    padding-right: 80px;
+    padding-right: 20px;
   }
   .map .map__item {
     height: 650px;
   }
   .partners__item img {
     height: 55px;
+  }
+  .product-description table {
+    width: 60%;
   }
   .project-intro__slider {
     width: 100% !important;
@@ -4279,6 +4335,9 @@ aside .subcategories__items {
   }
   .partners__item img {
     height: 70px;
+  }
+  .product-description table {
+    width: 80%;
   }
   .footer__navigation .menu.list-inline > li {
     padding-right: 45px;
