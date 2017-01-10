@@ -3180,8 +3180,17 @@ button.btn--inacive:active,
 .projects--map {
   position: relative;
 }
+.projects--map .col-md-15 {
+  padding: 0 10px;
+}
+.projects--map .projects__item.projects__item--small h1 {
+  padding: 5px 0 10px;
+}
 .projects--map .projects__item.projects__item--small.projects__item--active {
   box-shadow: 0 0 25px 2px rgba(18, 56, 98, 0.15);
+}
+.projects--map .projects__item:hover h1 {
+  padding: 5px 0 10px;
 }
 .projects--map .projects__item:hover h1 a:hover {
   text-decoration: none;
@@ -3194,6 +3203,7 @@ button.btn--inacive:active,
   padding-right: 0;
 }
 .projects--map .projects__item .projects__item-description {
+  margin-top: 0;
   padding-right: 7px;
 }
 .projects--map .projects__item .projects__item-description > p {
