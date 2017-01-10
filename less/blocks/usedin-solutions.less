@@ -6,7 +6,15 @@
 	padding-bottom: 30px;
 
 	&--bordered {
-		border-top: 1px solid #e1e1e1;
+		&:before {
+			display: block;
+
+			width: 100%;
+
+			content: "";
+
+			border-top: 1px solid #e1e1e1;
+		}
 	}
 
 	img {

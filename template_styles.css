@@ -2012,7 +2012,7 @@ button.btn--inacive:active,
   margin-left: 25px;
   vertical-align: middle;
   border-bottom-style: dotted;
-  font-size: 12px;
+  font-size: 16px;
 }
 .back a::before {
   position: absolute;
@@ -3799,7 +3799,10 @@ aside .subcategories__items {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.usedin-solutions--bordered {
+.usedin-solutions--bordered:before {
+  display: block;
+  width: 100%;
+  content: "";
   border-top: 1px solid #e1e1e1;
 }
 .usedin-solutions img {
