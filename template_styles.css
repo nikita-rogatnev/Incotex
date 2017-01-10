@@ -331,6 +331,7 @@ a:focus {
 }
 .panel-group .panel-title > a,
 .panel-group .panel-title > a:hover,
+.panel-group .panel-title > a:focus,
 .panel-group .panel-heading + .panel-collapse > .list-group {
   color: #1c5699;
   border: none;
@@ -341,8 +342,7 @@ a:focus {
   border: 0;
 }
 .panel-group .panel-title > a:hover,
-.panel-group .panel-title > a.collapsed:hover,
-.panel-group .panel-title > a.collapsed:focus {
+.panel-group .panel-title > a.collapsed:hover {
   text-decoration: none;
   color: #1c5699;
   border-bottom: 1px dotted #0077c8;
