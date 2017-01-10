@@ -12,7 +12,7 @@ $(document)
 		};
 
 		function changeSlide(index) {
-			if (!$('.slider__slide').eq(index).hasClass('slider__slide--active')){
+			if (!$('.slider__slide').eq(index).hasClass('slider__slide--active')) {
 				$('.slider__slide')
 					.stop(true, true)
 					.removeClass('slider__slide--active')
@@ -283,7 +283,7 @@ if ($("#map2").length) {
 			iwOuter
 				.parent()
 				.parent()
-				.css({top: "96px", left: '-172px'});
+				.css({top: "96px", left: '-197px'});
 
 			/* The DIV we want to change is above the .gm-style-iw DIV.
 	    * So, we use jQuery and create a iwBackground variable,

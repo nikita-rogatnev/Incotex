@@ -1755,8 +1755,7 @@ button.btn--inacive:active,
   top: 0;
   right: 0;
   width: 75%;
-  height: 100vh;
-  padding: 55px 0 0 0;
+  padding: 55px 0 25px 0;
   text-align: right;
   background: #123358;
 }
@@ -1803,8 +1802,9 @@ button.btn--inacive:active,
 .header__navigation .header__additional {
   position: absolute;
   z-index: 3;
-  top: 30px;
+  top: 33px;
   right: 80px;
+  left: 55%;
   display: inline-block;
   width: 50px;
   margin: 0;
@@ -2736,6 +2736,12 @@ button.btn--inacive:active,
   margin-bottom: 10px;
   padding-top: 5px;
   text-align: center;
+}
+.gm-style-iw {
+  float: right;
+}
+.gm-style-iw div {
+  float: right;
 }
 .gm-style-iw + div {
   display: none;
@@ -3926,6 +3932,7 @@ aside .subcategories__items {
     position: relative;
     top: 32px;
     right: 0;
+    left: inherit;
     width: auto;
     text-align: left;
   }
