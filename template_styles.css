@@ -4119,6 +4119,9 @@ aside .subcategories__items {
   .slider__caption.container {
     padding: 0 5px;
   }
+  .solution-description__item h3 {
+    margin-top: 0;
+  }
   .solution-description__double {
     padding-top: 0;
     padding-bottom: 0;
@@ -4442,9 +4445,6 @@ aside .subcategories__items {
   }
   .slider__caption {
     bottom: 100px;
-  }
-  .solution-description__item h3 {
-    margin-top: 0;
   }
   .technology__about-item {
     padding-right: 60px;
