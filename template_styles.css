@@ -2711,6 +2711,7 @@ button.btn--inacive:active,
   width: 100%;
   max-width: 75%;
   margin-left: 20px;
+  color: #000000;
 }
 .map__controls label > span svg {
   display: inline-block;
