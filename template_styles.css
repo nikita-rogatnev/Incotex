@@ -3400,6 +3400,9 @@ button.btn--inacive:active,
   margin: 0;
   border: 0;
 }
+.reviews__slider .carousel-control {
+  opacity: 1;
+}
 .reviews__slider .carousel-control.left:after {
   left: 0;
 }
@@ -3464,6 +3467,9 @@ button.btn--inacive:active,
 }
 .carousel .carousel-control.right:hover::before {
   content: url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2228%22%20height%3D%2252.06%22%20viewBox%3D%220%200%2028%2052.06%22%3E%0A%20%20%3Cpath%20style%3D%22fill%3A%20%2365bbfd%3Bfill-rule%3A%20evenodd%3B%22%20d%3D%22M14327.6%2C2841.92l-25-24.56a1.485%2C1.485%2C0%2C0%2C0-2.1%2C0%2C1.427%2C1.427%2C0%2C0%2C0%2C0%2C2.08l23.9%2C23.52-23.9%2C23.52a1.427%2C1.427%2C0%2C0%2C0%2C0%2C2.08%2C1.471%2C1.471%2C0%2C0%2C0%2C2.1%2C0l25-24.56A1.427%2C1.427%2C0%2C0%2C0%2C14327.6%2C2841.92Z%22%20transform%3D%22translate(-14300.1%20-2816.94)%22%2F%3E%0A%3C%2Fsvg%3E%0A');
+}
+.carousel-control {
+  opacity: 1 !important;
 }
 /* ------------------------------------------ */
 /* SLIDER BLOCK
