@@ -2138,6 +2138,9 @@ button.btn--inacive:active,
   padding: 7px 0 8px;
   font-size: 15px;
 }
+.catalog-filters .collapse__link span {
+  border: 0;
+}
 .catalog-filter__item {
   margin-bottom: 20px;
 }
