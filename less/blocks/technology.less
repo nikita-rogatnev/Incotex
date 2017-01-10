@@ -15,44 +15,6 @@
 .technology__slider {
 	margin-top: 20px;
 	margin-bottom: 30px;
-
-	.carousel-control {
-		background: transparent;
-
-		font-size: 0;
-		&:after,
-		&::before {
-			position: absolute;
-			top: 50%;
-
-			width: 30px;
-			height: 30px;
-
-			content: "";
-			transform: translate(-50%, -50%) rotate(45deg);
-
-			border-radius: 1px;
-
-			@media (min-width: @screen-sm) {
-				width: 60px;
-				height: 60px;
-			}
-		}
-
-		&.left {
-			&:after {
-				border-bottom: 5px solid @palette-white;
-				border-left: 5px solid @palette-white;
-			}
-		}
-
-		&.right {
-			&:before {
-				border-top: 5px solid @palette-white;
-				border-right: 5px solid @palette-white;
-			}
-		}
-	}
 }
 
 .technology__about-item {
