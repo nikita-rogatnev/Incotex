@@ -222,6 +222,9 @@ b,
 strong {
   font-weight: 800;
 }
+a:focus {
+  text-decoration: none;
+}
 .container-fluid {
   margin-right: auto;
   margin-left: auto;

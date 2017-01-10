@@ -26,6 +26,12 @@ strong {
 	font-weight: 800;
 }
 
+a {
+	&:focus {
+		text-decoration: none;
+	}
+}
+
 // SVG IE FIX
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	img[src$=".svg"] {
