@@ -208,7 +208,7 @@ a.icon:focus::before {
   font-family: 'rouble';
   font-weight: normal;
   font-style: normal;
-  src: url('/fonts/rouble/RUBSN.otf');
+  src: url('/fonts/rouble/RUBSN.woff');
 }
 .rouble {
   font-family: 'rouble';
@@ -2168,7 +2168,7 @@ button.btn--inacive:active,
 /* CATALOG BLOCK
 /* ------------------------------------------ */
 .catalog__items {
-  margin: 0;
+  margin: 0 -10px;
 }
 .catalog__item {
   margin-top: 15px;
@@ -3570,22 +3570,43 @@ button.btn--inacive:active,
   margin: 0 0 7px;
 }
 .solution-description__item {
+  position: relative;
   padding-top: 50px;
   padding-bottom: 40px;
+}
+.solution-description__item:before {
+  position: absolute;
+  left: 10px;
+  display: block;
+  width: calc(100% - 20px);
+  margin-top: -50px;
+  content: "";
   border-top: 1px solid #e1e1e1;
 }
 .solution-description__item:nth-child(2) {
   padding-top: 10px;
-  border-top: 0;
+}
+.solution-description__item:nth-child(2):before {
+  display: none;
 }
 .solution-description__double {
   padding-top: 50px;
   padding-bottom: 40px;
+}
+.solution-description__double:before {
+  position: absolute;
+  left: 10px;
+  display: block;
+  width: calc(100% - 20px);
+  margin-top: -50px;
+  content: "";
   border-top: 1px solid #e1e1e1;
 }
 .solution-description__double:nth-child(1) {
   padding-top: 0;
-  border-top: 0;
+}
+.solution-description__double:nth-child(1):before {
+  display: none;
 }
 .solution-description__double:nth-child(2) {
   padding-bottom: 0;
@@ -3636,7 +3657,7 @@ button.btn--inacive:active,
 /* SOLUTION PRODUCTION BLOCK
 /* ------------------------------------------ */
 .solution-production {
-  padding-top: 30px;
+  padding-top: 40px;
   padding-bottom: 30px;
   color: #434343;
 }
@@ -3809,8 +3830,10 @@ aside .subcategories__items {
   padding-bottom: 30px;
 }
 .usedin-solutions--bordered:before {
+  position: absolute;
   display: block;
   width: 100%;
+  margin-top: -40px;
   content: "";
   border-top: 1px solid #e1e1e1;
 }
@@ -4096,7 +4119,9 @@ aside .subcategories__items {
   .solution-description__double {
     padding-top: 0;
     padding-bottom: 0;
-    border-top: 0;
+  }
+  .solution-description__double:before {
+    display: none;
   }
   .solution-description__double img {
     width: auto;
