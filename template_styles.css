@@ -2138,9 +2138,10 @@ button.btn--inacive:active,
   border: 0;
 }
 .catalog-filter__reset {
-  display: inline;
+  display: inline-block;
   margin: 0;
   padding: 0;
+  vertical-align: middle;
   color: #2a4c91;
   border: 0;
   border-bottom: 1px dotted #2a4c91;
@@ -3688,6 +3689,7 @@ aside .subcategories__items {
 .subcategory__soting .subcategory__soting-noborder .selectfix-current-value {
   display: inline-block;
   width: auto;
+  vertical-align: middle;
   border: 0;
 }
 .subcategory__soting .subcategory__soting-noborder .selectfix-current-value {
