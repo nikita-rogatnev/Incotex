@@ -1168,7 +1168,7 @@ a:not([class]):focus {
 }
 .link--dotted {
   text-decoration: none;
-  border-bottom: 1px dotted rgba(28, 86, 153, 0.3);
+  border-bottom: 1px dotted #1c5699;
 }
 .link--dotted:hover {
   text-decoration: none;
