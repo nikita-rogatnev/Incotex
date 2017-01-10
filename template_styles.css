@@ -204,6 +204,15 @@ a.icon:focus::before {
   content: '\e824';
   font-size: 14px;
 }
+@font-face {
+  font-family: 'rouble';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/fonts/rouble/RUBSN.otf');
+}
+.rouble {
+  font-family: 'rouble';
+}
 /* ------------------------------------------ */
 /* GLOBAL
 /* ------------------------------------------ */
