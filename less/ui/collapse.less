@@ -4,14 +4,24 @@
 .collapse__link {
 	text-decoration: none;
 
+	border: 0;
+
 	&:hover {
 		text-decoration: none;
+
+		border: 0;
+
+		span {
+			border-bottom: 1px dotted #3aa9ff;
+		}
 	}
 
 	span {
 		display: inline-block;
 
 		vertical-align: middle;
+
+		border-bottom: 1px dotted #1c5699;
 	}
 
 	&.link--dotted {
@@ -50,6 +60,8 @@
 	&.collapse__link--right {
 		.collapse--open {
 			&:after {
+				position: absolute;
+
 				display: inline-block;
 
 				width: 10px;
@@ -62,6 +74,8 @@
 
 		.collapse--close {
 			&:after {
+				position: absolute;
+
 				display: inline-block;
 
 				width: 10px;

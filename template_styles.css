@@ -456,13 +456,19 @@ a:focus {
 /* ------------------------------------------ */
 .collapse__link {
   text-decoration: none;
+  border: 0;
 }
 .collapse__link:hover {
   text-decoration: none;
+  border: 0;
+}
+.collapse__link:hover span {
+  border-bottom: 1px dotted #3aa9ff;
 }
 .collapse__link span {
   display: inline-block;
   vertical-align: middle;
+  border-bottom: 1px dotted #1c5699;
 }
 .collapse__link.link--dotted:hover {
   text-decoration: none;
@@ -483,6 +489,7 @@ a:focus {
   vertical-align: top;
 }
 .collapse__link.collapse__link--right .collapse--open:after {
+  position: absolute;
   display: inline-block;
   width: 10px;
   margin-left: 8px;
@@ -490,6 +497,7 @@ a:focus {
   vertical-align: top;
 }
 .collapse__link.collapse__link--right .collapse--close:after {
+  position: absolute;
   display: inline-block;
   width: 10px;
   margin-left: 5px;
