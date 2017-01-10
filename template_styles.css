@@ -1458,6 +1458,7 @@ ul.pagination {
   color: #231f20;
   border: 0;
   background: none;
+  font-weight: 800;
 }
 .pagination > .disabled > a,
 .pagination > .disabled > a:focus,
