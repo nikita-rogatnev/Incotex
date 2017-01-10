@@ -167,12 +167,12 @@ $(document)
 if ($("#map").length) {
 	var locations = [
 		[
-			'3', 57.354645, 32.252347, 3, "./images/map/map__icon--factories-icon.svg"
+			'3', 57.354645, 32.252347, 3, "./images/map/map__icon--factories-icon.png"
 		],
 		[
-			'2', 57.354645, 35.252347, 2, "./images/map/map__icon--offices-icon.svg"
+			'2', 57.354645, 35.252347, 2, "./images/map/map__icon--offices-icon.png"
 		],
-		['1', 57.354645, 38.252347, 1, "./images/map/map__icon--representations-icon.svg"]
+		['1', 57.354645, 38.252347, 1, "./images/map/map__icon--representations-icon.png"]
 	];
 
 	var map = new google
