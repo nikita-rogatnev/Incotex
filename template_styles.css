@@ -4440,6 +4440,9 @@ aside .subcategories__items {
   .slider__caption {
     bottom: 100px;
   }
+  .solution-description__item h3 {
+    margin-top: 0;
+  }
   .technology__about-item {
     padding-right: 60px;
   }
