@@ -2098,6 +2098,12 @@ button.btn--inacive:active,
 .catalog-categories {
   padding-bottom: 20px;
 }
+.catalog-categories__item:nth-child(odd) .catalog-categories__text {
+  padding-left: 40px;
+}
+.catalog-categories__item:nth-child(even) .catalog-categories__text {
+  padding-right: 40px;
+}
 /* ------------------------------------------ */
 /* CATALOG FILTER BLOCK
 /* ------------------------------------------ */
@@ -4171,6 +4177,9 @@ aside .subcategories__items {
   }
   .header__form {
     width: 100%;
+  }
+  .catalog-categories div {
+    padding: 0;
   }
   .catalog__items--three .catalog__item {
     min-width: 33.33333333%;
