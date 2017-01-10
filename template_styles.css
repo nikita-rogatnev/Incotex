@@ -1166,8 +1166,7 @@ a:not([class]):focus {
 .link--dotted {
   border-bottom: 1px dotted rgba(28, 86, 153, 0.3);
 }
-.link--dotted:hover,
-.link--dotted:focus {
+.link--dotted:hover {
   border-bottom: 1px dotted #3aa9ff;
 }
 /* ------------------------------------------ */
