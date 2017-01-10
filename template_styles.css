@@ -3574,6 +3574,9 @@ button.btn--inacive:active,
   padding-top: 50px;
   padding-bottom: 40px;
 }
+.solution-description__item .solution-description__double > h3 {
+  margin-top: 34px;
+}
 .solution-description__item:before {
   position: absolute;
   left: 10px;
