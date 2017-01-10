@@ -4179,6 +4179,7 @@ aside .subcategories__items {
     width: 100%;
   }
   .catalog-categories div {
+    margin: 0;
     padding: 0;
   }
   .catalog__items--three .catalog__item {
