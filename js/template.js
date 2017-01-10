@@ -202,6 +202,7 @@ if ($("#map").length) {
 					.LatLng(locations[i][1], locations[i][2]),
 				icon: locations[i][4],
 				title: locations[i][0],
+				optimized: false,
 				map: map
 			});
 
@@ -258,6 +259,7 @@ if ($("#map2").length) {
 					.LatLng(locations[i][1], locations[i][2]),
 				icon: locations[i][4],
 				title: locations[i][0],
+				optimized: false,
 				map: map
 			});
 
