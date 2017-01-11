@@ -2325,27 +2325,28 @@ button.btn--inacive:active,
   font-size: 13px;
   line-height: 15px;
 }
-.catalog__item--project .catalog__item-map {
-  line-height: 1;
-}
-.catalog__item--project .catalog__item-map a {
-  text-align: left;
-  color: #1c5699;
-  border-bottom: 1px dotted #1c5699;
-  font-size: 13px;
-}
-.catalog__item--project .catalog__item-map a:before {
-  position: absolute;
-  top: 5px;
-  left: -10px;
-  content: url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2213%22%20height%3D%2216%22%20viewBox%3D%220%200%2013%2016%22%3E%3Cpath%20style%3D%22fill%3A%20%23d51f0c%3B%20fill-rule%3A%20evenodd%3B%22%20d%3D%22M2971.09%2C1500.64a7.257%2C7.257%2C0%2C0%2C0-9.19%2C0%2C5.726%2C5.726%2C0%2C0%2C0-.61%2C7.88l5.21%2C6.48%2C5.2-6.48A5.707%2C5.707%2C0%2C0%2C0%2C2971.09%2C1500.64Zm-4.53%2C5.96a2.067%2C2.067%2C0%2C1%2C1%2C2.37-2.05A2.228%2C2.228%2C0%2C0%2C1%2C2966.56%2C1506.6Z%22%20transform%3D%22translate(-2960%20-1499)%22%2F%3E%3C%2Fsvg%3E');
-  border: 0;
-}
 .catalog__item--project p {
   margin-top: 8px;
   color: #434343;
   font-size: 15px;
   line-height: 17px;
+}
+.catalog__item-map {
+  position: relative;
+  line-height: 1;
+}
+.catalog__item-map a {
+  text-align: left;
+  color: #1c5699;
+  border-bottom: 1px dotted #1c5699;
+  font-size: 13px;
+}
+.catalog__item-map a:before {
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  content: url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2213%22%20height%3D%2216%22%20viewBox%3D%220%200%2013%2016%22%3E%3Cpath%20style%3D%22fill%3A%20%23d51f0c%3B%20fill-rule%3A%20evenodd%3B%22%20d%3D%22M2971.09%2C1500.64a7.257%2C7.257%2C0%2C0%2C0-9.19%2C0%2C5.726%2C5.726%2C0%2C0%2C0-.61%2C7.88l5.21%2C6.48%2C5.2-6.48A5.707%2C5.707%2C0%2C0%2C0%2C2971.09%2C1500.64Zm-4.53%2C5.96a2.067%2C2.067%2C0%2C1%2C1%2C2.37-2.05A2.228%2C2.228%2C0%2C0%2C1%2C2966.56%2C1506.6Z%22%20transform%3D%22translate(-2960%20-1499)%22%2F%3E%3C%2Fsvg%3E');
+  border: 0;
 }
 /* ------------------------------------------ */
 /* CERTIFICATES BLOCK
@@ -2361,6 +2362,56 @@ button.btn--inacive:active,
 }
 .certificates__heading {
   margin-top: 20px;
+}
+/* ------------------------------------------ */
+/* DEALERS LIST BLOCK
+/* ------------------------------------------ */
+.dealers-list {
+  padding-bottom: 60px;
+}
+.dealers-list h2 {
+  margin-top: 40px;
+}
+.dealers-list__item {
+  position: relative;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+}
+.dealers-list__item .catalog__item-map {
+  margin-top: 5px;
+}
+.dealers-list__item .catalog__item-map a {
+  display: inline-block;
+  margin-left: 25px;
+}
+.dealers-list__item .catalog__item-map a:before {
+  top: 0;
+  left: 0;
+}
+.dealers-list__item h1 {
+  margin: 0 0 20px 0;
+  color: #000000;
+  font-size: 21px;
+  line-height: 1;
+}
+.dealers-list__item h1 a {
+  text-decoration: none;
+  color: #000000;
+}
+.dealers-list__item span {
+  margin-bottom: 0;
+  color: #000000;
+  font-size: 14px;
+  line-height: 16px;
+}
+.dealers-list__item .dealers-list__contacts {
+  display: block;
+  margin-top: 20px;
+}
+.dealers-list__item .dealers-list__contacts span {
+  display: block;
+  margin-top: 5px;
 }
 /* ------------------------------------------ */
 /* DEALERS BLOCK

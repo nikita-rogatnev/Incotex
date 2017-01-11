@@ -312,25 +312,18 @@ if ($("#map2").length) {
 		});
 }
 
-google
-	.maps
-	.event
-	.addListener(map, "click", function (event) {
-		infowindow.close();
-	});
-
 // ------------------------------------------ //
 // GOOGLE MAP /parters.html
 // ------------------------------------------ //
 if ($("#map3").length) {
 	var locations = [
 		[
-			'<article class="map__project-item"><h1><a href="project.html">Освещение улицы</a></h1><span>Россия, г. Волгоград</span><small>Сдача работ: 2014</small><a href="project.html"><img src="./images/catalog/projects/project__item-1.jpg" alt="project item" width="300" height="120"></a></article>', 57.354645, 32.252347, 3, "./images/map/flag__red.png"
+			'<article class="map__project-item"><h1>Наименование компании</h1><span>109382, г.Москва, ул.Люблинская, д.72, оф.7</span><span class="dealers-list__contacts" style="display:block; margin-top:20px;"><span>Телефон: +7 (499) 703-01-83</span><span>Директор: +7 916 629-45-01</span><span>Сайт: <a href="#">www.company.ru</a></span></span></article>', 57.354645, 32.252347, 3, "./images/map/flag__red.png"
 		],
 		[
-			'<article class="map__project-item"><h1><a href="project.html">Освещение улицы</a></h1><span>Россия, г. Волгоград</span><small>Сдача работ: 2014</small><a href="project.html"><img src="./images/catalog/projects/project__item-1.jpg" alt="project item" width="300" height="120"></a></article>', 57.354645, 35.252347, 2, "./images/map/flag__red.png"
+			'<article class="map__project-item"><h1>Наименование компании</h1><span>109382, г.Москва, ул.Люблинская, д.72, оф.7</span><span class="dealers-list__contacts" style="display:block; margin-top:20px;"><span>Телефон: +7 (499) 703-01-83</span><span>Директор: +7 916 629-45-01</span><span>Сайт: <a href="#">www.company.ru</a></span></span></article>', 56.454645, 34.452347, 3, "./images/map/flag__blue.png"
 		],
-		['<article class="map__project-item"><h1><a href="project.html">Освещение улицы</a></h1><span>Россия, г. Волгоград</span><small>Сдача работ: 2014</small><a href="project.html"><img src="./images/catalog/projects/project__item-1.jpg" alt="project item" width="300" height="120"></a></article>', 57.354645, 38.252347, 1, "./images/map/flag__blue.png"]
+		['<article class="map__project-item"><h1>Наименование компании</h1><span>109382, г.Москва, ул.Люблинская, д.72, оф.7</span><span class="dealers-list__contacts" style="display:block; margin-top:20px;"><span>Телефон: +7 (499) 703-01-83</span><span>Директор: +7 916 629-45-01</span><span>Сайт: <a href="#">www.company.ru</a></span></span></article>', 54.554645, 33.752347, 3, "./images/map/flag__red.png"]
 	];
 
 	var map = new google
