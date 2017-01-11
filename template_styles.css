@@ -2364,6 +2364,13 @@ button.btn--inacive:active,
   margin-top: 20px;
 }
 /* ------------------------------------------ */
+/* CONTACTS BLOCK
+/* ------------------------------------------ */
+.contacts__address span {
+  display: block;
+  margin-bottom: 7px;
+}
+/* ------------------------------------------ */
 /* DEALERS LIST BLOCK
 /* ------------------------------------------ */
 .dealers-list {

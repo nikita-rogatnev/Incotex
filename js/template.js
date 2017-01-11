@@ -406,6 +406,94 @@ if ($("#map3").length) {
 		});
 }
 
+// ------------------------------------------ //
+// GOOGLE MAP /contacts.html
+// ------------------------------------------ //
+if ($("#map4").length) {
+	var locations = [
+		['<article class="map__project-item"><h1>Наименование компании</h1><span>109382, г.Москва, ул.Люблинская, д.72, оф.7</span><span class="dealers-list__contacts" style="display:block; margin-top:20px;"><span>Телефон: +7 (499) 703-01-83</span><span>Директор: +7 916 629-45-01</span><span>Сайт: <a href="#">www.company.ru</a></span></span></article>', 57.354645, 32.252347, 3, "./images/map/flag__red.png"]
+	];
+
+	var map = new google
+		.maps
+		.Map(document.getElementById('map4'), {
+			zoom: 6,
+			scrollwheel: false,
+			center: new google
+				.maps
+				.LatLng(57.354645, 38.252347),
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		});
+
+	var infowindow = new google
+		.maps
+		.InfoWindow();
+
+	var marker,
+		i;
+
+	for (i = 0; i < locations.length; i++) {
+		marker = new google
+			.maps
+			.Marker({
+				position: new google
+					.maps
+					.LatLng(locations[i][1], locations[i][2]),
+				icon: locations[i][4],
+				title: locations[i][0],
+				optimized: false,
+				map: map
+			});
+
+		google
+			.maps
+			.event
+			.addListener(marker, 'click', (function (marker, i) {
+				return function () {
+					infowindow.setContent(locations[i][0]);
+					infowindow.open(map, marker);
+				}
+			})(marker, i));
+	}
+
+	google
+		.maps
+		.event
+		.addListener(infowindow, 'domready', function () {
+
+			// Reference to the DIV which receives the contents of the infowindow using jQuery
+			var iwOuter = $('.gm-style-iw');
+
+			iwOuter
+				.parent()
+				.parent()
+				.css({top: "96px", left: '-197px'});
+
+			/* The DIV we want to change is above the .gm-style-iw DIV.
+		    * So, we use jQuery and create a iwBackground variable,
+		    * and took advantage of the existing reference to .gm-style-iw for the previous DIV with .prev().
+		    */
+			var iwBackground = iwOuter.prev();
+
+			iwBackground
+				.children(':nth-child(1)')
+				.css({'display': 'none'});
+
+			iwBackground
+				.children(':nth-child(2)')
+				.css({'display': 'none'});
+
+			iwBackground
+				.children(':nth-child(3)')
+				.css({'display': 'none'});
+
+			iwBackground
+				.children(':nth-child(4)')
+				.css({'display': 'none'});
+
+		});
+}
+
 google
 	.maps
 	.event
