@@ -2422,6 +2422,134 @@ button.btn--inacive:active,
   line-height: 30px;
 }
 /* ------------------------------------------ */
+/* HELP BLOCK
+/* ------------------------------------------ */
+.help__treatment {
+  padding-top: 40px;
+}
+.help__background {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #f2f2f2;
+}
+.help__background p {
+  margin-bottom: 20px;
+}
+.help__selects {
+  margin-top: 20px;
+}
+.help__country {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.help__country .country {
+  margin: 0 0 0 20px;
+  font-size: 0;
+  font-size: 13px;
+}
+.help__country .country .dropdown-toggle {
+  text-decoration: none;
+  border: 0;
+}
+.help__country .country .dropdown-toggle:hover {
+  text-decoration: none;
+  border: 0;
+}
+.help__country .country a {
+  color: #0f3473;
+}
+.help__country .country a:hover span {
+  text-decoration: none;
+  border: 0;
+}
+.help__country .country img {
+  width: 22px;
+  height: 15px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.help__country .country span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  border: 0;
+}
+.help__country .country span:nth-child(2) {
+  right: 15px;
+  margin: 0;
+  margin-left: 20px;
+}
+.help__country .country span:nth-child(2):after {
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  display: block;
+  width: 10px;
+  height: 14px;
+  content: url('data:image/svg+xml, %3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20%20viewBox%3D%220%200%206%203%22%3E%3Cpath%20fill%3D%22%234675ac%22%20d%3D%22M0%2C0.6c0-0.2%2C0.1-0.3%2C0.2-0.4c0.3-0.2%2C0.7-0.3%2C1.1%2C0L3%2C1.5l1.7-1.4c0.3-0.2%2C0.7-0.2%2C1.1%2C0%20C6%2C0.4%2C6.1%2C0.7%2C5.9%2C0.9c0%2C0-0.1%2C0.1-0.1%2C0.1L3.5%2C2.8c-0.3%2C0.2-0.7%2C0.2-1%2C0L0.2%2C1.1C0.1%2C1%2C0%2C0.8%2C0%2C0.6z%22%2F%3E%3C%2Fsvg%3E');
+  transform: translateY(-70%);
+}
+.help__country .country .dropdown-menu,
+.help__country .country .dropdown-menu > li > a,
+.help__country .country .dropdown-menu > li > a:focus,
+.help__country .country .dropdown-menu > li > a:hover,
+.help__country .country .dropdown-toggle,
+.help__country .country .dropdown-toggle:focus,
+.help__country .country .dropdown-toggle:hover,
+.help__country .country .nav .open > a,
+.help__country .country .nav .open > a:focus,
+.help__country .country .nav .open > a:hover {
+  width: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  font-size: 13px;
+}
+.help__country .country .dropdown-menu {
+  left: 25px;
+  width: 170px;
+  min-width: initial;
+  margin-top: 5px;
+  margin-top: 20px;
+  margin-left: -70px;
+  padding: 0;
+  padding: 10px 12px;
+  border: 2px solid #1c5699;
+  border-radius: 5px;
+  background: #ffffff;
+}
+.help__country .country .dropdown-menu > li {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 7px 0;
+}
+.help__country .country .dropdown-menu a {
+  color: #1c5699;
+}
+.help__country .country .dropdown-menu a:hover {
+  color: #000000;
+}
+.help__form {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.help__call {
+  padding-bottom: 20px;
+}
+.help__number a {
+  text-decoration: none;
+  pointer-events: none;
+  color: #000000;
+  border: 0;
+  font-size: 1.6em;
+  line-height: 1;
+}
+/* ------------------------------------------ */
 /* HERO BLOCK
 /* ------------------------------------------ */
 .hero {
@@ -4151,6 +4279,9 @@ aside .subcategories__items {
     font-size: 40px;
     line-height: 52px;
   }
+  .help__note {
+    margin-top: 15px;
+  }
   .hero__headings > h1 {
     font-size: 56px;
     line-height: 57px;
@@ -4419,6 +4550,24 @@ aside .subcategories__items {
   }
   .catalog__item--project:hover .catalog__item-more {
     display: block;
+  }
+  .help__country {
+    margin-left: 0;
+    vertical-align: top;
+  }
+  .help__country .country span:nth-child(2):after {
+    right: -15px;
+    transform: translateY(-80%);
+  }
+  .help__number p {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+  }
+  .help__number a {
+    display: inline-block;
+    margin-left: 50px;
+    vertical-align: middle;
   }
   .history__item:nth-child(odd) .history__time:after {
     right: 10px;

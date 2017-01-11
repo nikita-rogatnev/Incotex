@@ -1,0 +1,211 @@
+/* ------------------------------------------ */
+/* HELP BLOCK
+/* ------------------------------------------ */
+.help__treatment {
+	padding-top: 40px;
+}
+
+.help__background {
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	background: #f2f2f2;
+
+	p {
+		margin-bottom: 20px;
+	}
+}
+
+.help__selects {
+	margin-top: 20px;
+}
+
+.help__country {
+	display: inline-block;
+
+	margin-left: 10px;
+
+	vertical-align: middle;
+
+	@media (min-width: @screen-md) {
+		margin-left: 0;
+
+		vertical-align: top;
+	}
+
+	.country {
+		margin: 0 0 0 20px;
+
+		font-size: 0;
+		font-size: 13px;
+
+		.dropdown-toggle {
+			text-decoration: none;
+
+			border: 0;
+
+			&:hover {
+				text-decoration: none;
+
+				border: 0;
+			}
+		}
+
+		a {
+			color: #0f3473;
+
+			&:hover {
+				span {
+					text-decoration: none;
+
+					border: 0;
+				}
+			}
+		}
+
+		img {
+			width: 22px;
+			height: 15px;
+			margin-right: 10px;
+
+			vertical-align: middle;
+		}
+
+		span {
+			position: relative;
+
+			display: inline-block;
+
+			vertical-align: middle;
+			text-decoration: none;
+
+			border: 0;
+
+			&:nth-child(2) {
+				right: 15px;
+
+				margin: 0;
+				margin-left: 20px;
+
+				&:after {
+					position: absolute;
+					top: 50%;
+					right: -15px;
+
+					display: block;
+
+					width: 10px;
+					height: 14px;
+
+					content: url('data:image/svg+xml, %3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20%20viewBox%3D%220%200%206%203%22%3E%3Cpath%20fill%3D%22%234675ac%22%20d%3D%22M0%2C0.6c0-0.2%2C0.1-0.3%2C0.2-0.4c0.3-0.2%2C0.7-0.3%2C1.1%2C0L3%2C1.5l1.7-1.4c0.3-0.2%2C0.7-0.2%2C1.1%2C0%20C6%2C0.4%2C6.1%2C0.7%2C5.9%2C0.9c0%2C0-0.1%2C0.1-0.1%2C0.1L3.5%2C2.8c-0.3%2C0.2-0.7%2C0.2-1%2C0L0.2%2C1.1C0.1%2C1%2C0%2C0.8%2C0%2C0.6z%22%2F%3E%3C%2Fsvg%3E');
+					transform: translateY(-70%);
+
+					@media (min-width: @screen-md) {
+						right: -15px;
+
+						transform: translateY(-80%);
+					}
+				}
+			}
+		}
+
+		.dropdown-menu,
+		.dropdown-menu > li > a,
+		.dropdown-menu > li > a:focus,
+		.dropdown-menu > li > a:hover,
+		.dropdown-toggle,
+		.dropdown-toggle:focus,
+		.dropdown-toggle:hover,
+		.nav .open > a,
+		.nav .open > a:focus,
+		.nav .open > a:hover {
+			width: auto;
+			padding: 0;
+
+			border: 0;
+			background: transparent;
+			box-shadow: none;
+
+			font-size: 13px;
+		}
+
+		.dropdown-menu {
+			left: 25px;
+
+			width: 170px;
+			min-width: initial;
+			margin-top: 5px;
+			margin-top: 20px;
+			margin-left: -70px;
+			padding: 0;
+			padding: 10px 12px;
+
+			border: 2px solid @palette-accent;
+			border-radius: 5px;
+			background: @palette-white;
+
+			& > li {
+				display: block;
+
+				width: 100%;
+				margin: 0;
+				padding: 7px 0;
+			}
+
+			a {
+				color: @palette-accent;
+
+				&:hover {
+					color: @palette-black;
+				}
+			}
+		}
+	}
+}
+
+.help__form {
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
+.help__call {
+	padding-bottom: 20px;
+}
+
+.help__number {
+	p {
+		@media (min-width: @screen-md) {
+			display: inline-block;
+
+			margin: 0;
+
+			vertical-align: middle;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		pointer-events: none;
+
+		color: @palette-black;
+		border: 0;
+
+		font-size: 1.6em;
+		line-height: 1;
+
+		@media (min-width: @screen-md) {
+			display: inline-block;
+
+			margin-left: 50px;
+
+			vertical-align: middle;
+		}
+	}
+}
+
+.help__note {
+	@media (min-width: @screen-sm) {
+		margin-top: 15px;
+	}
+}
