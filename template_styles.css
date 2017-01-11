@@ -2050,7 +2050,6 @@ button.btn--inacive:active,
   padding-bottom: 10px;
 }
 .breadcrumbs .breadcrumbs__items {
-  overflow: hidden;
   max-width: 100%;
   margin: 0;
   padding: 0;
