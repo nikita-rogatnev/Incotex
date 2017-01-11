@@ -1202,7 +1202,7 @@ a:not([class]):focus {
   width: 30px;
   height: 30px;
   content: "";
-  background: url(images/pdf/pdf.png);
+  background: url(images/pdf/pdf-2.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
