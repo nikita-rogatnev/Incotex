@@ -2838,6 +2838,62 @@ button.btn--inacive:active,
   text-transform: uppercase;
 }
 /* ------------------------------------------ */
+/* NEWS BLOCK
+/* ------------------------------------------ */
+.news .news__years {
+  margin: 0;
+  padding: 0;
+}
+.news .news__years .news__year {
+  margin: 0;
+  padding-right: 5px;
+  padding-left: 0;
+}
+.news .news__years .news__year a {
+  text-decoration: none;
+  color: #1c5699;
+  border: 0;
+}
+.news .news__years .news__year a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #1c5699;
+}
+.news .news__years .news__year--active a {
+  pointer-events: none;
+  color: #000000;
+  font-size: 2em;
+}
+.news .news__years .news__year--active a:hover {
+  text-decoration: none;
+  color: #000000;
+  border-bottom: 0;
+}
+.news .news__items {
+  margin: 20px 0 0 0;
+}
+.news .news__item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.news .news__item h1 a {
+  text-decoration: none;
+  color: #000000;
+  border: 0;
+}
+.news .news__item h1 a:hover {
+  text-decoration: none;
+  color: #3aa9ff;
+  border-bottom: 1px solid #3aa9ff;
+  outline: 0 none;
+}
+.news .news__item time {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: bold;
+}
+/* ------------------------------------------ */
 /* PAGE PAGINATION BLOCK
 /* ------------------------------------------ */
 .page-pagination {
@@ -4138,6 +4194,12 @@ aside .subcategories__items {
     margin-bottom: 0;
     text-align: right;
   }
+  .news .news__years .news__year {
+    padding-right: 15px;
+  }
+  .news .news__item h1 {
+    margin-top: 0;
+  }
   .partners__item img {
     width: auto;
     max-width: 100%;
@@ -4362,6 +4424,9 @@ aside .subcategories__items {
   }
   .map .map__item {
     height: 650px;
+  }
+  .news .news__years .news__year {
+    padding-right: 35px;
   }
   .partners__item img {
     height: 55px;
