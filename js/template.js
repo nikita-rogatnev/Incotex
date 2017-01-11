@@ -318,3 +318,104 @@ google
 	.addListener(map, "click", function (event) {
 		infowindow.close();
 	});
+
+// ------------------------------------------ //
+// GOOGLE MAP /parters.html
+// ------------------------------------------ //
+if ($("#map3").length) {
+	var locations = [
+		[
+			'<article class="map__project-item"><h1><a href="project.html">Освещение улицы</a></h1><span>Россия, г. Волгоград</span><small>Сдача работ: 2014</small><a href="project.html"><img src="./images/catalog/projects/project__item-1.jpg" alt="project item" width="300" height="120"></a></article>', 57.354645, 32.252347, 3, "./images/map/flag__red.png"
+		],
+		[
+			'<article class="map__project-item"><h1><a href="project.html">Освещение улицы</a></h1><span>Россия, г. Волгоград</span><small>Сдача работ: 2014</small><a href="project.html"><img src="./images/catalog/projects/project__item-1.jpg" alt="project item" width="300" height="120"></a></article>', 57.354645, 35.252347, 2, "./images/map/flag__red.png"
+		],
+		['<article class="map__project-item"><h1><a href="project.html">Освещение улицы</a></h1><span>Россия, г. Волгоград</span><small>Сдача работ: 2014</small><a href="project.html"><img src="./images/catalog/projects/project__item-1.jpg" alt="project item" width="300" height="120"></a></article>', 57.354645, 38.252347, 1, "./images/map/flag__blue.png"]
+	];
+
+	var map = new google
+		.maps
+		.Map(document.getElementById('map3'), {
+			zoom: 6,
+			scrollwheel: false,
+			center: new google
+				.maps
+				.LatLng(57.354645, 38.252347),
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		});
+
+	var infowindow = new google
+		.maps
+		.InfoWindow();
+
+	var marker,
+		i;
+
+	for (i = 0; i < locations.length; i++) {
+		marker = new google
+			.maps
+			.Marker({
+				position: new google
+					.maps
+					.LatLng(locations[i][1], locations[i][2]),
+				icon: locations[i][4],
+				title: locations[i][0],
+				optimized: false,
+				map: map
+			});
+
+		google
+			.maps
+			.event
+			.addListener(marker, 'click', (function (marker, i) {
+				return function () {
+					infowindow.setContent(locations[i][0]);
+					infowindow.open(map, marker);
+				}
+			})(marker, i));
+	}
+
+	google
+		.maps
+		.event
+		.addListener(infowindow, 'domready', function () {
+
+			// Reference to the DIV which receives the contents of the infowindow using jQuery
+			var iwOuter = $('.gm-style-iw');
+
+			iwOuter
+				.parent()
+				.parent()
+				.css({top: "96px", left: '-197px'});
+
+			/* The DIV we want to change is above the .gm-style-iw DIV.
+		    * So, we use jQuery and create a iwBackground variable,
+		    * and took advantage of the existing reference to .gm-style-iw for the previous DIV with .prev().
+		    */
+			var iwBackground = iwOuter.prev();
+
+			iwBackground
+				.children(':nth-child(1)')
+				.css({'display': 'none'});
+
+			iwBackground
+				.children(':nth-child(2)')
+				.css({'display': 'none'});
+
+			iwBackground
+				.children(':nth-child(3)')
+				.css({'display': 'none'});
+
+			iwBackground
+				.children(':nth-child(4)')
+				.css({'display': 'none'});
+
+		});
+}
+
+google
+	.maps
+	.event
+	.addListener(map, "click", function (event) {
+		infowindow.close();
+	});

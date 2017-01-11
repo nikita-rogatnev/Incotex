@@ -113,7 +113,7 @@
 							<a href="projects.html">Проекты</a>
 						</li>
 						<li class="menu__item menu__item--active">
-							<a href="partners.html">Партнерам</a>
+							<a href="dealers.html">Партнерам</a>
 						</li>
 						<li class="menu__item">
 							<a href="contacts.html">Контакты</a>
@@ -134,26 +134,108 @@
 		<section class="breadcrumbs container">
 			<ul class="breadcrumbs__items">
 				<li><a href="index.html">Главная</a></li>
-				<li><a href="partners.html">Торговые партнеры</a></li>
+				<li><a href="dealers.html">Торговые партнеры</a></li>
 			</ul>
 		</section>
 		<!-- BREADCRUMBS END -->
 
 		<!-- HEADING -->
 		<section class="heading container">
-			<h1>Торговые партнеры</h1>
+			<h1>Дилеры (48)</h1>
 		</section>
 		<!-- HEADING END -->
 
-		<!-- PARTNERS -->
-		<section class="partners container">
+		<!-- DEALERS -->
+		<form class="dealers container">
 			<div class="row">
-				<div class="col-xs-12">
-
+				<div class="col-xs-12 col-md-6">
+					<div class="dealers__search form-group">
+						<input id="exampleInputText1" type="text" placeholder="Регион, город или адрес партнера" class="form-control">
+						<button class="btn btn--accent btn-sm" type="submit">Показать</button>
+					</div>
 				</div>
 			</div>
+
+			<h3>Тип продукции</h3>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<label><input type="checkbox" name="checkbox" checked=""><span>Осветительные системы</span></label>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<label><input type="checkbox" name="checkbox"><span>Средства отображения информации</span></label>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<label><input type="checkbox" name="checkbox"><span>Торговое оборудование «Меркурий»</span></label>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<label><input type="checkbox" name="checkbox"><span>IP видеокамеры и системы видеонаблюдения «ТВ Хелп»</span></label>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<label><input type="checkbox" name="checkbox"><span>Счетчики электроэнергии</span></label>
+				</div>
+			</div>
+
+			<h3>Направление деятельности</h3>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<label><input type="checkbox" name="checkbox"><span>наименование направления</span></label>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<label><input type="checkbox" name="checkbox"><span>наименование направления</span></label>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<label><input type="checkbox" name="checkbox"><span>наименование направления</span></label>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<label><input type="checkbox" name="checkbox"><span>наименование направления</span></label>
+				</div>
+			</div>
+
+			<h3>Статус партнера</h3>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<label><input type="checkbox" name="checkbox"><span>дистрибьютор</span></label>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<label><input type="checkbox" name="checkbox"><span>дилер</span></label>
+				</div>
+			</div>
+
+		</form>
+		<!-- DEALERS END -->
+
+		<!-- MAP -->
+		<section class="map map--projects">
+
+			<!-- MAP CONTROLS -->
+			<div class="map__controls">
+				<div class="map__container container">
+					<div class="row">
+						<div class="map__controls-found col-xs-12 col-sm-4 col-md-3">
+							<h4>Найдено <span>5</span> партнеров</h4>
+						</div>
+						<div class="map__controls-reset col-xs-12 col-sm-5">
+							<a href="#" class="link link--dotted">Сбросить фильтр</a>
+						</div>
+						<div class="map__controls-collapse col-xs-12 col-sm-3 col-md-4">
+							<a href="#map--projects" data-toggle="collapse" aria-expanded="true" class="collapse__link collapse__link--right">
+								<span class="collapse--close">Скрыть карту</span>
+								<span class="collapse--open">Показать карту</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- MAP CONTROLS END -->
+
+			<!-- MAP CONTENT -->
+			<div class="map__container collapse in" id="map--projects">
+				<div id="map3" class="map__item"></div>
+			</div>
+			<!-- MAP CONTENT END -->
+
 		</section>
-		<!-- PARTNERS END -->
+		<!-- MAP END -->
 
 	</main>
 	<!-- MAIN END -->
@@ -178,7 +260,7 @@
 						<a href="projects.html">Проекты</a>
 					</li>
 					<li class="menu__item">
-						<a href="partners.html">Партнерам</a>
+						<a href="dealers.html">Партнерам</a>
 					</li>
 					<li class="menu__item">
 						<a href="help.html">Поддержка</a>

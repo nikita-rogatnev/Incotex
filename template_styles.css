@@ -2363,6 +2363,25 @@ button.btn--inacive:active,
   margin-top: 20px;
 }
 /* ------------------------------------------ */
+/* DEALERS BLOCK
+/* ------------------------------------------ */
+.dealers__search {
+  font-size: 0;
+}
+.dealers__search input,
+.dealers__search button {
+  display: inline-block;
+  vertical-align: middle;
+}
+.dealers__search input {
+  width: calc(100% - 190px);
+  margin-right: 10px;
+}
+.dealers__search .btn.btn-sm {
+  margin: 0;
+  padding: 6px 20px;
+}
+/* ------------------------------------------ */
 /* ERROR BLOCK
 /* ------------------------------------------ */
 .error {
