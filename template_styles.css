@@ -2366,9 +2366,92 @@ button.btn--inacive:active,
 /* ------------------------------------------ */
 /* CONTACTS BLOCK
 /* ------------------------------------------ */
+.contacts .tab-content {
+  padding-top: 50px;
+}
+.contacts .contacts__route {
+  margin-top: 40px;
+}
+.contacts .nav-tabs img {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
+.contacts .nav-tabs span {
+  display: inline-block;
+  vertical-align: middle;
+}
 .contacts__address span {
   display: block;
   margin-bottom: 7px;
+}
+.contacts__person {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.contacts__person h4 {
+  margin: 0;
+}
+.contacts__person small {
+  display: block;
+  margin-bottom: 10px;
+}
+.contacts__person img,
+.contacts__person .contacts__person-info {
+  display: inline-block;
+  vertical-align: top;
+}
+.contacts__person img {
+  width: 90px;
+  height: 90px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.contacts__departnments-list {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.contacts__departnments-item {
+  position: relative;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+}
+.contacts__departnments-item .catalog__item-map {
+  margin-top: 5px;
+}
+.contacts__departnments-item .catalog__item-map a {
+  display: inline-block;
+  margin-left: 25px;
+}
+.contacts__departnments-item .catalog__item-map a:before {
+  top: 0;
+  left: 0;
+}
+.contacts__departnments-item h1 {
+  margin: 0 0 20px 0;
+  color: #000000;
+  font-size: 21px;
+  line-height: 1;
+}
+.contacts__departnments-item h1 a {
+  text-decoration: none;
+  color: #000000;
+}
+.contacts__departnments-item span {
+  display: block;
+  margin-bottom: 7px;
+  color: #000000;
+  font-size: 14px;
+  line-height: 16px;
+}
+.contacts__departnments-item .dealers-list__contacts {
+  display: block;
+  margin-top: 20px;
+}
+.contacts__departnments-item .dealers-list__contacts span {
+  display: block;
+  margin-top: 5px;
 }
 /* ------------------------------------------ */
 /* DEALERS LIST BLOCK

@@ -1,10 +1,131 @@
 /* ------------------------------------------ */
 /* CONTACTS BLOCK
 /* ------------------------------------------ */
+.contacts {
+	.tab-content {
+		padding-top: 50px;
+	}
+
+	.contacts__route {
+		margin-top: 40px;
+	}
+
+	.nav-tabs {
+		img {
+			width: 24px;
+			height: 24px;
+			margin-right: 4px;
+		}
+
+		span {
+			display: inline-block;
+
+			vertical-align: middle;
+		}
+	}
+}
+
 .contacts__address {
 	span {
 		display: block;
 
 		margin-bottom: 7px;
+	}
+}
+
+.contacts__person {
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+	h4 {
+		margin: 0;
+	}
+
+	small {
+		display: block;
+
+		margin-bottom: 10px;
+	}
+
+	img,
+	.contacts__person-info {
+		display: inline-block;
+
+		vertical-align: top;
+	}
+
+	img {
+		width: 90px;
+		height: 90px;
+		margin-right: 20px;
+
+		border-radius: 50%;
+	}
+}
+
+.contacts__departnments-list {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.contacts__departnments-item {
+	position: relative;
+
+	margin: 20px 0;
+	padding: 20px;
+
+	border: 1px solid #e1e1e1;
+
+	.catalog__item-map {
+		margin-top: 5px;
+
+		a {
+			display: inline-block;
+
+			margin-left: 25px;
+
+			&:before {
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+
+	h1 {
+		margin: 0 0 20px 0;
+
+		color: @palette-black;
+
+		font-size: 21px;
+		line-height: 1;
+
+		a {
+			text-decoration: none;
+
+			color: @palette-black;
+		}
+	}
+
+	span {
+		display: block;
+
+		margin-bottom: 7px;
+
+		color: @palette-black;
+
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.dealers-list__contacts {
+		display: block;
+
+		margin-top: 20px;
+
+		span {
+			display: block;
+
+			margin-top: 5px;
+		}
 	}
 }
