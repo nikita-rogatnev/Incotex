@@ -171,7 +171,9 @@
 
 		&.catalog__item {
 			margin: 15px 0;
-			padding: 0;
+			@media (min-width: @screen-md) {
+				padding: 0;
+			}
 		}
 
 		.btn--accent {
