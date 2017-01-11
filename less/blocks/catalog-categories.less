@@ -13,15 +13,17 @@
 }
 
 .catalog-categories__item {
-	&:nth-child(odd) {
-		.catalog-categories__text {
-			padding-left: 40px;
+	@media (min-width: @screen-md) {
+		&:nth-child(odd) {
+			.catalog-categories__text {
+				padding-left: 40px;
+			}
 		}
-	}
 
-	&:nth-child(even) {
-		.catalog-categories__text {
-			padding-right: 40px;
+		&:nth-child(even) {
+			.catalog-categories__text {
+				padding-right: 40px;
+			}
 		}
 	}
 }
