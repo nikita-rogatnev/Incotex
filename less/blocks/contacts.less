@@ -11,6 +11,32 @@
 	}
 
 	.nav-tabs {
+		li {
+			border-top: 2px solid transparent;
+			border-right: 2px solid transparent;
+			border-left: 2px solid transparent;
+		}
+
+		@media (min-width: @screen-md) {
+			.active {
+				border-top: 2px solid #cecece;
+				border-right: 2px solid #cecece;
+				border-left: 2px solid #cecece;
+			}
+		}
+
+		a {
+			border: 0;
+
+			&:hover {
+				border: 0;
+
+				span {
+					border-bottom: 1px dotted #1c5699;
+				}
+			}
+		}
+
 		img {
 			width: 24px;
 			height: 24px;
@@ -21,6 +47,8 @@
 			display: inline-block;
 
 			vertical-align: middle;
+
+			border-bottom: 1px dotted transparent;
 		}
 	}
 }

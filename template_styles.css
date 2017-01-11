@@ -2366,6 +2366,20 @@ button.btn--inacive:active,
 .contacts .contacts__route {
   margin-top: 40px;
 }
+.contacts .nav-tabs li {
+  border-top: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+.contacts .nav-tabs a {
+  border: 0;
+}
+.contacts .nav-tabs a:hover {
+  border: 0;
+}
+.contacts .nav-tabs a:hover span {
+  border-bottom: 1px dotted #1c5699;
+}
 .contacts .nav-tabs img {
   width: 24px;
   height: 24px;
@@ -2374,6 +2388,7 @@ button.btn--inacive:active,
 .contacts .nav-tabs span {
   display: inline-block;
   vertical-align: middle;
+  border-bottom: 1px dotted transparent;
 }
 .contacts__address span {
   display: block;
@@ -4723,6 +4738,11 @@ aside .subcategories__items {
   }
   .catalog__item--project:hover .catalog__item-more {
     display: block;
+  }
+  .contacts .nav-tabs .active {
+    border-top: 2px solid #cecece;
+    border-right: 2px solid #cecece;
+    border-left: 2px solid #cecece;
   }
   .help__country {
     margin-left: 0;
