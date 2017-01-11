@@ -234,9 +234,6 @@ strong {
 a:focus {
   text-decoration: none;
 }
-.container {
-  overflow: hidden;
-}
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -2163,6 +2160,9 @@ button.btn--inacive:active,
 .catalog-filter__item {
   margin-bottom: 20px;
 }
+.catalog-filter__item .form-group {
+  margin-bottom: 0;
+}
 .catalog-filter__item .collapse__link.collapse__link--left[aria-expanded=false]:before {
   transform: translateY(20%) rotate(270deg);
 }
@@ -3278,7 +3278,6 @@ button.btn--inacive:active,
 .product-description table {
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 .product-description table td:nth-child(even) {
   width: 20%;
