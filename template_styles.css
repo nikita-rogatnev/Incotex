@@ -1875,13 +1875,12 @@ button.btn--inacive:active,
 }
 .header__navigation .country span:nth-child(2):after {
   position: absolute;
-  top: 50%;
+  top: 0;
   right: -15px;
   display: block;
   width: 10px;
-  height: 14px;
+  height: 10px;
   content: url('data:image/svg+xml, %3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20%20viewBox%3D%220%200%206%203%22%3E%3Cpath%20fill%3D%22%234675ac%22%20d%3D%22M0%2C0.6c0-0.2%2C0.1-0.3%2C0.2-0.4c0.3-0.2%2C0.7-0.3%2C1.1%2C0L3%2C1.5l1.7-1.4c0.3-0.2%2C0.7-0.2%2C1.1%2C0%20C6%2C0.4%2C6.1%2C0.7%2C5.9%2C0.9c0%2C0-0.1%2C0.1-0.1%2C0.1L3.5%2C2.8c-0.3%2C0.2-0.7%2C0.2-1%2C0L0.2%2C1.1C0.1%2C1%2C0%2C0.8%2C0%2C0.6z%22%2F%3E%3C%2Fsvg%3E');
-  transform: translateY(-70%);
 }
 .header__navigation .country .dropdown-menu,
 .header__navigation .country .dropdown-menu > li > a,
@@ -4704,7 +4703,6 @@ aside .subcategories__items {
   }
   .header__navigation .country span:nth-child(2):after {
     right: -15px;
-    transform: translateY(-80%);
   }
   .header__navigation .country .dropdown-menu,
   .header__navigation .country .dropdown-menu > li > a,
