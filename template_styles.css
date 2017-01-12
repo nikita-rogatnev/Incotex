@@ -1982,6 +1982,9 @@ button.btn--inacive:active,
   font-size: 12px;
   line-height: 1;
 }
+.no-transition {
+  transition: height 0.01s;
+}
 /* ------------------------------------------ */
 /* ABOUT BLOCK
 /* ------------------------------------------ */
