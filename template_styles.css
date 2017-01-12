@@ -2163,6 +2163,12 @@ button.btn--inacive:active,
 .catalog-filter__item {
   margin-bottom: 20px;
 }
+.catalog-filter__item .form-group {
+  margin-bottom: 0;
+}
+.catalog-filter__item label {
+  margin-bottom: 0;
+}
 .catalog-filter__item .collapse__link.collapse__link--left[aria-expanded=false]:before {
   transform: translateY(20%) rotate(270deg);
 }
@@ -5085,12 +5091,6 @@ aside .subcategories__items {
   }
 }
 @media (max-width: 991px) {
-  .catalog-filter__item .form-group {
-    margin-bottom: 0;
-  }
-  .catalog-filter__item label {
-    margin-bottom: 0;
-  }
   .projects__item .projects__item-description > h1 {
     min-height: initial;
     margin: 0;
