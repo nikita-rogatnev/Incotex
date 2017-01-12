@@ -15,24 +15,47 @@
 		top: 0;
 		right: 0;
 
-		width: 85px;
+		width: 65px;
 		height: 100%;
 
 		text-align: right;
+
+		@media (min-width: @screen-md) {
+			width: 85px;
+		}
 	}
 	.fotorama__stage {
-		width: calc(~"100% - 90px") !important;
+		width: calc(~"100% - 65px") !important;
+
+		@media (min-width: @screen-md) {
+			width: calc(~"100% - 90px") !important;
+		}
 	}
 
 	.fotorama__thumb-border {
 		display: none;
 	}
 
+
+	.fotorama__nav__frame {
+		width: 54px !important;
+		height: 54px !important;
+
+		@media (min-width: @screen-md) {
+			width: 73.5px !important;
+			height: 73.5px !important;
+		}
+	}
+
 	.fotorama__nav,
 	.fotorama__nav__shaft {
-		width: 85px !important;
+		width: 65px !important;
 		height: 100%;
 		padding: 0 !important;
+
+		@media (min-width: @screen-md) {
+			width: 85px !important;
+		}
 	}
 
 	.fotorama__nav__frame {

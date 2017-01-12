@@ -3468,19 +3468,23 @@ button.btn--inacive:active,
   position: absolute;
   top: 0;
   right: 0;
-  width: 85px;
+  width: 65px;
   height: 100%;
   text-align: right;
 }
 .project-intro__slider .fotorama__stage {
-  width: calc(100% - 90px) !important;
+  width: calc(100% - 65px) !important;
 }
 .project-intro__slider .fotorama__thumb-border {
   display: none;
 }
+.project-intro__slider .fotorama__nav__frame {
+  width: 54px !important;
+  height: 54px !important;
+}
 .project-intro__slider .fotorama__nav,
 .project-intro__slider .fotorama__nav__shaft {
-  width: 85px !important;
+  width: 65px !important;
   height: 100%;
   padding: 0 !important;
 }
@@ -3859,6 +3863,9 @@ button.btn--inacive:active,
 }
 .reviews__slider .carousel-indicators .active {
   border-color: #559dd8;
+}
+.reviews__slide .reviews__slide-text {
+  overflow-x: hidden;
 }
 .carousel .carousel-control {
   background: transparent;
@@ -4823,6 +4830,20 @@ aside .subcategories__items {
   }
   .product-description table {
     width: 60%;
+  }
+  .project-intro__slider .fotorama__nav-wrap {
+    width: 85px;
+  }
+  .project-intro__slider .fotorama__stage {
+    width: calc(100% - 90px) !important;
+  }
+  .project-intro__slider .fotorama__nav__frame {
+    width: 73.5px !important;
+    height: 73.5px !important;
+  }
+  .project-intro__slider .fotorama__nav,
+  .project-intro__slider .fotorama__nav__shaft {
+    width: 85px !important;
   }
   .project-intro__slider {
     width: 100% !important;
