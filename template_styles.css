@@ -4174,7 +4174,12 @@ aside .subcategories__items {
   border: 0;
 }
 .subcategory__soting .subcategory__soting-noborder .selectfix-current-value {
+  max-width: 100%;
+  margin-top: -20px;
   padding-left: 0;
+}
+.subcategory__soting .subcategory__soting-noborder .selectfix-current-value span span {
+  top: -1px;
 }
 .subcategory__soting .subcategory__soting-noborder .selectfix-current-value::before {
   display: none;
@@ -4976,6 +4981,9 @@ aside .subcategories__items {
   }
   .slider__caption {
     bottom: 100px;
+  }
+  .subcategory__soting .subcategory__soting-noborder .selectfix-current-value span span {
+    top: 1px;
   }
   .technology__about-item {
     padding-right: 60px;
