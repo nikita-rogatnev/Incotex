@@ -155,9 +155,13 @@
 
 	max-width: 300px;
 	margin: 0 20px;
-	padding: 1px 20px 20px;
+	padding: 1px 15px 10px;
 
 	background: @palette-white;
+
+	@media (min-width: @screen-sm) {
+		padding: 1px 20px 20px;
+	}
 
 	&:before {
 		position: absolute;
@@ -183,8 +187,13 @@
 	}
 
 	h1 {
-		font-size: 21px;
+		font-size: 16px;
 		line-height: 22px;
+
+		@media (min-width: @screen-sm) {
+			font-size: 21px;
+			line-height: 22px;
+		}
 
 		a {
 			text-decoration: none;
@@ -201,8 +210,12 @@
 
 		color: @palette-black;
 
-		font-size: 15px;
+		font-size: 13px;
 		line-height: 1;
+
+		@media (min-width: @screen-sm) {
+			font-size: 15px;
+		}
 	}
 
 	small {

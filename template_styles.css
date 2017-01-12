@@ -3112,7 +3112,7 @@ button.btn--inacive:active,
   position: relative;
   max-width: 300px;
   margin: 0 20px;
-  padding: 1px 20px 20px;
+  padding: 1px 15px 10px;
   background: #ffffff;
 }
 .map__project-item:before {
@@ -3133,7 +3133,7 @@ button.btn--inacive:active,
   background: #ffffff;
 }
 .map__project-item h1 {
-  font-size: 21px;
+  font-size: 16px;
   line-height: 22px;
 }
 .map__project-item h1 a {
@@ -3145,7 +3145,7 @@ button.btn--inacive:active,
   display: block;
   margin-bottom: 5px;
   color: #000000;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1;
 }
 .map__project-item small {
@@ -4538,6 +4538,16 @@ aside .subcategories__items {
     margin-top: 0;
     margin-bottom: 0;
     text-align: right;
+  }
+  .map__project-item {
+    padding: 1px 20px 20px;
+  }
+  .map__project-item h1 {
+    font-size: 21px;
+    line-height: 22px;
+  }
+  .map__project-item span {
+    font-size: 15px;
   }
   .news .news__years .news__year {
     padding-right: 15px;
