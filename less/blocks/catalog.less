@@ -36,11 +36,12 @@
 
 .catalog__item {
 	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 
 	@media (min-width: @screen-sm) {
 		min-width: 50%;
 		max-width: 50%;
+		margin-bottom: 15px;
 
 		flex-grow: 0;
 		flex-basis: calc(~"50% - 20px");
@@ -170,7 +171,12 @@
 		}
 
 		&.catalog__item {
-			margin: 15px 0;
+			margin: 15px 0 30px;
+
+			@media (min-width: @screen-sm) {
+				margin: 15px 0;
+			}
+
 			@media (min-width: @screen-md) {
 				padding: 0;
 			}
