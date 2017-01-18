@@ -3,27 +3,50 @@
 /* ------------------------------------------ */
 .catalog-categories {
 	padding-bottom: 20px;
-
-	div {
-		@media (min-width: @screen-md) {
-			margin: 0;
-			padding: 0;
-		}
-	}
 }
 
 .catalog-categories__item {
+	position: relative;
+
 	@media (min-width: @screen-md) {
+		margin-bottom: 120px;
+
 		&:nth-child(odd) {
 			.catalog-categories__text {
-				padding-left: 40px;
+				right: 60px;
 			}
 		}
 
 		&:nth-child(even) {
 			.catalog-categories__text {
-				padding-right: 40px;
+				left: 60px;
 			}
 		}
+	}
+
+	@media (min-width: @screen-lg) {
+		margin-bottom: 80px;
+	}
+}
+
+.catalog-categories__image {
+	display: none;
+
+	@media (min-width: @screen-md) {
+		display: block;
+	}
+}
+
+.catalog-categories__text {
+	background: @palette-white;
+
+	@media (min-width: @screen-md) {
+		position: absolute;
+
+		margin-top: -40px;
+		padding: 10px 20px;
+
+		border: 1px solid #d0d0d0;
+		border-radius: 3px;
 	}
 }

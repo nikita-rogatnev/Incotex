@@ -2169,6 +2169,15 @@ button.btn--inacive:active,
 .catalog-categories {
   padding-bottom: 20px;
 }
+.catalog-categories__item {
+  position: relative;
+}
+.catalog-categories__image {
+  display: none;
+}
+.catalog-categories__text {
+  background: #ffffff;
+}
 /* ------------------------------------------ */
 /* CATALOG FILTER BLOCK
 /* ------------------------------------------ */
@@ -4767,15 +4776,24 @@ aside .subcategories__items {
   .header__form {
     width: 100%;
   }
-  .catalog-categories div {
-    margin: 0;
-    padding: 0;
+  .catalog-categories__item {
+    margin-bottom: 120px;
   }
   .catalog-categories__item:nth-child(odd) .catalog-categories__text {
-    padding-left: 40px;
+    right: 60px;
   }
   .catalog-categories__item:nth-child(even) .catalog-categories__text {
-    padding-right: 40px;
+    left: 60px;
+  }
+  .catalog-categories__image {
+    display: block;
+  }
+  .catalog-categories__text {
+    position: absolute;
+    margin-top: -40px;
+    padding: 10px 20px;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
   }
   .catalog__items--three .catalog__item {
     min-width: 33.33333333%;
@@ -5051,6 +5069,9 @@ aside .subcategories__items {
   }
   .header__navigation .country .dropdown-menu img {
     margin-top: -4px;
+  }
+  .catalog-categories__item {
+    margin-bottom: 80px;
   }
   .catalog__item {
     margin-top: 35px;
