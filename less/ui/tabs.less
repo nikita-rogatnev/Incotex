@@ -7,7 +7,7 @@
 
 	border: 0;
 
-	@media (min-width: @screen-md) {
+	@media (min-width: @screen-sm) {
 		border-bottom: 2px solid #cecece;
 	}
 }
@@ -24,7 +24,8 @@
 
 	border-bottom: 1px dashed #cecece;
 
-	@media (min-width: @screen-md) {
+
+	@media (min-width: @screen-sm) {
 		float: left;
 
 		width: auto;
@@ -38,7 +39,11 @@
 .nav-tabs .active {
 	background: @palette-white;
 
-	@media (min-width: @screen-md) {
+	a {
+		font-weight: 800;
+	}
+
+	@media (min-width: @screen-sm) {
 		border: 2px solid #cecece;
 		border-bottom: 0;
 	}
@@ -56,7 +61,7 @@
 	border-bottom: 1px solid transparent;
 
 	font-size: 17px;
-	font-weight: 700;
+	font-weight: 400;
 }
 
 .nav > li > a:hover,

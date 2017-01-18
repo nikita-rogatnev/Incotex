@@ -406,7 +406,7 @@ a:focus {
   margin: 0 0 5px;
   color: #000000;
   font-size: 21px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 36px;
 }
 .alert-success {
@@ -1031,6 +1031,12 @@ textarea {
   background-color: transparent;
   line-height: 20px;
 }
+.widget-upload-field .upload-field-btn {
+  font-weight: 900;
+}
+.widget-upload-field .upload-field-value {
+  font-style: normal;
+}
 .widget-upload-field .icon-file:before {
   margin: -4px 6px 0 0;
   font-size: 14px;
@@ -1112,6 +1118,14 @@ h5,
 h6 {
   color: #000000;
 }
+.tech h1,
+.tech h2,
+.tech h3,
+.tech h4,
+.tech h5,
+.tech h6 {
+  font-weight: 900;
+}
 h1 {
   margin: 35px 0 38px;
   font-size: 24px;
@@ -1167,7 +1181,7 @@ img {
 .link,
 a:not([class]) {
   cursor: pointer;
-  transition: color 0.3s;
+  transition: color 0.15s;
   text-decoration: none;
   color: #1c5699;
   border-bottom: 1px solid rgba(28, 86, 153, 0.3);
@@ -1242,6 +1256,8 @@ ul:not([class]) > li::before {
   background: #1f6799;
 }
 ul:not([class]) > li > ul:not([class]) > li::before {
+  width: 7px;
+  height: 7px;
   border: 1px solid #1f6799;
   background: none;
 }
@@ -1573,6 +1589,9 @@ thead {
 .nav-tabs .active {
   background: #ffffff;
 }
+.nav-tabs .active a {
+  font-weight: 800;
+}
 .nav > li > a {
   display: inline-block;
   padding: 0;
@@ -1581,7 +1600,7 @@ thead {
   color: #1c5699;
   border-bottom: 1px solid transparent;
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 400;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -1793,6 +1812,7 @@ button.btn--inacive:active,
   top: 0;
   right: 0;
   width: 75%;
+  height: 100vh;
   padding: 55px 0 25px 0;
   text-align: right;
   background: #123358;
@@ -3493,6 +3513,9 @@ button.btn--inacive:active,
   height: 100%;
   padding: 0 !important;
 }
+.project-intro__slider .fotorama__nav__shaft {
+  overflow-y: scroll;
+}
 .project-intro__slider .fotorama__nav__frame {
   display: block;
   margin-bottom: 3px;
@@ -3677,6 +3700,7 @@ button.btn--inacive:active,
 }
 .projects__item.projects__item--small:hover,
 .projects__item.projects__item--small.projects__item--active {
+  cursor: pointer;
   border-radius: 3px;
   box-shadow: 0 0 25px 10px rgba(18, 56, 98, 0.15);
 }
@@ -3791,7 +3815,7 @@ button.btn--inacive:active,
 }
 .reviews small {
   display: block;
-  margin-top: 10px;
+  margin-bottom: 10px;
   color: #d5e0ef;
   font-size: 15px;
   font-style: italic;
@@ -3950,17 +3974,17 @@ button.btn--inacive:active,
   z-index: 1;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 .slider__slide img {
   position: relative;
+  left: 50%;
   width: auto;
   min-width: 100%;
   max-width: none;
   height: 100%;
   min-height: 100%;
-  left: 50%;
   transform: translate(-50%, 0);
   moz-transform: translate(-50%, 0);
   ms-transform: translate(-50%, 0);
@@ -3993,10 +4017,13 @@ button.btn--inacive:active,
 .slider__caption a:hover {
   text-decoration: none;
   color: #ffffff;
-  border-color: #2e539e !important;
+  border-color: #ffffff !important;
 }
 .fotorama__thumb-border {
   border-color: #2e539e !important;
+}
+.fotorama__arr {
+  display: none !important;
 }
 /* ------------------------------------------ */
 /* SOLUTION DESCRIPTION BLOCK
@@ -4221,6 +4248,12 @@ aside .subcategories__items {
   font-weight: 900;
   line-height: 36px;
 }
+.technology h3 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 21px;
+  font-weight: 400;
+}
 .technology__slider {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -4398,6 +4431,20 @@ aside .subcategories__items {
   h2 {
     font-size: 30px;
     line-height: 36px;
+  }
+  .nav.nav-tabs {
+    border-bottom: 2px solid #cecece;
+  }
+  .nav-tabs > li {
+    float: left;
+    width: auto;
+    padding: 13px 24px 13px;
+    border-bottom: 0;
+    border-radius: 2px 2px 0 0;
+  }
+  .nav-tabs .active {
+    border: 2px solid #cecece;
+    border-bottom: 0;
   }
   .header--absolute .header__navigation .country {
     border-left: 1px solid rgba(255, 255, 255, 0.23);
@@ -4658,20 +4705,6 @@ aside .subcategories__items {
     float: left;
     width: 20%;
   }
-  .nav.nav-tabs {
-    border-bottom: 2px solid #cecece;
-  }
-  .nav-tabs > li {
-    float: left;
-    width: auto;
-    padding: 13px 24px 13px;
-    border-bottom: 0;
-    border-radius: 2px 2px 0 0;
-  }
-  .nav-tabs .active {
-    border: 2px solid #cecece;
-    border-bottom: 0;
-  }
   .header .navbar-toggle.collapsed {
     right: -15px;
   }
@@ -4914,7 +4947,7 @@ aside .subcategories__items {
     line-height: 18px;
   }
   .projects__item:hover h1 a:hover {
-    border-bottom: 1px dotted #ffffff;
+    border-bottom: 0;
   }
   .projects__item:hover h1 span {
     z-index: 3;
