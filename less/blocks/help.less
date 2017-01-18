@@ -1,10 +1,6 @@
 /* ------------------------------------------ */
 /* HELP BLOCK
 /* ------------------------------------------ */
-.help__treatment {
-	padding-top: 40px;
-}
-
 .help__background {
 	margin-bottom: 20px;
 	padding-top: 20px;
@@ -174,33 +170,15 @@
 }
 
 .help__number {
-	p {
-		@media (min-width: @screen-md) {
-			display: inline-block;
+	color: @palette-black;
+	border: 0;
 
-			margin: 0;
+	font-size: 1.6em;
+	line-height: 1;
 
-			vertical-align: middle;
-		}
-	}
-
-	a {
+	@media (min-width: @screen-sm) {
 		text-decoration: none;
 		pointer-events: none;
-
-		color: @palette-black;
-		border: 0;
-
-		font-size: 1.6em;
-		line-height: 1;
-
-		@media (min-width: @screen-md) {
-			display: inline-block;
-
-			margin-left: 50px;
-
-			vertical-align: middle;
-		}
 	}
 }
 

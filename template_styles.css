@@ -2746,9 +2746,7 @@ button.btn--inacive:active,
 .help__call {
   padding-bottom: 20px;
 }
-.help__number a {
-  text-decoration: none;
-  pointer-events: none;
+.help__number {
   color: #000000;
   border: 0;
   font-size: 1.6em;
@@ -4533,6 +4531,10 @@ aside .subcategories__items {
     font-size: 40px;
     line-height: 52px;
   }
+  .help__number {
+    text-decoration: none;
+    pointer-events: none;
+  }
   .help__note {
     margin-top: 15px;
   }
@@ -4776,6 +4778,9 @@ aside .subcategories__items {
   .header__form {
     width: 100%;
   }
+  .catalog-categories {
+    padding-top: 40px;
+  }
   .catalog-categories__item {
     margin-bottom: 120px;
   }
@@ -4833,16 +4838,6 @@ aside .subcategories__items {
   .help__country .country span:nth-child(2):after {
     right: -15px;
     transform: translateY(-80%);
-  }
-  .help__number p {
-    display: inline-block;
-    margin: 0;
-    vertical-align: middle;
-  }
-  .help__number a {
-    display: inline-block;
-    margin-left: 50px;
-    vertical-align: middle;
   }
   .history__item:nth-child(odd) .history__time:after {
     right: 10px;
