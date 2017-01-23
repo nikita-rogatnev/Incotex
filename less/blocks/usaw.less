@@ -2,10 +2,25 @@
 /* USAW BLOCK
 /* ------------------------------------------ */
 .usaw {
+	position: relative;
+
 	padding-top: 30px;
 	padding-bottom: 30px;
 
-	border-top: 1px solid #e1e1e1;
+	&--bordered {
+		&:before {
+			position: absolute;
+
+			display: block;
+
+			width: calc(~"100% - 30px");
+			margin-top: -40px;
+
+			content: "";
+
+			border-top: 1px solid #e1e1e1;
+		}
+	}
 
 	.catalog__item {
 		table,

@@ -2,70 +2,96 @@ $(document)
 	.ready(function () {
 
 		// ------------------------------------------ //
-		// HOME SLIDER
+		// ADD SWIPE TO SLIDERS
 		// ------------------------------------------ //
-		if ($(window).width() > 991) {
-			$(document)
-				.on('mouseenter', '.js-projects-slider', function () {
-					changeSlide($(this).index());
-				});
+		if ($(".carousel").length) {
+			$(".carousel").swipe({
+				//Generic swipe handler for all directions
+				swipeLeft: function (event, direction, distance, duration, fingerCount) {
+					$(this)
+						.parent()
+						.carousel('next');
+				},
+				swipeRight: function () {
+					$(this)
+						.parent()
+						.carousel('prew');
+				},
+				//Default is 75px, set to 0 for demo so any distance triggers swipe
+				threshold: 0
+			});
 		};
 
-		function changeSlide(index) {
-			if (!$('.slider__slide').eq(index).hasClass('slider__slide--active')) {
-				$('.slider__slide')
-					.stop(true, true)
-					.removeClass('slider__slide--active')
-					.fadeOut(800);
+		// ------------------------------------------ //
+		// HOME SLIDER
+		// ------------------------------------------ //
+		if ($(".slider").length) {
+			if ($(window).width() > 991) {
+				$(document)
+					.on('mouseenter', '.js-projects-slider', function () {
+						changeSlide($(this).index());
+					});
+			};
 
-				$('.slider__slide')
-					.eq(index)
-					.addClass('slider__slide--active')
-					.fadeIn(800);
-			}
+			function changeSlide(index) {
+				if (!$('.slider__slide').eq(index).hasClass('slider__slide--active')) {
+					$('.slider__slide')
+						.stop(true, true)
+						.removeClass('slider__slide--active')
+						.fadeOut(800);
+
+					$('.slider__slide')
+						.eq(index)
+						.addClass('slider__slide--active')
+						.fadeIn(800);
+				}
+			};
 		};
 
 		// ------------------------------------------ //
 		// INPUT[TYPE="FILE"]
 		// ------------------------------------------ //
-		$('input[type="file"].uploadpicker').each(function () {
-			var field = $(this);
-			var required = field.is('[required]');
-			var disabled = field.is('[disabled]');
-			var placeholder = field.attr('placeholder');
-			field
-				.addClass('upload-field-overlay')
-				.removeAttr('required')
-				.wrap('<span class="widget-upload-field' + (disabled
-					? ' disabled'
-					: '') + '"/>')
-			var wrapper = field.parent();
-			wrapper.prepend('<input class="upload-field-value form-control" type="text"' + (required
-				? ' required="required"'
-				: '') + (disabled
-				? ' disabled="disabled"'
-				: '') + ' placeholder="Файл не выбран" />').prepend('<span class="icon icon-file"></span><span class="upload-field-btn">' + (placeholder
-				? placeholder
-				: 'Прикрепить файл') + '</span>');
-			field.bind('change', function () {
-				var values = [
-					this
-						.value
-						.split(/[\/\\]/)
-						.pop()
-				];
-				if (this.files) {
-					values = [];
-					for (var i = 0; i < this.files.length; i++) {
-						values.push(this.files[i].name);
-					}
-				}
-				var parts = $(this).val();
-				wrapper
-					.find('.upload-field-value')
-					.val(values.join(', '));
-			});
-		});
+		if ($('input[type="file"].uploadpicker').length) {
+			$('input[type="file"].uploadpicker')
+				.each(function () {
+					var field = $(this);
+					var required = field.is('[required]');
+					var disabled = field.is('[disabled]');
+					var placeholder = field.attr('placeholder');
+					field
+						.addClass('upload-field-overlay')
+						.removeAttr('required')
+						.wrap('<span class="widget-upload-field' + (disabled
+							? ' disabled'
+							: '') + '"/>')
+					var wrapper = field.parent();
+					wrapper.prepend('<input class="upload-field-value form-control" type="text"' + (required
+						? ' required="required"'
+						: '') + (disabled
+						? ' disabled="disabled"'
+						: '') + ' placeholder="Файл не выбран" />').prepend('<span class="icon icon-file"></span><span class="upload-field-btn">' + (placeholder
+						? placeholder
+						: 'Прикрепить файл') + '</span>');
+					field.bind('change', function () {
+						var values = [
+							this
+								.value
+								.split(/[\/\\]/)
+								.pop()
+						];
+						if (this.files) {
+							values = [];
+							for (var i = 0; i < this.files.length; i++) {
+								values.push(this.files[i].name);
+							}
+						}
+						var parts = $(this).val();
+						wrapper
+							.find('.upload-field-value')
+							.val(values.join(', '));
+					});
+				});
+		};
 
 		// ------------------------------------------ //
 		// SELECTFIX

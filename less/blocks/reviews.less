@@ -92,6 +92,8 @@
 	}
 
 	.carousel-control {
+		display: none;
+
 		opacity: 1;
 
 		&.left {
@@ -104,6 +106,10 @@
 			&:before {
 				right: 0;
 			}
+		}
+
+		@media (min-width: @screen-sm) {
+			display: block;
 		}
 	}
 
