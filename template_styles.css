@@ -2802,6 +2802,11 @@ button.btn--inacive:active,
   display: inline-block;
   margin: 0 auto;
 }
+.hero__about .hero__container:hover {
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+}
 .hero__about .hero__container::before {
   position: absolute;
   top: -35px;
@@ -4264,6 +4269,10 @@ aside .subcategories__items {
   padding-top: 15px;
   padding-bottom: 50px;
 }
+.technology h2 {
+  font-size: 15px;
+  line-height: 22px;
+}
 .technology h4 {
   font-size: 21px;
   font-weight: 900;
@@ -4272,8 +4281,9 @@ aside .subcategories__items {
 .technology h3 {
   margin: 0;
   margin-bottom: 30px;
-  font-size: 21px;
+  font-size: 15px;
   font-weight: 400;
+  line-height: 22px;
 }
 .technology__slider {
   margin-top: 20px;
@@ -4703,6 +4713,14 @@ aside .subcategories__items {
   }
   .subcategory__select-sort {
     margin-bottom: 0;
+  }
+  .technology h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .technology h3 {
+    font-size: 21px;
+    line-height: 26px;
   }
   .usedin-projects .project__item {
     min-height: 340px;
