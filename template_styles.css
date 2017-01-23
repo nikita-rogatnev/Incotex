@@ -3452,6 +3452,9 @@ button.btn--inacive:active,
   font-size: 15px;
   line-height: 17px;
 }
+.product-info .tab-pane td {
+  vertical-align: bottom;
+}
 .product-info .tab-pane td:nth-child(odd) {
   position: relative;
   width: 70%;
