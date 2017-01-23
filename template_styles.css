@@ -1032,6 +1032,12 @@ textarea {
   line-height: 20px;
 }
 .widget-upload-field .upload-field-btn {
+  border-bottom: 1px solid transparent;
+}
+.widget-upload-field:hover .upload-field-btn {
+  border-bottom: 1px solid #3aa9ff;
+}
+.widget-upload-field .upload-field-btn {
   font-weight: 900;
 }
 .widget-upload-field .upload-field-value {
@@ -3098,7 +3104,7 @@ button.btn--inacive:active,
   height: 370px;
 }
 .map--projects .map__container .map__item {
-  height: 320px;
+  height: 400px;
 }
 .map--projects .map__controls {
   padding-top: 15px;
@@ -4869,6 +4875,7 @@ aside .subcategories__items {
     color: #000000;
   }
   .header__navigation .country .dropdown-menu a:hover span {
+    color: #0f3473;
     border-bottom: 1px solid #1c5699;
   }
   .header__form {

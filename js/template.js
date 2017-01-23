@@ -193,12 +193,12 @@ $(document)
 if ($("#map").length) {
 	var locations = [
 		[
-			'3', 57.354645, 32.252347, 3, "./images/map/map__icon--factories-icon.png"
+			'<article class="map__project-item"><h1>Наименование объекта</h1><span>109382, г.Москва, ул.Люблинская, д.72, оф.7</span><span class="dealers-list__contacts" style="display:block; margin-top:20px;"><span>Телефон: +7 (499) 703-01-83</span><span>Директор: +7 916 629-45-01</span><span>Сайт: <a href="#">www.company.ru</a></span></span></article>', 57.354645, 32.252347, 3, "./images/map/map__icon--factories-icon.png"
 		],
 		[
-			'2', 57.354645, 35.252347, 2, "./images/map/map__icon--offices-icon.png"
+			'<article class="map__project-item"><h1>Наименование объекта</h1><span>109382, г.Москва, ул.Люблинская, д.72, оф.7</span><span class="dealers-list__contacts" style="display:block; margin-top:20px;"><span>Телефон: +7 (499) 703-01-83</span><span>Директор: +7 916 629-45-01</span><span>Сайт: <a href="#">www.company.ru</a></span></span></article>', 57.354645, 35.252347, 2, "./images/map/map__icon--offices-icon.png"
 		],
-		['1', 57.354645, 38.252347, 1, "./images/map/map__icon--representations-icon.png"]
+		['<article class="map__project-item"><h1>Наименование объекта</h1><span>109382, г.Москва, ул.Люблинская, д.72, оф.7</span><span class="dealers-list__contacts" style="display:block; margin-top:20px;"><span>Телефон: +7 (499) 703-01-83</span><span>Директор: +7 916 629-45-01</span><span>Сайт: <a href="#">www.company.ru</a></span></span></article>', 57.354645, 38.252347, 1, "./images/map/map__icon--representations-icon.png"]
 	];
 
 	var map = new google
@@ -242,7 +242,44 @@ if ($("#map").length) {
 				}
 			})(marker, i));
 	}
-}
+
+	google
+		.maps
+		.event
+		.addListener(infowindow, 'domready', function () {
+
+			// Reference to the DIV which receives the contents of the infowindow using jQuery
+			var iwOuter = $('.gm-style-iw');
+
+			iwOuter
+				.parent()
+				.parent()
+				.css({top: "96px", left: '-210px'});
+
+			/* The DIV we want to change is above the .gm-style-iw DIV.
+	    * So, we use jQuery and create a iwBackground variable,
+	    * and took advantage of the existing reference to .gm-style-iw for the previous DIV with .prev().
+	    */
+			var iwBackground = iwOuter.prev();
+
+			iwBackground
+				.children(':nth-child(1)')
+				.css({'display': 'none'});
+
+			iwBackground
+				.children(':nth-child(2)')
+				.css({'display': 'none'});
+
+			iwBackground
+				.children(':nth-child(3)')
+				.css({'display': 'none'});
+
+			iwBackground
+				.children(':nth-child(4)')
+				.css({'display': 'none'});
+
+		});
+};
 
 // ------------------------------------------ //
 // GOOGLE MAP /about.html
@@ -437,7 +474,7 @@ if ($("#map3").length) {
 // ------------------------------------------ //
 if ($("#map4").length) {
 	var locations = [
-		['1', 57.354645, 38.252347, 1, "./images/map/flag__red.png"]
+		['<article class="map__project-item"><h1>Наименование компании</h1><span>109382, г.Москва, ул.Люблинская, д.72, оф.7</span><span class="dealers-list__contacts" style="display:block; margin-top:20px;"><span>Телефон: +7 (499) 703-01-83</span><span>Директор: +7 916 629-45-01</span><span>Сайт: <a href="#">www.company.ru</a></span></span></article>', 57.354645, 38.252347, 1, "./images/map/flag__red.png"]
 	];
 
 	var map = new google
