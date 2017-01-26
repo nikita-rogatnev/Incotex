@@ -1,6 +1,18 @@
 /* ------------------------------------------ */
 /* HELP BLOCK
 /* ------------------------------------------ */
+.help {
+	textarea {
+		@media (min-width: @screen-sm) {
+			min-height: 178px;
+		}
+
+		@media (min-width: @screen-md) {
+			min-height: 184px;
+		}
+	}
+}
+
 .help__background {
 	margin-bottom: 20px;
 	padding-top: 20px;
@@ -128,13 +140,12 @@
 		}
 
 		.dropdown-menu {
-			left: 25px;
+			left: 0;
 
 			width: 170px;
 			min-width: initial;
-			margin-top: 5px;
 			margin-top: 20px;
-			margin-left: -70px;
+			margin-left: -15px;
 			padding: 0;
 			padding: 10px 12px;
 

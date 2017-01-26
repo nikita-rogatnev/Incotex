@@ -4,13 +4,44 @@
 .catalog-categories {
 	padding-bottom: 20px;
 
+	text-align: center;
+
+	p,
+	h3 {
+		text-align: left;
+	}
+
 	@media (min-width: @screen-md) {
 		padding-top: 40px;
 	}
 }
 
+.catalog-categories__heading {
+	margin: 10px 0;
+
+	img {
+		display: inline-block;
+
+		width: 50px;
+		margin-right: 10px;
+
+		vertical-align: middle;
+	}
+
+	h3 {
+		display: inline-block;
+
+		width: calc(~"100% - 70px");
+		margin: 0;
+
+		vertical-align: middle;
+	}
+}
+
 .catalog-categories__item {
 	position: relative;
+
+	margin-bottom: 40px;
 
 	@media (min-width: @screen-md) {
 		margin-bottom: 120px;
